@@ -20,7 +20,7 @@ The Maven resources plugin may throw a warning of the form
 ```
 
 This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding, include the following line in the `properties` section of the Maven project file, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project file, `pom.xml`:
 
 ```xml
 <properties>
@@ -37,12 +37,127 @@ Similarly, the Maven compiler plugin may return
 ```
 
 This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding, include the following line in the `properties` section in the Maven project file, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project file, `pom.xml`:
 
 ```xml
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
+```
+### Maven compiler plugin: `Source option 5 is no longer supported. Use 7 or later.` / `Source option 6 is no longer supported. Use 7 or later.`
+
+The Maven compiler plugin may halt with either of the errors
+
+```text
+[ERROR] Source option 5 is no longer supported. Use 7 or later.
+```
+
+or
+
+```text
+[ERROR] Source option 6 is no longer supported. Use 7 or later.
+```
+
+To solve this problem, explicitly set the Java source version in the Maven project file, `pom.xml`.
+For Java 16, either enhance the `properties` section of `pom.xml` with the line
+
+```xml
+<properties>
+    <maven.compiler.source>16</maven.compiler.source>
+</properties>
+```
+
+or configure the Maven compiler in the `build` section:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>16</source>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+### Maven compiler plugin: `Target option 5 is no longer supported. Use 7 or later.` / `Target option 6 is no longer supported. Use 7 or later.`
+
+The Maven compiler plugin may halt with either of the errors
+
+```text
+[ERROR] Target option 5 is no longer supported. Use 7 or later.
+```
+
+or
+
+```text
+[ERROR] Target option 6 is no longer supported. Use 7 or later.
+```
+
+To solve this problem, explicitly set the Java target version in the Maven project file, `pom.xml`.
+For Java 16, either enhance the `properties` section of `pom.xml` with the line
+
+```xml
+<properties>
+    <maven.compiler.target>16</maven.compiler.target>
+</properties>
+```
+
+or configure the Maven compiler in the `build` section:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <target>16</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+### Maven compiler plugin: `source release 16 requires target release 16`
+
+The Maven compiler may encounter the following fatal error while compiling:
+
+```text
+source release 16 requires target release 16
+```
+
+To solve this problem, ensure that both the Java source and target versions are set in the Maven project file, `pom.xml`.
+Java 16 can be selected by enhancing the `properties` section of `pom.xml` with the lines
+
+```xml
+<properties>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
+</properties>
+```
+
+or by configuring the Maven compiler in the `build` section:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>16</source>
+                <target>16</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 ```
 
 ## License

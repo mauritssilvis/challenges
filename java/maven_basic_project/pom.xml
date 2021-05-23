@@ -9,10 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!-- Define the project file encoding -->
+        <!-- Set the project file encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <!-- Set the Java source version >= 7 -->
         <maven.compiler.source>16</maven.compiler.source>
+
+        <!-- Set the Java target version >= 7 -->
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
