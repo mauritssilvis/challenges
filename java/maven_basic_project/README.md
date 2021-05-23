@@ -13,16 +13,16 @@ I list several of such problems, here, including possible solutions.
 
 ### Maven resources plugin: `Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!`
 
-The Maven resources plugin may through a warning of the form
+The Maven resources plugin may throw a warning of the form
 
-```
+```text
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 ```
 
 This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding, include the following section in the Maven project file, `pom.xml`:
+To set the file encoding, include the following line in the `properties` section of the Maven project file, `pom.xml`:
 
-```
+```xml
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
@@ -32,14 +32,14 @@ To set the file encoding, include the following section in the Maven project fil
 
 Similarly, the Maven compiler plugin may return
 
-```
+```text
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 ```
 
 This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding, include the following section in the Maven project file, `pom.xml`:
+To set the file encoding, include the following line in the `properties` section in the Maven project file, `pom.xml`:
 
-```
+```xml
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
