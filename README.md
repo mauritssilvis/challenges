@@ -1,6 +1,6 @@
 # Challenges
 
-> A collection of programming challenges, solved in different languages
+> A collection of programming challenges, solved using different languages
 
 ## About
 
@@ -21,6 +21,12 @@ More generally, I strive to
 Finally, I aim to
 
 * showcase this experience and knowledge.
+
+## Status
+
+Currently, solutions to common programming challenges are available in
+
+* [Java](java).
 
 ## License
 
