@@ -11,9 +11,47 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 While setting up and executing a Maven project, several problems may occur.
 I list several of such problems, here, including possible solutions.
 
-### 1. Maven resources plugin issues
+### 1. Project object model issues
 
-#### 1.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+#### 1.1 The goal you specified requires a project to execute but there is no POM in this directory
+
+When executing Maven goals, the following error may occur:
+
+```text
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory. Please verify you invoked Maven from the correct directory.
+```
+
+To solve this problem, ensure the top-level directory of the project contains a Maven project object model file called `pom.xml` and ensure Maven is run in this directory. 
+
+#### 1.2 Non-readable POM: input contained no data
+
+When executing Maven goals, the following error may occur:
+
+```text
+[ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM: input contained no data
+```
+
+To solve this problem, ensure the Maven project object model, `pom.xml`, contains at least the `project` root element.
+For example, include this root element without,
+
+```xml
+<project></project>
+```
+
+or with the optional XML preamble and namespace information,
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+</project>
+```
+
+### 2. Maven resources plugin issues
+
+#### 2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
 The Maven resources plugin may throw a warning of the form
 
@@ -30,9 +68,9 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </properties>
 ```
 
-### 2. Maven compiler plugin issues
+### 3. Maven compiler plugin issues
 
-#### 2.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
+#### 3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
 
 Similarly, the Maven compiler plugin may return
 
@@ -49,7 +87,7 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </properties>
 ```
 
-#### 2.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
+#### 3.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -89,7 +127,7 @@ or configure the Maven compiler in the `build` section:
 </build>
 ```
 
-#### 2.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
+#### 3.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -129,7 +167,7 @@ or configure the Maven compiler in the `build` section:
 </build>
 ```
 
-#### 2.4 Source release 16 requires target release 16
+#### 3.4 Source release 16 requires target release 16
 
 The Maven compiler may encounter the following fatal error while compiling:
 
