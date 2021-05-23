@@ -11,7 +11,9 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 While setting up and executing a Maven project, several problems may occur.
 I list several of such problems, here, including possible solutions.
 
-### Maven resources plugin: `Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!`
+### 1. Maven resources plugin issues
+
+#### 1.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
 The Maven resources plugin may throw a warning of the form
 
@@ -28,7 +30,9 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </properties>
 ```
 
-### Maven compiler plugin: `File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!` 
+### 2. Maven compiler plugin issues
+
+#### 2.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
 
 Similarly, the Maven compiler plugin may return
 
@@ -44,7 +48,8 @@ To set the file encoding to UTF-8, include the following line in the `properties
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 ```
-### Maven compiler plugin: `Source option 5 is no longer supported. Use 7 or later.` / `Source option 6 is no longer supported. Use 7 or later.`
+
+#### 2.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -84,7 +89,7 @@ or configure the Maven compiler in the `build` section:
 </build>
 ```
 
-### Maven compiler plugin: `Target option 5 is no longer supported. Use 7 or later.` / `Target option 6 is no longer supported. Use 7 or later.`
+#### 2.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -124,7 +129,7 @@ or configure the Maven compiler in the `build` section:
 </build>
 ```
 
-### Maven compiler plugin: `source release 16 requires target release 16`
+#### 2.4 Source release 16 requires target release 16
 
 The Maven compiler may encounter the following fatal error while compiling:
 
