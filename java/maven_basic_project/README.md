@@ -49,6 +49,44 @@ or with the optional XML preamble and namespace information,
 </project>
 ```
 
+#### 1.3 'modelVersion' is missing
+
+When executing Maven goals, the following error may occur:
+
+```text
+[ERROR] Some problems were encountered while processing the POMs:
+[ERROR] 'modelVersion' is missing. @ line 2, column 10
+```
+
+To solve this problem, set the model version in the Maven project file, `pom.xml`:
+
+```xml
+<project>
+    <modelVersion>4.0.0</modelVersion>
+</project>
+```
+
+#### 1.4 'groupId' is missing / 'artifactId' is missing / 'version' is missing
+
+When executing Maven goals, one or more of the following errors may occur:
+
+```text
+[ERROR] Some problems were encountered while processing the POMs:
+[FATAL] 'groupId' is missing. @ line 2, column 10
+[FATAL] 'artifactId' is missing. @ line 2, column 10
+[FATAL] 'version' is missing. @ line 2, column 10
+```
+
+To solve these problems, include the project coordinates, i.e., the artifact group ID, ID and version in the Maven project file:
+
+```xml
+<project>
+    <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+    <artifactId>basic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</project>
+```
+
 ### 2. Maven resources plugin issues
 
 #### 2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
