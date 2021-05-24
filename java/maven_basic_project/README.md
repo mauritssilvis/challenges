@@ -32,8 +32,8 @@ When executing Maven goals, the following error may occur:
 [FATAL] Non-readable POM: input contained no data
 ```
 
-To solve this problem, ensure the Maven project object model, `pom.xml`, contains at least the `project` root element.
-For example, include this root element without,
+To solve this problem, ensure the Maven project object model file, `pom.xml`, contains at least the `project` root element.
+This root element can be included without,
 
 ```xml
 <project></project>
@@ -63,9 +63,11 @@ This warning indicates that no encoding has been set for project files, i.e., so
 To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project file, `pom.xml`:
 
 ```xml
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
+<project>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
 ```
 
 ### 3. Maven compiler plugin issues
@@ -82,9 +84,11 @@ This warning indicates that no encoding has been set for project files, i.e., so
 To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project file, `pom.xml`:
 
 ```xml
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
+<project>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
 ```
 
 #### 3.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
@@ -105,26 +109,30 @@ To solve this problem, explicitly set the Java source version in the Maven proje
 For Java 16, either enhance the `properties` section of `pom.xml` with the line
 
 ```xml
-<properties>
-    <maven.compiler.source>16</maven.compiler.source>
-</properties>
+<project>
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+    </properties>
+</project>
 ```
 
 or configure the Maven compiler in the `build` section:
 
 ```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>16</source>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>16</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
 ```
 
 #### 3.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
@@ -145,26 +153,30 @@ To solve this problem, explicitly set the Java target version in the Maven proje
 For Java 16, either enhance the `properties` section of `pom.xml` with the line
 
 ```xml
-<properties>
-    <maven.compiler.target>16</maven.compiler.target>
-</properties>
+<project>
+    <properties>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+</project>
 ```
 
 or configure the Maven compiler in the `build` section:
 
 ```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <target>16</target>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
 ```
 
 #### 3.4 Source release 16 requires target release 16
@@ -179,28 +191,32 @@ To solve this problem, ensure that both the Java source and target versions are 
 Java 16 can be selected by enhancing the `properties` section of `pom.xml` with the lines
 
 ```xml
-<properties>
-    <maven.compiler.source>16</maven.compiler.source>
-    <maven.compiler.target>16</maven.compiler.target>
-</properties>
+<project>
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+</project>
 ```
 
 or by configuring the Maven compiler in the `build` section:
 
 ```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>16</source>
-                <target>16</target>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
 ```
 
 ## License
