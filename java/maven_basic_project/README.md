@@ -257,6 +257,41 @@ or by configuring the Maven compiler in the `build` section:
 </project>
 ```
 
+### 4. Maven JAR plugin issues
+
+#### 4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
+
+When trying to execute a JAR, the following error may occur:
+
+```text
+no main manifest attribute, in basic-1.0-SNAPSHOT.jar
+```
+
+To solve this problem, configure the Maven JAR plugin in the Maven project file, `pom.xml`, to specify the class with which execution has to start:
+
+```xml
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>
+                                nl.mauritssilvis.challenges.maven.project.basic.Main
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
 ## License
 
 Copyright © 2021 Maurits H. Silvis
