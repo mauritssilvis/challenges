@@ -13,16 +13,22 @@
     <properties>
         <!-- Set the project file encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <!-- Set the Java source version >= 7 -->
-        <maven.compiler.source>16</maven.compiler.source>
-
-        <!-- Set the Java target version >= 7 -->
-        <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <!-- Set the Java source version >= 7 -->
+                    <source>16</source>
+                    <!-- Set the Java target version >= 7 -->
+                    <target>16</target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
