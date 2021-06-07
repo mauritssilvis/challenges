@@ -10,7 +10,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 
 Currently, Java solutions to the following challenges are available:
 
-* [Creating a basic Maven project](maven_basic_project).
+* [Creating a basic Maven project using IntelliJ IDEA](maven_basic_project).
 
 ## License
 
