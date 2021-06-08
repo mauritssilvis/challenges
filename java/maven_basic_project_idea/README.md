@@ -6,28 +6,28 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Maven project, set up using IntelliJ IDEA.
 
-## Background
+## 1. Background
 
-### Maven
+### 1.1 Maven
 
-#### Project object model
+#### 1.1.1 Project object model
 
-### IntelliJ IDEA
+### 1.2 IntelliJ IDEA
 
-#### Copyright
+#### 1.2.1 Copyright
 
-#### Inspection profiles
+#### 1.2.2 Inspection profiles
 
-#### Run configurations
+#### 1.2.3 Run configurations
 
-## Issues and solutions
+## 2. Issues and solutions
 
 While setting up and executing a Maven project, several problems may occur.
 I list several of such problems, here, including possible solutions.
 
-### 1. Project object model issues
+### 2.1 Project object model issues
 
-#### 1.1 The goal you specified requires a project to execute but there is no POM in this directory
+#### 2.1.1 The goal you specified requires a project to execute but there is no POM in this directory
 
 When executing Maven goals, the following error may occur:
 
@@ -37,7 +37,7 @@ When executing Maven goals, the following error may occur:
 
 To solve this problem, ensure the top-level directory of the project contains a Maven project object model file called `pom.xml` and ensure Maven is run in this directory. 
 
-#### 1.2 Non-readable POM: input contained no data
+#### 2.1.2 Non-readable POM: input contained no data
 
 When executing Maven goals, the following error may occur:
 
@@ -63,7 +63,7 @@ or with the optional XML preamble and namespace information,
 </project>
 ```
 
-#### 1.3 'modelVersion' is missing
+#### 2.1.3 'modelVersion' is missing
 
 When executing Maven goals, the following error may occur:
 
@@ -80,7 +80,7 @@ To solve this problem, set the model version in the Maven project file, `pom.xml
 </project>
 ```
 
-#### 1.4 'groupId' is missing / 'artifactId' is missing / 'version' is missing
+#### 2.1.4 'groupId' is missing / 'artifactId' is missing / 'version' is missing
 
 When executing Maven goals, one or more of the following errors may occur:
 
@@ -101,9 +101,9 @@ To solve these problems, include the project coordinates, i.e., the artifact gro
 </project>
 ```
 
-### 2. Maven resources plugin issues
+### 2.2 Maven resources plugin issues
 
-#### 2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+#### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
 The Maven resources plugin may throw a warning of the form
 
@@ -122,9 +122,9 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-### 3. Maven compiler plugin issues
+### 2.3 Maven compiler plugin issues
 
-#### 3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
+#### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
 
 Similarly, the Maven compiler plugin may return
 
@@ -143,7 +143,7 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-#### 3.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
+#### 2.3.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -187,7 +187,7 @@ or configure the Maven compiler in the `build` section:
 </project>
 ```
 
-#### 3.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
+#### 2.3.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with either of the errors
 
@@ -231,7 +231,7 @@ or configure the Maven compiler in the `build` section:
 </project>
 ```
 
-#### 3.4 Source release 16 requires target release 16
+#### 2.3.4 Source release 16 requires target release 16
 
 The Maven compiler may encounter the following fatal error while compiling:
 
@@ -271,9 +271,9 @@ or by configuring the Maven compiler in the `build` section:
 </project>
 ```
 
-### 4. Maven JAR plugin issues
+### 2.4 Maven JAR plugin issues
 
-#### 4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
+#### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 
 When trying to execute a JAR, the following error may occur:
 
