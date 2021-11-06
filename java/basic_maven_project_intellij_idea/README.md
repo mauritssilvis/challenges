@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Maven project, set up using IntelliJ IDEA.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
 Below, I give a brief [overview](#1-background) of the project's [code](#11-code) and the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea).
 I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues. 
@@ -30,13 +30,85 @@ This Java project is managed and built using [Apache Maven](https://maven.apache
 #### 1.2.1 Project object model
 
 The project object model file, `pom.xml`, is central to the use of Maven.
-In this file, the project details can be set, build plugins can be configured and project dependencies can be defined. 
+In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
+
+In the project object model file of the current project, the so-called project coordinates are set to
+
+```xml
+<project>
+    <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+    <artifactId>basic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</project>
+```
+
+The encoding of the source files is set to UTF-8 using
+
+```xml
+<project>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
+```
+
+Finally, the Maven compiler and JAR plugins are configured as
+
+```xml
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
+and
+
+```xml
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>
+                                nl.mauritssilvis.challenges.maven.project.basic.Main
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
+respectively.
+To stay up-to-date with the latest developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
 #### 1.2.2 Build
 
+The project can be built using the command
+
 ```shell
-mvn clean install
+$ mvn clean install
 ```
+
+Execution of this command will compile the above-mentioned Java class file, package it as a JAR and make this JAR available in your local Maven repository.
 
 ### 1.3 IntelliJ IDEA
 
