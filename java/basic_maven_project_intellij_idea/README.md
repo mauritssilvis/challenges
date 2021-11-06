@@ -17,9 +17,9 @@ For demonstrative purposes, the current project contains only a single Java clas
 
 ```java
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
 }
 ```
 
@@ -36,9 +36,9 @@ In the project object model file of the current project, [pom.xml](pom.xml), the
 
 ```xml
 <project>
-    <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
-    <artifactId>basic</artifactId>
-    <version>1.0-SNAPSHOT</version>
+  <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+  <artifactId>basic</artifactId>
+  <version>1.0-SNAPSHOT</version>
 </project>
 ```
 
@@ -46,9 +46,9 @@ The encoding of the source files is set to UTF-8 using
 
 ```xml
 <project>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
 ```
 
@@ -56,19 +56,19 @@ Finally, the Maven compiler and JAR plugins are configured as
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
@@ -76,24 +76,24 @@ and
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>
-                                nl.mauritssilvis.challenges.maven.project.basic.Main
-                            </mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>
+                nl.mauritssilvis.challenges.maven.project.basic.Main
+              </mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
@@ -216,7 +216,7 @@ To solve this problem, set the model version in the Maven project object model f
 
 ```xml
 <project>
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 </project>
 ```
 
@@ -236,9 +236,9 @@ For the current project, these coordinates are given by
 
 ```xml
 <project>
-    <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
-    <artifactId>basic</artifactId>
-    <version>1.0-SNAPSHOT</version>
+  <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+  <artifactId>basic</artifactId>
+  <version>1.0-SNAPSHOT</version>
 </project>
 ```
 
@@ -257,9 +257,9 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 ```xml
 <project>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
 ```
 
@@ -278,9 +278,9 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 ```xml
 <project>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
 ```
 
@@ -303,9 +303,9 @@ For Java 17, either extend the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-    </properties>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+  </properties>
 </project>
 ```
 
@@ -313,18 +313,18 @@ or configure the Maven compiler in the `build` section:
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>17</source>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>17</source>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
@@ -347,9 +347,9 @@ For Java 17, either extend the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
-    <properties>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+  <properties>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
 </project>
 ```
 
@@ -357,18 +357,18 @@ or configure the Maven compiler in the `build` section:
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <target>17</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <target>17</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
@@ -385,10 +385,10 @@ Java 17 can be selected by extending the `properties` section of `pom.xml` with 
 
 ```xml
 <project>
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
 </project>
 ```
 
@@ -396,19 +396,19 @@ or by configuring the Maven compiler in the `build` section:
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
@@ -427,24 +427,24 @@ For the current project, this looks as follows:
 
 ```xml
 <project>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>
-                                nl.mauritssilvis.challenges.maven.project.basic.Main
-                            </mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>
+                nl.mauritssilvis.challenges.maven.project.basic.Main
+              </mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 ```
 
