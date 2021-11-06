@@ -1,4 +1,4 @@
-# Challenges > Java > Creating a basic Maven project using IntelliJ IDEA
+# Challenges > Java > Setting up a basic Maven project using IntelliJ IDEA
 
 > A basic Maven project, set up using IntelliJ IDEA
 
