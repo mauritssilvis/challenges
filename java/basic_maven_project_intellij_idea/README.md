@@ -159,7 +159,7 @@ or
 ```
 
 To solve this problem, explicitly set the Java source version in the Maven project object model file, `pom.xml`.
-For Java 17, either enhance the `properties` section of `pom.xml` with the line
+For Java 17, either extend the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
@@ -203,7 +203,7 @@ or
 ```
 
 To solve this problem, explicitly set the Java target version in the Maven project object model file, `pom.xml`.
-For Java 17, either enhance the `properties` section of `pom.xml` with the line
+For Java 17, either extend the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
@@ -240,8 +240,8 @@ The Maven compiler may encounter the following fatal error while compiling:
 source release 17 requires target release 17
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`.
-Java 17 can be selected by enhancing the `properties` section of `pom.xml` with the lines
+To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`, and that the target version is not smaller than the source version.
+Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
 
 ```xml
 <project>
