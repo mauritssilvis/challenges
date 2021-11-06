@@ -32,7 +32,7 @@ This Java project is managed and built using [Apache Maven](https://maven.apache
 The project object model file, `pom.xml`, is central to the use of Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
-In the project object model file of the current project, the so-called project coordinates are set to
+In the project object model file of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
 
 ```xml
 <project>
@@ -113,13 +113,52 @@ Execution of this command will compile the above-mentioned Java class file, pack
 ### 1.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
-Detailed documentation of IntelliJ IDEA is provided [here](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
+IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), which contains a step-by-step guide for [setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
 
-#### 1.3.1 Copyright
+The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related files.
+A few of these files are highlighted below.
 
-#### 1.3.2 Inspection profiles
+#### 1.3.1 Code styles
 
-#### 1.3.3 Run configurations
+First, to make cross-platform coding easier, Unix line endings are selected in the file [codeStyleConfig.xml](.idea/codeStyles/codeStyleConfig.xml).
+In addition, rulers are shown at 80 characters.
+
+```xml
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="LINE_SEPARATOR" value="&amp;#10;" />
+    <option name="SOFT_MARGINS" value="80" />
+  </code_scheme>
+</component>
+```
+
+#### 1.3.2 Copyright
+
+Automatic copyright messages including a license identifier are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
+
+```xml
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright © &amp;#36;today.year Maurits H. Silvis&#10;SPDX-License-Identifier: GPL-3.0-or-later" />
+    <option name="myName" value="GNU GPL v3" />
+  </copyright>
+</component>
+```
+
+#### 1.3.3 Inspection profiles
+
+To learn about possible code improvements and optimizations, a profile in which all Java-17-compatible IntelliJ IDEA code inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
+A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
+
+#### 1.3.4 Run configurations
+
+The project comes with two run configuration, one for running
+
+```shell
+$ mvn clean install
+```
+
+and one for executing the resulting JAR.
 
 ## 2. Issues and solutions
 
