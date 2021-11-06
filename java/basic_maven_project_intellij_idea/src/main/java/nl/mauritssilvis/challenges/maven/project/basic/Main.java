@@ -7,6 +7,6 @@ package nl.mauritssilvis.challenges.maven.project.basic;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Main.main()");
+        System.out.println("Hello world!");
     }
 }
