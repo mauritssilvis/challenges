@@ -69,10 +69,10 @@ When executing Maven goals, the following error may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[ERROR] 'modelVersion' is missing. @ line 2, column 10
+[ERROR] 'modelVersion' is missing. @ line 1, column 9
 ```
 
-To solve this problem, set the model version in the Maven project file, `pom.xml`:
+To solve this problem, set the model version in the Maven project object model file, `pom.xml`:
 
 ```xml
 <project>
@@ -86,12 +86,13 @@ When executing Maven goals, one or more of the following errors may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] 'groupId' is missing. @ line 2, column 10
-[FATAL] 'artifactId' is missing. @ line 2, column 10
-[FATAL] 'version' is missing. @ line 2, column 10
+[FATAL] 'groupId' is missing. @ line 1, column 9
+[FATAL] 'artifactId' is missing. @ line 1, column 9
+[FATAL] 'version' is missing. @ line 1, column 9
 ```
 
-To solve these problems, include the project coordinates, i.e., the artifact group ID, ID and version in the Maven project file:
+To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the Maven project object model file, `pom.xml`.
+For the current project, these coordinates are given by
 
 ```xml
 <project>
@@ -111,8 +112,8 @@ The Maven resources plugin may throw a warning of the form
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 ```
 
-This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project file, `pom.xml`:
+This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
+To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project object model file, `pom.xml`:
 
 ```xml
 <project>
@@ -132,8 +133,8 @@ Similarly, the Maven compiler plugin may return
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 ```
 
-This warning indicates that no encoding has been set for project files, i.e., sources and resources.
-To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project file, `pom.xml`:
+This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
+To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project object model file, `pom.xml`:
 
 ```xml
 <project>
@@ -157,13 +158,13 @@ or
 [ERROR] Source option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java source version in the Maven project file, `pom.xml`.
-For Java 16, either enhance the `properties` section of `pom.xml` with the line
+To solve this problem, explicitly set the Java source version in the Maven project object model file, `pom.xml`.
+For Java 17, either enhance the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
 </project>
 ```
@@ -179,7 +180,7 @@ or configure the Maven compiler in the `build` section:
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>16</source>
+                    <source>17</source>
                 </configuration>
             </plugin>
         </plugins>
@@ -201,13 +202,13 @@ or
 [ERROR] Target option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java target version in the Maven project file, `pom.xml`.
-For Java 16, either enhance the `properties` section of `pom.xml` with the line
+To solve this problem, explicitly set the Java target version in the Maven project object model file, `pom.xml`.
+For Java 17, either enhance the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
     <properties>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 </project>
 ```
@@ -223,7 +224,7 @@ or configure the Maven compiler in the `build` section:
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <target>16</target>
+                    <target>17</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -231,22 +232,22 @@ or configure the Maven compiler in the `build` section:
 </project>
 ```
 
-#### 2.3.4 Source release 16 requires target release 16
+#### 2.3.4 Source release 17 requires target release 17
 
 The Maven compiler may encounter the following fatal error while compiling:
 
 ```text
-source release 16 requires target release 16
+source release 17 requires target release 17
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the Maven project file, `pom.xml`.
-Java 16 can be selected by enhancing the `properties` section of `pom.xml` with the lines
+To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`.
+Java 17 can be selected by enhancing the `properties` section of `pom.xml` with the lines
 
 ```xml
 <project>
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 </project>
 ```
@@ -262,8 +263,8 @@ or by configuring the Maven compiler in the `build` section:
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -281,7 +282,8 @@ When trying to execute a JAR, the following error may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin in the Maven project file, `pom.xml`, to specify the class with which execution has to start:
+To solve this problem, configure the Maven JAR plugin in the Maven project object model file, `pom.xml`, in such a way that it specifies the class with which execution has to start.
+For the current project, this looks as follows:
 
 ```xml
 <project>
