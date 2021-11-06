@@ -2,23 +2,52 @@
 
 > A basic Maven project, set up using IntelliJ IDEA
 
-## About
+## Introduction
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Maven project, set up using IntelliJ IDEA.
 
+Below, I give a brief [overview](#1-background) of the project's [code](#11-code) and the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea).
+I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues. 
+
 ## 1. Background
 
-### 1.1 Maven
+### 1.1 Code
 
-#### 1.1.1 Project object model
+For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
-### 1.2 IntelliJ IDEA
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+```
 
-#### 1.2.1 Copyright
+### 1.2 Maven
 
-#### 1.2.2 Inspection profiles
+This Java project is managed and built using [Apache Maven](https://maven.apache.org/).
 
-#### 1.2.3 Run configurations
+#### 1.2.1 Project object model
+
+The project object model file, `pom.xml`, is central to the use of Maven.
+In this file, the project details can be set, build plugins can be configured and project dependencies can be defined. 
+
+#### 1.2.2 Build
+
+```shell
+mvn clean install
+```
+
+### 1.3 IntelliJ IDEA
+
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
+Detailed documentation of IntelliJ IDEA is provided [here](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
+
+#### 1.3.1 Copyright
+
+#### 1.3.2 Inspection profiles
+
+#### 1.3.3 Run configurations
 
 ## 2. Issues and solutions
 

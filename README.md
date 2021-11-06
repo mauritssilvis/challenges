@@ -26,7 +26,7 @@ Finally, I aim to
 
 Currently, solutions to common programming challenges are available in
 
-* [Java](java).
+* [Java](java)
 
 ## License
 
