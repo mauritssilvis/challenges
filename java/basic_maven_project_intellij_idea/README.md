@@ -104,7 +104,7 @@ To stay up-to-date with the latest developments, Java 17 was selected, which req
 
 The project can be built using the command
 
-```bash
+```shell
 $ mvn clean install
 ```
 
@@ -154,7 +154,7 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 The project comes with two run configuration, one for running
 
-```bash
+```shell
 $ mvn clean install
 ```
 
