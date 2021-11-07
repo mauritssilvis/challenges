@@ -236,6 +236,38 @@ For example, the Maven compiler plugin can be selected with the following `build
 </project>
 ```
 
+#### 2.1.6 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
+
+When using Maven plugins, a warning similar to
+
+```text
+[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.maven.project:basic:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 23, column 21
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+```
+
+may be shown.
+
+To prevent this warning as well as potential future problems with your project, specify the version of the Maven plugin in the Maven project object model file, `pom.xml`.
+For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
 ### 2.2 Maven resources plugin issues
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -459,37 +491,6 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
           <source>17</source>
           <target>17</target>
         </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
-
-#### 2.3.5 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
-
-When using the Maven compiler plugin, a warning similar to
-
-```text
-[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.maven.project:basic:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 23, column 21
-[WARNING]
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING]
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-```
-
-may be shown.
-
-To prevent this warning as well as potential future problems with your project, specify the version of the Maven compiler plugin in the Maven project object model file, `pom.xml`:
-
-```xml
-<project>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
       </plugin>
     </plugins>
   </build>
