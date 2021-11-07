@@ -18,6 +18,8 @@ A description of Maven and IntelliJ IDEA, their configuration, and problems that
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
+package nl.mauritssilvis.challenges.maven.jar.executable.standalone;
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
@@ -233,6 +235,8 @@ nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
 This main class contains has a main method with a recognized signature:
 
 ```java
+package nl.mauritssilvis.challenges.maven.jar.executable.standalone;
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");

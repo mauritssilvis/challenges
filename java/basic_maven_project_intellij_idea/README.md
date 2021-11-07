@@ -16,6 +16,8 @@ I also detail several [issues](#2-issues-and-solutions) that can occur when sett
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
+package nl.mauritssilvis.challenges.maven.project.basic;
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
