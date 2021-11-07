@@ -253,22 +253,24 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-#### 2.3.2 Source option 5 is no longer supported. Use 7 or later. / Source option 6 is no longer supported. Use 7 or later.
+#### 2.3.2 Source option is no longer supported. Use 7 or later.
 
-The Maven compiler plugin may halt with either of the errors
+The Maven compiler plugin may halt with one of the following errors:
+
+```text
+[ERROR] Source option 1.3 is no longer supported. Use 7 or later.
+```
 
 ```text
 [ERROR] Source option 5 is no longer supported. Use 7 or later.
 ```
-
-or
 
 ```text
 [ERROR] Source option 6 is no longer supported. Use 7 or later.
 ```
 
 To solve this problem, explicitly set the Java source version in the Maven project object model file, `pom.xml`.
-For Java 17, either extend the `properties` section of `pom.xml` with the line
+For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
@@ -278,7 +280,23 @@ For Java 17, either extend the `properties` section of `pom.xml` with the line
 </project>
 ```
 
-or configure the Maven compiler in the `build` section:
+In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Alternatively, configure both the Java source and Maven compiler plugin versions in the `build` section:
 
 ```xml
 <project>
@@ -297,22 +315,24 @@ or configure the Maven compiler in the `build` section:
 </project>
 ```
 
-#### 2.3.3 Target option 5 is no longer supported. Use 7 or later. / Target option 6 is no longer supported. Use 7 or later.
+#### 2.3.3 Target option is no longer supported. Use 7 or later.
 
-The Maven compiler plugin may halt with either of the errors
+The Maven compiler plugin may halt with one of the following errors:
+
+```text
+[ERROR] Target option 1.1 is no longer supported. Use 7 or later.
+```
 
 ```text
 [ERROR] Target option 5 is no longer supported. Use 7 or later.
 ```
-
-or
 
 ```text
 [ERROR] Target option 6 is no longer supported. Use 7 or later.
 ```
 
 To solve this problem, explicitly set the Java target version in the Maven project object model file, `pom.xml`.
-For Java 17, either extend the `properties` section of `pom.xml` with the line
+For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
@@ -322,7 +342,23 @@ For Java 17, either extend the `properties` section of `pom.xml` with the line
 </project>
 ```
 
-or configure the Maven compiler in the `build` section:
+In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Alternatively, configure both the Java target and Maven compiler plugin versions in the `build` section:
 
 ```xml
 <project>
@@ -341,15 +377,22 @@ or configure the Maven compiler in the `build` section:
 </project>
 ```
 
-#### 2.3.4 Source release 17 requires target release 17
+#### 2.3.4 Failure executing javac, but could not parse the error / Source release 17 requires target release 17
 
-The Maven compiler may encounter the following fatal error while compiling:
+The Maven compiler plugin may encounter either of the following errors while compiling:
+
+```text
+[ERROR] Failure executing javac, but could not parse the error
+```
+
+or
 
 ```text
 source release 17 requires target release 17
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`, and that the target version is not smaller than the source version.
+To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`.
+Additionally, ensure that the target version is not smaller than the source version.
 Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
 
 ```xml
@@ -361,7 +404,23 @@ Java 17 can be selected by extending the `properties` section of `pom.xml` with 
 </project>
 ```
 
-or by configuring the Maven compiler in the `build` section:
+In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Alternatively, configure the Java target, source and Maven compiler plugin versions in the `build` section:
 
 ```xml
 <project>
