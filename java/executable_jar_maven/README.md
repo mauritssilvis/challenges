@@ -27,7 +27,7 @@ public class Main {
 
 ### 1.2 Maven configuration
 
-To ensure that the JAR created by Maven is executable, the project object model file of the current project [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
+To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
 
 ```xml
 <project>
@@ -78,7 +78,7 @@ When trying to execute a JAR, the following error may occur:
 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin in the Maven project object model file, `pom.xml`, in such a way that it specifies the class with which execution has to start.
+To solve this problem, configure the Maven JAR plugin in the Maven project object model, `pom.xml`, in such a way that it specifies the class with which execution has to start.
 For the current project, this looks as follows:
 
 ```xml
