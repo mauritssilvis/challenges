@@ -30,7 +30,7 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/).
-A brief overview of the Maven project basics is given in the [Maven](../basic_maven_project_intellij_idea#12-maven) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+A brief overview of the basic Maven project details is given in the [Maven](../basic_maven_project_intellij_idea#12-maven) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 #### 1.2.1 Configuration
 
@@ -88,7 +88,7 @@ While setting up and building a Maven project, several problems may occur.
 I partly documented these problems in the [Issues and solutions](../basic_maven_project_intellij_idea#2-issues-and-solutions) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 Additional problems may occur when trying to execute a JAR created using Maven.
-I describe these problems, here, including possible solutions.
+I describe the problems related to the [Maven JAR plugin](#21-maven-jar-plugin-issues), including possible solutions.
 
 ### 2.1 Maven JAR plugin issues
 
