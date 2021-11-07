@@ -381,6 +381,37 @@ or by configuring the Maven compiler in the `build` section:
 </project>
 ```
 
+#### 2.3.5 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
+
+When using the Maven compiler plugin, a warning similar to
+
+```text
+[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.maven.project:basic:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 23, column 21
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+```
+
+may be shown.
+
+To prevent this warning as well as potential future problems with your project, specify the version of the Maven compiler plugin in the Maven project object model file, `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
 ### 2.4 Maven JAR plugin issues
 
 #### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
