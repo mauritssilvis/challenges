@@ -211,6 +211,31 @@ For the current project, these coordinates are given by
 </project>
 ```
 
+#### 2.1.5 'build.plugins.plugin.(groupId:artifactId)' artifactId of a plugin must be defined
+
+When executing Maven goals, the following error may occur:
+
+```text
+[ERROR] Some problems were encountered while processing the POMs:
+[FATAL] 'build.plugins.plugin.(groupId:artifactId)' artifactId of a plugin must be defined.  @ line 21, column 21
+```
+
+To solve this problem, ensure all desired Maven plugins are identified using their artifact ID.
+For example, the Maven compiler plugin can be selected with the following `build` section of `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
 ### 2.2 Maven resources plugin issues
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
