@@ -521,7 +521,7 @@ When trying to execute a JAR, the following error may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to [Creating an executable JAR using Maven](../executable_jar_maven).
+To solve this problem, configure the Maven JAR plugin according to the discussion of several [Maven JAR plugin issues](../executable_jar_maven#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven).
 
 ## License
 
