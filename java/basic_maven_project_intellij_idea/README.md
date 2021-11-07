@@ -32,6 +32,8 @@ This Java project is managed and built using [Apache Maven](https://maven.apache
 The project object model file, `pom.xml`, is central to the use of Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
+#### 1.2.2 Configuration
+
 In the project object model file of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
 
 ```xml
@@ -75,7 +77,7 @@ Finally, the Maven compiler plugin is configured as
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected. 
 Moreover, to be up-to-date with recent developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
-#### 1.2.2 Build
+#### 1.2.3 Build
 
 The project can be built using the command
 
