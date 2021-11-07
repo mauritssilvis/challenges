@@ -9,7 +9,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give a brief [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and the available [IntelliJ IDEA run configurations](#13-intellij-idea).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
-A description of Maven and IntelliJ IDEA, their configuration, and problems that may occur when setting up a Maven project can be found in [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+A description of Maven and IntelliJ IDEA, their configuration, and problems that may occur when setting up a basic Maven project can be found in [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 ## 1. Background
 
@@ -27,11 +27,12 @@ public class Main {
 
 ### 1.2 Maven
 
-This project is managed and built using [Maven](../basic_maven_project_intellij_idea#12-maven).
+This Java project is managed and built using [Maven](https://maven.apache.org/).
+A brief overview of the Maven project basics is given in the [Maven](../basic_maven_project_intellij_idea#12-maven) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 #### 1.2.1 Configuration
 
-To ensure that the JAR created by Maven is executable, the [project object model](../basic_maven_project_intellij_idea#121-project-object-model) of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
+To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
 
 ```xml
 <project>
@@ -56,7 +57,7 @@ To ensure that the JAR created by Maven is executable, the [project object model
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected and the main class was defined as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
 
 ```text
 nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
@@ -64,7 +65,7 @@ nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
 
 #### 1.2.2 Build
 
-The JAR can be built using the command
+The executable JAR can be built using the command
 
 ```shell
 $ mvn clean install
@@ -72,7 +73,8 @@ $ mvn clean install
 
 ### 1.3 IntelliJ IDEA
 
-This project was set up using [IntelliJ IDEA](../basic_maven_project_intellij_idea#13-intellij-idea).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+A brief overview of the IntelliJ IDEA project basics is given in the [IntelliJ IDEA](../basic_maven_project_intellij_idea#13-intellij-idea) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 #### 1.3.1 Run configurations
 
@@ -98,7 +100,8 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin in such a way that the class with which execution has to start is specified.
+To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin.
+Specifically, set the main class property to the fully qualified name of the class with which execution has to start.
 
 For the current project, the `build` section of `pom.xml` contains the following directives:
 
@@ -125,7 +128,11 @@ For the current project, the `build` section of `pom.xml` contains the following
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
+
+```text
+nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+```
 
 #### 2.1.2 Could not find or load main class
 
@@ -139,7 +146,7 @@ Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.maven.j
 Such an error is caused by a faulty specification of the main class of your project.
 
 To solve this problem, ensure that the Maven JAR plugin is properly configured in the `build` section of the project object model, `pom.xml`.
-In particular, specify the proper fully qualified path of the class with which execution has to start.
+In particular, set the main class property to the proper fully qualified path of the class with which execution has to start.
 
 For the current project, the configuration of the Maven JAR plugin looks as follows:
 
@@ -166,7 +173,11 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
+
+```text
+nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+```
 
 #### 2.1.3 Main method not found in class
 
@@ -213,13 +224,13 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected and the main class was defined as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
 
 ```text
 nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
 ```
 
-This main class contains a main method:
+This main class contains has a main method with a recognized signature:
 
 ```java
 public class Main {

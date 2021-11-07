@@ -7,7 +7,7 @@
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
 Below, I give an [overview](#1-background) of the project's [code](#11-code), the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea), and their configuration.
-I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues. 
+I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
 ## 1. Background
 
@@ -26,6 +26,7 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/).
+A brief overview of the Maven project details is provided in what follows.
 
 #### 1.2.1 Project object model
 
@@ -74,8 +75,8 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected. 
-Moreover, to be up-to-date with recent developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
+Moreover, to be up-to-date with recent developments, Java 17 is selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
 #### 1.2.3 Build
 
@@ -89,7 +90,7 @@ Execution of this command will compile the above-mentioned Java class file, pack
 
 ### 1.3 IntelliJ IDEA
 
-This project was set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/). 
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 IntelliJ IDEA is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
 IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), which contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
 
@@ -151,7 +152,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] The goal you specified requires a project to execute but there is no POM in this directory. Please verify you invoked Maven from the correct directory.
 ```
 
-To solve this problem, ensure the top-level directory of the project contains a project object model file called `pom.xml` and ensure Maven is run in this directory. 
+To solve this problem, ensure the top-level directory of the project contains a project object model file called `pom.xml` and ensure Maven is run in this directory.
 
 #### 2.1.2 Non-readable POM: input contained no data
 
@@ -276,7 +277,7 @@ For example, for the Maven compiler plugin, extend the `build` section of `pom.x
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected.
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
 
 ### 2.2 Maven resources plugin issues
 
@@ -305,7 +306,7 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 Several issues may be reported by the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-#### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
+#### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 
 Similar to the Maven resources plugin, the Maven compiler plugin may return
 
