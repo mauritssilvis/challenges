@@ -208,6 +208,7 @@ When executing Maven goals, one or more of the following errors may occur:
 ```
 
 To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the project object model, `pom.xml`.
+
 For the current project, these coordinates are given by
 
 ```xml

@@ -76,7 +76,9 @@ The project comes with two run configuration, one for creating and one for execu
 
 ## 2. Issues and solutions
 
-While setting up and building a Maven project, several problems may occur, which are partly documented in the [Issues and solutions](../basic_maven_project_intellij_idea#2-issues-and-solutions) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+While setting up and building a Maven project, several problems may occur.
+I partly documented these problems in the [Issues and solutions](../basic_maven_project_intellij_idea#2-issues-and-solutions) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+
 Additional problems may occur when trying to execute a JAR created using Maven.
 I describe these problems, here, including possible solutions.
 
@@ -93,6 +95,7 @@ no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 ```
 
 To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin in such a way that the class with which execution has to start is specified.
+
 For the current project, the `build` section of `pom.xml` contains the following directives:
 
 ```xml
@@ -130,8 +133,10 @@ Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.maven.j
 ```
 
 Such an error is caused by a faulty specification of the main class of your project.
+
 To solve this problem, ensure that the Maven JAR plugin is properly configured in the `build` section of the project object model, `pom.xml`.
 In particular, specify the proper fully qualified path of the class with which execution has to start.
+
 For the current project, the configuration of the Maven JAR plugin looks as follows:
 
 ```xml
