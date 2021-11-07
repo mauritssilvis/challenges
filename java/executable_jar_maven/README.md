@@ -27,7 +27,7 @@ public class Main {
 
 ### 1.2 Maven
 
-In the project object model file of the current project, [pom.xml](pom.xml), the Maven JAR plugin is configured as
+To ensure that the JAR created by Maven is executable, the project object model file of the current project [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
 
 ```xml
 <project>
