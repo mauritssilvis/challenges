@@ -56,7 +56,11 @@ To ensure that the JAR created by Maven is executable, the [project object model
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected and the main class was defined as
+
+```text
+nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+```
 
 #### 1.2.2 Build
 
@@ -163,6 +167,67 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
 ```
 
 Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+
+#### 2.1.3 Main method not found in class
+
+When trying to execute a JAR, an error similar to the following may occur:
+
+```text
+Error: Main method not found in class nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+```
+
+This error arises when the main class of your project doesn't contain a proper main method.
+
+To solve this problem, ensure that the main class of your project contains a method with the signature
+
+```java
+public static void main(String[] args) {
+  // ...
+}
+```
+
+For the current project, the configuration of the Maven JAR plugin that is part of the `build` section of the project object model, `pom.xml`, looks as follows:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>
+                nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+              </mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected and the main class was defined as
+
+```text
+nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+```
+
+This main class contains a main method:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+}
+```
 
 ## License
 
