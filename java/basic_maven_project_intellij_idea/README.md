@@ -136,8 +136,11 @@ Note that the latter run configuration will [fail](#24-maven-jar-plugin-issues).
 
 While setting up and building a Maven project, several problems may occur.
 I list several of such problems, here, including possible solutions.
+Specifically, I discuss problems related to the [project object model](#21-project-object-model-issues), the [Maven resources plugin](#22-maven-resources-plugin-issues), the [Maven compiler plugin](#23-maven-compiler-plugin-issues) and the [Maven JAR plugin](#24-maven-jar-plugin-issues).
 
 ### 2.1 Project object model issues
+
+Several issues may arise in relation to the [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html).
 
 #### 2.1.1 The goal you specified requires a project to execute but there is no POM in this directory
 
