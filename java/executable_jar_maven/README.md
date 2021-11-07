@@ -25,9 +25,13 @@ public class Main {
 }
 ```
 
-### 1.2 Maven configuration
+### 1.2 Maven
 
-To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
+This project is managed and built using [Maven](../basic_maven_project_intellij_idea#12-maven).
+
+#### 1.2.1 Configuration
+
+To ensure that the JAR created by Maven is executable, the [project object model](../basic_maven_project_intellij_idea#121-project-object-model) of the current project, [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
 
 ```xml
 <project>
@@ -51,6 +55,8 @@ To ensure that the JAR created by Maven is executable, the project object model 
   </build>
 </project>
 ```
+
+#### 1.2.2 Build
 
 The JAR can be built using the command
 
