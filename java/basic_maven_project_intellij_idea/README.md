@@ -512,17 +512,17 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 
 ### 2.4 Maven JAR plugin issues
 
-At least one issue may be reported by the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
+At least one issue may arise in relation to the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 
-When trying to execute a JAR, the following error may occur:
+When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of several [Maven JAR plugin issues](../executable_jar_maven#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable_jar_maven#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven).
 
 ## License
 

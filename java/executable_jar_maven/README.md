@@ -77,23 +77,62 @@ The project comes with two run configuration, one for creating and one for execu
 ## 2. Issues and solutions
 
 While setting up and building a Maven project, several problems may occur, which are partly documented in the [Issues and solutions](../basic_maven_project_intellij_idea#2-issues-and-solutions) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
-An additional problem may occur when trying to execute a JAR created using Maven.
-I describe this problem, here, including a possible solution.
+Additional problems may occur when trying to execute a JAR created using Maven.
+I describe these problems, here, including possible solutions.
 
 ### 2.1 Maven JAR plugin issues
 
-At least one issue may be reported by the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
+Several issues may arise in relation to the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.1.1 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 
-When trying to execute a JAR, the following error may occur:
+When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin in the Maven project object model, `pom.xml`, in such a way that it specifies the class with which execution has to start.
-For the current project, this looks as follows:
+To solve this problem, use the `build` section of the Maven project object model, `pom.xml`, to configure the Maven JAR plugin in such a way that the class with which execution has to start is specified.
+For the current project, the `build` section of `pom.xml` contains the following directives:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>
+                nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+              </mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+
+#### 2.1.2 Could not find or load main class
+
+When trying to execute a JAR, an error similar to the following may occur:
+
+```text
+Error: Could not find or load main class nl.mauritssilvis.challenges.maven.jar.executable.standalone.NonExisting
+Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.maven.jar.executable.standalone.NonExisting
+```
+
+Such an error is caused by a faulty specification of the main class of your project.
+To solve this problem, ensure that the Maven JAR plugin is properly configured in the `build` section of the Maven project object model, `pom.xml`.
+In particular, specify the proper fully qualified path of the class with which execution has to start.
+For the current project, the configuration of the Maven JAR plugin looks as follows:
 
 ```xml
 <project>
