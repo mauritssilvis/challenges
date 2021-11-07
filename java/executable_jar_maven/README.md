@@ -9,7 +9,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give a brief [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and the available [IntelliJ IDEA run configurations](#13-intellij-idea).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
-A description of Maven and IntelliJ IDEA, their configuration, and several problems that may occur when setting up a Maven project can be found in [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+A description of Maven and IntelliJ IDEA, their configuration, and problems that may occur when setting up a Maven project can be found in [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 
 ## 1. Background
 
@@ -76,7 +76,7 @@ The project comes with two run configuration, one for creating and one for execu
 
 ## 2. Issues and solutions
 
-While setting up and building a Maven project, several problems may occur, which are partly documented under [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
+While setting up and building a Maven project, several problems may occur, which are partly documented in the [Issues and solutions](../basic_maven_project_intellij_idea#2-issues-and-solutions) section of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij_idea).
 An additional problem may occur when trying to execute a JAR created using Maven.
 I describe this problem, here, including a possible solution.
 
