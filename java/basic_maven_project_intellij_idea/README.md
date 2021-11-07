@@ -72,7 +72,8 @@ Finally, the Maven compiler plugin is configured as
 </project>
 ```
 
-To stay up-to-date with the latest developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected. 
+Moreover, to be up-to-date with recent developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
 #### 1.2.2 Build
 
@@ -268,6 +269,8 @@ For example, for the Maven compiler plugin, extend the `build` section of `pom.x
 </project>
 ```
 
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected.
+
 ### 2.2 Maven resources plugin issues
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -337,7 +340,7 @@ For Java 17, this can be done by extending the `properties` section of `pom.xml`
 </project>
 ```
 
-In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+In addition, select the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) in the `build` section of `pom.xml`:
 
 ```xml
 <project>
@@ -399,7 +402,7 @@ For Java 17, this can be done by extending the `properties` section of `pom.xml`
 </project>
 ```
 
-In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+In addition, select the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) in the `build` section of `pom.xml`:
 
 ```xml
 <project>
@@ -461,7 +464,7 @@ Java 17 can be selected by extending the `properties` section of `pom.xml` with 
 </project>
 ```
 
-In addition, select the latest version of the Maven compiler plugin in the `build` section of `pom.xml`:
+In addition, select the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) in the `build` section of `pom.xml`:
 
 ```xml
 <project>
