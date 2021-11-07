@@ -25,7 +25,7 @@ public class Main {
 
 ### 1.2 Maven
 
-This Java project is managed and built using Apache's [Maven](https://maven.apache.org/).
+This Java project is managed and built using [Maven](https://maven.apache.org/).
 
 #### 1.2.1 Project object model
 
