@@ -251,7 +251,7 @@ When using Maven plugins, a warning similar to
 
 may be shown.
 
-To prevent this warning as well as potential future problems with your project, specify the version of the Maven plugin in the Maven project object model file, `pom.xml`.
+To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the Maven project object model file, `pom.xml`.
 For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
 
 ```xml
