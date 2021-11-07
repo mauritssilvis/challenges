@@ -11,6 +11,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Currently, Java solutions to the following challenges are available:
 
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij_idea)
+* [Creating an executable JAR using Maven](executable_jar_maven)
 
 ## License
 

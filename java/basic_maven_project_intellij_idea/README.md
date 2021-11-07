@@ -6,7 +6,7 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
-Below, I give a brief [overview](#1-background) of the project's [code](#11-code) and the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea).
+Below, I give an [overview](#1-background) of the project's [code](#11-code), the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea), and their configuration.
 I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues. 
 
 ## 1. Background
@@ -52,7 +52,7 @@ The encoding of the source files is set to UTF-8 using
 </project>
 ```
 
-Finally, the Maven compiler and JAR plugins are configured as
+Finally, the Maven compiler plugin is configured as
 
 ```xml
 <project>
@@ -72,32 +72,6 @@ Finally, the Maven compiler and JAR plugins are configured as
 </project>
 ```
 
-and
-
-```xml
-<project>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>
-                nl.mauritssilvis.challenges.maven.project.basic.Main
-              </mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
-
-respectively.
 To stay up-to-date with the latest developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
 #### 1.2.2 Build
@@ -152,17 +126,12 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 #### 1.3.4 Run configurations
 
-The project comes with two run configuration, one for running
-
-```shell
-$ mvn clean install
-```
-
-and one for executing the resulting JAR.
+The project comes with two run configuration, one for creating and one for executing the resulting JAR.
+Note that the latter run configuration will [fail](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
-While setting up and executing a Maven project, several problems may occur.
+While setting up and building a Maven project, several problems may occur.
 I list several of such problems, here, including possible solutions.
 
 ### 2.1 Project object model issues
@@ -422,31 +391,7 @@ When trying to execute a JAR, the following error may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin in the Maven project object model file, `pom.xml`, in such a way that it specifies the class with which execution has to start.
-For the current project, this looks as follows:
-
-```xml
-<project>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>
-                nl.mauritssilvis.challenges.maven.project.basic.Main
-              </mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
-```
+To solve this problem, configure the Maven JAR plugin according to [Creating an executable JAR using Maven](../executable_jar_maven).
 
 ## License
 
