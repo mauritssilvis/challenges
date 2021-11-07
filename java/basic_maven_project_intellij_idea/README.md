@@ -127,7 +127,7 @@ A profile in which only the default inspections are selected is stored in [Defau
 #### 1.3.4 Run configurations
 
 The project comes with two run configuration, one for creating and one for executing the resulting JAR.
-Note that this latter process will [fail](#24-maven-jar-plugin-issues).
+Note that the latter run configuration will [fail](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
