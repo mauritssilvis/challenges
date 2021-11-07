@@ -29,12 +29,12 @@ This Java project is managed and built using [Apache Maven](https://maven.apache
 
 #### 1.2.1 Project object model
 
-The project object model file, `pom.xml`, is central to the use of Maven.
+The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), `pom.xml`, is central to the use of Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
 #### 1.2.2 Configuration
 
-In the project object model file of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
+In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
 
 ```xml
 <project>
@@ -158,7 +158,7 @@ When executing Maven goals, the following error may occur:
 [FATAL] Non-readable POM: input contained no data
 ```
 
-To solve this problem, ensure the Maven project object model file, `pom.xml`, contains at least the `project` root element.
+To solve this problem, ensure the Maven project object model, `pom.xml`, contains at least the `project` root element.
 This root element can be included without,
 
 ```xml
@@ -184,7 +184,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] 'modelVersion' is missing. @ line 1, column 9
 ```
 
-To solve this problem, set the model version in the Maven project object model file, `pom.xml`:
+To solve this problem, set the model version in the Maven project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -203,7 +203,7 @@ When executing Maven goals, one or more of the following errors may occur:
 [FATAL] 'version' is missing. @ line 1, column 9
 ```
 
-To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the Maven project object model file, `pom.xml`.
+To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the Maven project object model, `pom.xml`.
 For the current project, these coordinates are given by
 
 ```xml
@@ -254,7 +254,7 @@ When using Maven plugins, a warning similar to
 
 may be shown.
 
-To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the Maven project object model file, `pom.xml`.
+To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the Maven project object model, `pom.xml`.
 For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
 
 ```xml
@@ -286,7 +286,7 @@ The Maven resources plugin may throw a warning of the form
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
-To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project object model file, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -309,7 +309,7 @@ Similar to the Maven resources plugin, the Maven compiler plugin may return
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
-To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project object model file, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -335,7 +335,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Source option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java source version in the Maven project object model file, `pom.xml`.
+To solve this problem, explicitly set the Java source version in the Maven project object model, `pom.xml`.
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -397,7 +397,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Target option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java target version in the Maven project object model file, `pom.xml`.
+To solve this problem, explicitly set the Java target version in the Maven project object model, `pom.xml`.
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -457,7 +457,7 @@ or
 source release 17 requires target release 17
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model file, `pom.xml`.
+To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
 
