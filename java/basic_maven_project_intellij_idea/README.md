@@ -89,7 +89,8 @@ Execution of this command will compile the above-mentioned Java class file, pack
 
 ### 1.3 IntelliJ IDEA
 
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
+This project was set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/). 
+IntelliJ IDEA is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
 IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), which contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
 
 The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related files.

@@ -66,7 +66,11 @@ The JAR can be built using the command
 $ mvn clean install
 ```
 
-### 1.3 IntelliJ IDEA run configurations
+### 1.3 IntelliJ IDEA
+
+This project was set up using [IntelliJ IDEA](../basic_maven_project_intellij_idea#13-intellij-idea).
+
+#### 1.3.1 Run configurations
 
 The project comes with two run configuration, one for creating and one for executing the resulting JAR.
 
