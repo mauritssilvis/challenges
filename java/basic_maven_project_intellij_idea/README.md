@@ -275,6 +275,8 @@ Here, the latest version of the [Maven compiler plugin](https://maven.apache.org
 
 ### 2.2 Maven resources plugin issues
 
+At least one issue may be reported by the [Maven resources plugin](http://maven.apache.org/plugins/maven-resources-plugin/).
+
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
 The Maven resources plugin may throw a warning of the form
@@ -296,9 +298,11 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 ### 2.3 Maven compiler plugin issues
 
+Several issues may be reported by the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).
+
 #### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
 
-Similarly, the Maven compiler plugin may return
+Similar to the Maven resources plugin, the Maven compiler plugin may return
 
 ```text
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
@@ -503,6 +507,8 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 ```
 
 ### 2.4 Maven JAR plugin issues
+
+At least one issue may be reported by the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 
