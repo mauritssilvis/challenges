@@ -92,7 +92,7 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, use the `build` section of the Maven project object model, `pom.xml`, to configure the Maven JAR plugin in such a way that the class with which execution has to start is specified.
+To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin in such a way that the class with which execution has to start is specified.
 For the current project, the `build` section of `pom.xml` contains the following directives:
 
 ```xml
@@ -130,7 +130,7 @@ Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.maven.j
 ```
 
 Such an error is caused by a faulty specification of the main class of your project.
-To solve this problem, ensure that the Maven JAR plugin is properly configured in the `build` section of the Maven project object model, `pom.xml`.
+To solve this problem, ensure that the Maven JAR plugin is properly configured in the `build` section of the project object model, `pom.xml`.
 In particular, specify the proper fully qualified path of the class with which execution has to start.
 For the current project, the configuration of the Maven JAR plugin looks as follows:
 
