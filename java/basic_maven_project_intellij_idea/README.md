@@ -97,7 +97,7 @@ A few of these files are highlighted below.
 
 #### 1.3.1 Code styles
 
-First, to make cross-platform coding easier, Unix line endings are selected in the file [codeStyleConfig.xml](.idea/codeStyles/codeStyleConfig.xml).
+First, to make cross-platform coding easier, Unix line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
 In addition, rulers are shown at 80 characters.
 
 ```xml
