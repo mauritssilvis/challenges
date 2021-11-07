@@ -20,9 +20,9 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <!-- Set the Maven compiler plugin artifact ID -->
+                <!-- Set the artifact ID of the Maven compiler plugin -->
                 <artifactId>maven-compiler-plugin</artifactId>
-                <!-- Set the latest Maven compiler plugin version -->
+                <!-- Set the latest version of the Maven compiler plugin -->
                 <version>3.8.1</version>
                 <configuration>
                     <!-- Set the Java source version >= 7 -->

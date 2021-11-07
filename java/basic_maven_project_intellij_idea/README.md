@@ -7,7 +7,7 @@
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
 Below, I give an [overview](#1-background) of the project's [code](#11-code), the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea), and their configuration.
-I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues. 
+I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
 ## 1. Background
 
@@ -16,6 +16,8 @@ I also detail several [issues](#2-issues-and-solutions) that can occur when sett
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
+package nl.mauritssilvis.challenges.maven.project.basic;
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
@@ -26,6 +28,7 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/).
+A brief overview of the Maven project details is provided in what follows.
 
 #### 1.2.1 Project object model
 
@@ -74,8 +77,8 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected. 
-Moreover, to be up-to-date with recent developments, Java 17 was selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
+Moreover, to be up-to-date with recent developments, Java 17 is selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
 #### 1.2.3 Build
 
@@ -89,7 +92,8 @@ Execution of this command will compile the above-mentioned Java class file, pack
 
 ### 1.3 IntelliJ IDEA
 
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+IntelliJ IDEA is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
 IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), which contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
 
 The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related files.
@@ -150,7 +154,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] The goal you specified requires a project to execute but there is no POM in this directory. Please verify you invoked Maven from the correct directory.
 ```
 
-To solve this problem, ensure the top-level directory of the project contains a Maven project object model file called `pom.xml` and ensure Maven is run in this directory. 
+To solve this problem, ensure the top-level directory of the project contains a project object model file called `pom.xml` and ensure Maven is run in this directory.
 
 #### 2.1.2 Non-readable POM: input contained no data
 
@@ -161,7 +165,7 @@ When executing Maven goals, the following error may occur:
 [FATAL] Non-readable POM: input contained no data
 ```
 
-To solve this problem, ensure the Maven project object model, `pom.xml`, contains at least the `project` root element.
+To solve this problem, ensure the project object model, `pom.xml`, contains at least the `project` root element.
 This root element can be included without,
 
 ```xml
@@ -187,7 +191,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] 'modelVersion' is missing. @ line 1, column 9
 ```
 
-To solve this problem, set the model version in the Maven project object model, `pom.xml`:
+To solve this problem, set the model version in the project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -206,7 +210,8 @@ When executing Maven goals, one or more of the following errors may occur:
 [FATAL] 'version' is missing. @ line 1, column 9
 ```
 
-To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the Maven project object model, `pom.xml`.
+To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the project object model, `pom.xml`.
+
 For the current project, these coordinates are given by
 
 ```xml
@@ -257,7 +262,7 @@ When using Maven plugins, a warning similar to
 
 may be shown.
 
-To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the Maven project object model, `pom.xml`.
+To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the project object model, `pom.xml`.
 For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
 
 ```xml
@@ -274,7 +279,7 @@ For example, for the Maven compiler plugin, extend the `build` section of `pom.x
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) was selected.
+Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
 
 ### 2.2 Maven resources plugin issues
 
@@ -289,7 +294,7 @@ The Maven resources plugin may throw a warning of the form
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
-To set the file encoding to UTF-8, include the following line in the `properties` section of the Maven project object model, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section of the project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -303,7 +308,7 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 Several issues may be reported by the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).
 
-#### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! 
+#### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 
 Similar to the Maven resources plugin, the Maven compiler plugin may return
 
@@ -312,7 +317,7 @@ Similar to the Maven resources plugin, the Maven compiler plugin may return
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
-To set the file encoding to UTF-8, include the following line in the `properties` section in the Maven project object model, `pom.xml`:
+To set the file encoding to UTF-8, include the following line in the `properties` section in the project object model, `pom.xml`:
 
 ```xml
 <project>
@@ -338,7 +343,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Source option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java source version in the Maven project object model, `pom.xml`.
+To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -400,7 +405,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Target option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java target version in the Maven project object model, `pom.xml`.
+To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -460,7 +465,7 @@ or
 source release 17 requires target release 17
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the Maven project object model, `pom.xml`.
+To solve this problem, ensure that both the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
 
@@ -511,17 +516,17 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 
 ### 2.4 Maven JAR plugin issues
 
-At least one issue may be reported by the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
+At least one issue may arise in relation to the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 
-When trying to execute a JAR, the following error may occur:
+When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of several [Maven JAR plugin issues](../executable_jar_maven#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable_jar_maven#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven).
 
 ## License
 
