@@ -25,7 +25,7 @@ public class Main {
 }
 ```
 
-### 1.2 Maven
+### 1.2 Maven configuration
 
 To ensure that the JAR created by Maven is executable, the project object model file of the current project [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
 
@@ -58,7 +58,7 @@ The JAR can be built using the command
 $ mvn clean install
 ```
 
-### 1.3 IntelliJ IDEA
+### 1.3 IntelliJ IDEA run configurations
 
 The project comes with two run configuration, one for creating and one for executing the resulting JAR.
 
