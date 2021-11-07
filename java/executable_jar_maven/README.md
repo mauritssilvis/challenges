@@ -31,7 +31,7 @@ This project is managed and built using [Maven](../basic_maven_project_intellij_
 
 #### 1.2.1 Configuration
 
-To ensure that the JAR created by Maven is executable, the [project object model](../basic_maven_project_intellij_idea#121-project-object-model) of the current project, [pom.xml](pom.xml), contains the following configuration for the Maven JAR plugin:
+To ensure that the JAR created by Maven is executable, the [project object model](../basic_maven_project_intellij_idea#121-project-object-model) of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
 
 ```xml
 <project>
@@ -56,6 +56,8 @@ To ensure that the JAR created by Maven is executable, the [project object model
 </project>
 ```
 
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
+
 #### 1.2.2 Build
 
 The JAR can be built using the command
@@ -75,6 +77,8 @@ An additional problem may occur when trying to execute a JAR created using Maven
 I describe this problem, here, including a possible solution.
 
 ### 2.1 Maven JAR plugin issues
+
+At least one issue may be reported by the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.1.1 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
 
@@ -109,6 +113,8 @@ For the current project, this looks as follows:
   </build>
 </project>
 ```
+
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) was selected.
 
 ## License
 
