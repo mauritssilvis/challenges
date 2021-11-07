@@ -54,7 +54,7 @@ The encoding of the source files is set to UTF-8 using
 </project>
 ```
 
-Finally, the Maven compiler plugin is configured as
+Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as
 
 ```xml
 <project>
