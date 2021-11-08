@@ -8,9 +8,14 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 
 ## Status
 
-Currently, Java solutions to the following challenges are available:
+Currently, Java solutions are available to challenges in the following categories:
+
+### Projects
 
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij_idea)
+
+### JARs
+
 * [Creating an executable JAR using Maven](executable_jar_maven)
 
 ## License
