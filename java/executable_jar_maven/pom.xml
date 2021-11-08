@@ -10,7 +10,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.mauritssilvis.challenges.maven.jar.executable</groupId>
+    <groupId>nl.mauritssilvis.challenges.java.jars.maven.executable</groupId>
     <artifactId>standalone</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -41,7 +41,7 @@
                         <manifest>
                             <!-- Set the class with which execution has to start -->
                             <mainClass>
-                                nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+                                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
                             </mainClass>
                         </manifest>
                     </archive>
