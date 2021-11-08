@@ -18,7 +18,7 @@ A description of Maven and IntelliJ IDEA, their configuration, and problems that
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
-package nl.mauritssilvis.challenges.java.jars.maven.executable.standalone;
+package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
   public static void main(String[] args) {
@@ -48,7 +48,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
           <archive>
             <manifest>
               <mainClass>
-                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+                nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
               </mainClass>
             </manifest>
           </archive>
@@ -62,7 +62,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
 Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
 
 ```text
-nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 ```
 
 #### 1.2.2 Build
@@ -119,7 +119,7 @@ For the current project, the `build` section of `pom.xml` contains the following
           <archive>
             <manifest>
               <mainClass>
-                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+                nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
               </mainClass>
             </manifest>
           </archive>
@@ -133,7 +133,7 @@ For the current project, the `build` section of `pom.xml` contains the following
 Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
 
 ```text
-nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 ```
 
 #### 2.1.2 Could not find or load main class
@@ -141,8 +141,8 @@ nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
 When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
-Error: Could not find or load main class nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.NonExisting
-Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.NonExisting
+Error: Could not find or load main class nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.NonExisting
+Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.NonExisting
 ```
 
 Such an error is caused by a faulty specification of the main class of your project.
@@ -164,7 +164,7 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
           <archive>
             <manifest>
               <mainClass>
-                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+                nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
               </mainClass>
             </manifest>
           </archive>
@@ -178,7 +178,7 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
 Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
 
 ```text
-nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 ```
 
 #### 2.1.3 Main method not found in class
@@ -186,7 +186,7 @@ nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
 When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
-Error: Main method not found in class nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main, please define the main method as:
+Error: Main method not found in class nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main, please define the main method as:
    public static void main(String[] args)
 or a JavaFX application class must extend javafx.application.Application
 ```
@@ -215,7 +215,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
           <archive>
             <manifest>
               <mainClass>
-                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+                nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
               </mainClass>
             </manifest>
           </archive>
@@ -229,13 +229,13 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
 
 ```text
-nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
+nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 ```
 
 This main class contains has a main method with a recognized signature:
 
 ```java
-package nl.mauritssilvis.challenges.java.jars.maven.executable.standalone;
+package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
   public static void main(String[] args) {
