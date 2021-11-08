@@ -41,7 +41,7 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 
 ```xml
 <project>
-  <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+  <groupId>nl.mauritssilvis.challenges.java.projects.maven</groupId>
   <artifactId>basic</artifactId>
   <version>1.0-SNAPSHOT</version>
 </project>
@@ -216,7 +216,7 @@ For the current project, these coordinates are given by
 
 ```xml
 <project>
-  <groupId>nl.mauritssilvis.challenges.maven.project</groupId>
+  <groupId>nl.mauritssilvis.challenges.java.projects.maven</groupId>
   <artifactId>basic</artifactId>
   <version>1.0-SNAPSHOT</version>
 </project>
@@ -252,7 +252,7 @@ For example, the Maven compiler plugin can be selected with the following `build
 When using Maven plugins, a warning similar to
 
 ```text
-[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.maven.project:basic:jar:1.0-SNAPSHOT
+[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.projects.maven:basic:jar:1.0-SNAPSHOT
 [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 23, column 21
 [WARNING]
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
