@@ -41,7 +41,7 @@
                         <manifest>
                             <!-- Set the class with which execution has to start -->
                             <mainClass>
-                                nl.mauritssilvis.challenges.maven.jar.executable.standalone.Main
+                                nl.mauritssilvis.challenges.java.jars.maven.executable.standalone.Main
                             </mainClass>
                         </manifest>
                     </archive>
