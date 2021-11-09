@@ -13,11 +13,11 @@ Currently, Java solutions are available to challenges in the following categorie
 ### Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij_idea)
-* [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij_idea)
+* [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
 
 ### JARs
 
-* [Creating an executable JAR using Maven](executable_jar_maven)
+* [Creating an executable JAR using Maven](executable_jar_maven_intellij)
 
 ## License
 
