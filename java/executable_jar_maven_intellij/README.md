@@ -6,7 +6,7 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a Maven project that can create an executable JAR.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-java), the used [Maven configuration](#12-maven) and [IntelliJ IDEA's configuration](#13-intellij-idea).
+Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven) .
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
 This project builds on [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
@@ -29,16 +29,29 @@ public class Main {
 }
 ```
 
-### 1.2 Maven
+### 1.2 IntelliJ IDEA
 
-This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](../#23-maven) of [Challenges > Java](..)).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
 
-The used configuration extends the [Maven configuration](../basic_maven_project_intellij#12-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
-Additional details regarding the Maven configuration of the current project are given in what follows.
+The basic configuration is described in the [IntelliJ IDEA section](../basic_maven_project_intellij#12-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+Additional details regarding the IntelliJ IDEA configuration of the current project are given in what follows.
 
 #### 1.2.1 Configuration
 
-##### 1.2.1.1 Maven JAR plugin
+##### 1.2.1.1 Run configurations
+
+The current project comes with two run configuration, one for creating and one for executing the resulting JAR.
+
+### 1.3 Maven
+
+This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](../#23-maven) of [Challenges > Java](..)).
+
+The used configuration extends the [Maven configuration](../basic_maven_project_intellij#13-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+Additional details regarding the Maven configuration of the current project are given in what follows.
+
+#### 1.3.1 Configuration
+
+##### 1.3.1.1 Maven JAR plugin
 
 To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
 
@@ -71,26 +84,13 @@ Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plug
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 ```
 
-#### 1.2.2 Build
+#### 1.3.2 Build
 
 The executable JAR can be built using the command
 
 ```shell
 $ mvn clean install
 ```
-
-### 1.3 IntelliJ IDEA
-
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
-
-The basic configuration is described in the [IntelliJ IDEA section](../basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
-Additional details regarding the IntelliJ IDEA configuration of the current project are given in what follows.
-
-#### 1.3.1 Configuration
-
-##### 1.3.1.1 Run configurations
-
-The current project comes with two run configuration, one for creating and one for executing the resulting JAR.
 
 ## 2. Issues and solutions
 
