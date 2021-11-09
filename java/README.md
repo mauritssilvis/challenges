@@ -35,10 +35,15 @@ This IDE supports Java, several other Java virtual machine (JVM) languages and c
 IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
-An overview of the configurations used in the above-mentioned projects is provided in the [IntelliJ IDEA section](basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
+An overview of the settings used in the above-mentioned projects is provided in the [IntelliJ IDEA section](basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
 
 
 ### 2.3 Maven
+
+[Maven](https://maven.apache.org/) is a tool that can be used to manage and build projects written in Java and other programming languages.
+The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to the use of Maven.
+In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
+
 
 ## License
 

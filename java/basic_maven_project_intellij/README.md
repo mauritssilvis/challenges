@@ -6,7 +6,7 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-code), [Maven](#12-maven) and [IntelliJ IDEA's configuration](#13-intellij-idea).
+Below, I give an [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and [IntelliJ IDEA's configuration](#13-intellij-idea).
 I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
 ## 1. Background
@@ -28,14 +28,10 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/).
-A brief overview of the Maven project details is provided in what follows.
+A brief overview of Maven is given in the [Maven section](../#23-maven) of [Challenges > Java](..).
+The Maven configuration of the current project is detailed in what follows.
 
-#### 1.2.1 Project object model
-
-The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), `pom.xml`, is central to the use of Maven.
-In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
-
-#### 1.2.2 Configuration
+#### 1.2.1 Configuration
 
 In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
 
@@ -80,7 +76,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
 Moreover, to be up-to-date with recent developments, Java 17 is selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
 
-#### 1.2.3 Build
+#### 1.2.2 Build
 
 The project can be built using the command
 

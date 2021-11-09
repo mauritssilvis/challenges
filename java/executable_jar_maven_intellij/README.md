@@ -28,7 +28,9 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/).
-A brief overview of the basic Maven project details is given in the [Maven section](../basic_maven_project_intellij#12-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+A brief overview of Maven is given in the [Maven section](../#23-maven) of [Challenges > Java](..).
+Details about the basic Maven project setup can be found in the [Maven section](../basic_maven_project_intellij#12-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+Additional details regarding the Maven configuration of the current project are given in what follows.
 
 #### 1.2.1 Configuration
 
