@@ -30,6 +30,14 @@ Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea)
 
 ### 2.2 IntelliJ IDEA
 
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
+This IDE supports Java, several other Java virtual machine (JVM) languages and can be extended with plugins to retrieve support for other programming languages.
+IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
+
+IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
+An overview of the configurations used in the above-mentioned projects is provided in the [IntelliJ IDEA section](basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
+
+
 ### 2.3 Maven
 
 ## License

@@ -6,7 +6,7 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a basic Java project, managed using Maven and set up using IntelliJ IDEA.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-code), the two tools used, namely, [Maven](#12-maven) and [IntelliJ IDEA](#13-intellij-idea), and their configuration.
+Below, I give an [overview](#1-background) of the project's [code](#11-code), [Maven](#12-maven) and [IntelliJ IDEA's configuration](#13-intellij-idea).
 I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
 ## 1. Background
@@ -93,10 +93,11 @@ Execution of this command will compile the above-mentioned Java class file, pack
 ### 1.3 IntelliJ IDEA
 
 This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-IntelliJ IDEA is an integrated development environment developed by JetBrains, of which the community edition can be downloaded and used for free.
-IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), which contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
+A brief description of IntelliJ IDEA is given in the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..).
 
-The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related files.
+IntelliJ IDEA's [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
+
+The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related configuration files.
 A few of these files are highlighted below.
 
 #### 1.3.1 Code styles
@@ -115,7 +116,7 @@ In addition, rulers are shown at 80 characters.
 
 #### 1.3.2 Copyright
 
-Automatic copyright messages including a license identifier are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
+Automatic copyright messages including the current year and a license identifier are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
 
 ```xml
 <component name="CopyrightManager">
@@ -128,7 +129,7 @@ Automatic copyright messages including a license identifier are configured in th
 
 #### 1.3.3 Inspection profiles
 
-To learn about possible code improvements and optimizations, an inspection profile in which all Java-17-compatible IntelliJ IDEA code inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
+To learn about possible code improvements and optimizations, a code inspection profile in which all Java-17-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
 
 #### 1.3.4 Run configurations
