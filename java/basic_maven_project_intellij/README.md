@@ -27,8 +27,7 @@ public class Main {
 
 ### 1.2 Maven
 
-This Java project is managed and built using [Maven](https://maven.apache.org/).
-A brief overview of Maven is given in the [Maven section](../#23-maven) of [Challenges > Java](..).
+This Java project is managed and built using [Maven](https://maven.apache.org/) (also refer to the [Maven section](../#23-maven) of [Challenges > Java](..)).
 The Maven configuration of the current project is detailed in what follows.
 
 #### 1.2.1 Configuration
