@@ -28,10 +28,15 @@ Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea)
 
 ### 2.1 Java
 
+[Java](https://www.oracle.com/java/) is an object-oriented programming language with a syntax similar to that of C and C++.
+As is the case for C and C++ code, Java code has to be compiled before it can be executed.
+C and C++ are, however, compiled into platform-specific machine code.
+Instead, Java compiles to platform-independent bytecode, which can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
+
 ### 2.2 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
-This IDE supports Java and several other Java virtual machine (JVM) languages, and can be extended with plugins to retrieve support for other programming languages.
+This IDE supports Java and several other Java virtual machine languages, and can be extended with plugins to retrieve support for other programming languages.
 IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
