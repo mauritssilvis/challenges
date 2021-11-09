@@ -6,7 +6,7 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide the code and settings for a Maven project that can create an executable JAR.
 
-Below, I give a brief [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and the available [IntelliJ IDEA run configurations](#13-intellij-idea).
+Below, I give an [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and the [IntelliJ IDEA's configuration](#13-intellij-idea).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
 This project builds on [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
@@ -35,6 +35,8 @@ The used configuration extends the [Maven configuration](../basic_maven_project_
 Additional details regarding the Maven configuration of the current project are given in what follows.
 
 #### 1.2.1 Configuration
+
+##### 1.2.1.1 Maven JAR plugin
 
 To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
 
@@ -82,7 +84,9 @@ The used configuration is described in the [IntelliJ IDEA section](../basic_mave
 
 Additional details regarding the IntelliJ IDEA configuration of the current project are given in what follows.
 
-#### 1.3.1 Run configurations
+#### 1.3.1 Configuration
+
+##### 1.3.1.1 Run configurations
 
 The current project comes with two run configuration, one for creating and one for executing the resulting JAR.
 

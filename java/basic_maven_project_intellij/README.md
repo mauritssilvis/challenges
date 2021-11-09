@@ -33,6 +33,8 @@ The Maven configuration of the current project is detailed in what follows.
 
 #### 1.2.1 Configuration
 
+##### 1.2.1.1 Project coordinates
+
 In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
 
 ```xml
@@ -43,6 +45,8 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 </project>
 ```
 
+##### 1.2.1.2 Encoding
+
 The encoding of the source files is set to UTF-8 using
 
 ```xml
@@ -52,6 +56,8 @@ The encoding of the source files is set to UTF-8 using
   </properties>
 </project>
 ```
+
+##### 1.2.1.3 Maven compiler plugin
 
 Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as
 
@@ -85,17 +91,20 @@ $ mvn clean install
 ```
 
 Execution of this command will compile the above-mentioned Java class file, package it as a JAR and make this JAR available in your local Maven repository.
+Note that this JAR will [not be executable](#24-maven-jar-plugin-issues).
 
 ### 1.3 IntelliJ IDEA
 
 This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (also refer to the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
 
-IntelliJ IDEA's [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
+The used IntelliJ IDEA configuration is described in what follows.
+
+#### 1.3.1 Configuration
 
 The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related configuration files.
 A few of these files are highlighted below.
 
-#### 1.3.1 Code styles
+##### 1.3.1.1 Code styles
 
 First, to make cross-platform coding easier, Unix line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
 In addition, rulers are shown at 80 characters.
@@ -109,7 +118,7 @@ In addition, rulers are shown at 80 characters.
 </component>
 ```
 
-#### 1.3.2 Copyright
+##### 1.3.1.2 Copyright
 
 Automatic copyright messages including the current year and a license identifier are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
 
@@ -122,12 +131,12 @@ Automatic copyright messages including the current year and a license identifier
 </component>
 ```
 
-#### 1.3.3 Inspection profiles
+##### 1.3.1.3 Inspection profiles
 
 To learn about possible code improvements and optimizations, a code inspection profile in which all Java-17-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
 
-#### 1.3.4 Run configurations
+##### 1.3.1.4 Run configurations
 
 The project comes with two run configuration, one for creating and one for executing the resulting JAR.
 Note that the latter run configuration will [fail](#24-maven-jar-plugin-issues).
