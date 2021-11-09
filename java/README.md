@@ -2,11 +2,11 @@
 
 > A collection of programming challenges, solved using Java
 
-## About
+## Introduction
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
-## Status
+## 1. Status
 
 Currently, Java solutions are available to challenges in the following categories:
 
@@ -17,6 +17,14 @@ Currently, Java solutions are available to challenges in the following categorie
 ### JARs
 
 * [Creating an executable JAR using Maven](executable_jar_maven_intellij)
+
+## 2. Background
+
+### 2.1 Java
+
+### 2.2 IntelliJ IDEA
+
+### 2.3 Maven
 
 ## License
 
