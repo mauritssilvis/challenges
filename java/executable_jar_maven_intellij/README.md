@@ -9,6 +9,8 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give a brief [overview](#1-background) of the project's [code](#11-code), the used [Maven configuration](#12-maven) and the available [IntelliJ IDEA run configurations](#13-intellij-idea).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
+This project builds on [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+
 ## 1. Background
 
 ### 1.1 Code
@@ -28,7 +30,7 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/) (also refer to the [Maven section](../#23-maven) of [Challenges > Java](..)).
-This project extends the [Maven configuration](../basic_maven_project_intellij#12-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+The used configuration extends the [Maven configuration](../basic_maven_project_intellij#12-maven) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
 
 Additional details regarding the Maven configuration of the current project are given in what follows.
 
@@ -75,9 +77,10 @@ $ mvn clean install
 
 ### 1.3 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-A brief description of IntelliJ IDEA is given in the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..).
-The used IntelliJ IDEA configuration is described in the [IntelliJ IDEA section](../basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (also refer to the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
+The used configuration is described in the [IntelliJ IDEA section](../basic_maven_project_intellij#13-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+
+Additional details regarding the IntelliJ IDEA configuration of the current project are given in what follows.
 
 #### 1.3.1 Run configurations
 

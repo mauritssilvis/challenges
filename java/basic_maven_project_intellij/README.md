@@ -28,6 +28,7 @@ public class Main {
 ### 1.2 Maven
 
 This Java project is managed and built using [Maven](https://maven.apache.org/) (also refer to the [Maven section](../#23-maven) of [Challenges > Java](..)).
+
 The Maven configuration of the current project is detailed in what follows.
 
 #### 1.2.1 Configuration
@@ -87,8 +88,7 @@ Execution of this command will compile the above-mentioned Java class file, pack
 
 ### 1.3 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-A brief description of IntelliJ IDEA is given in the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (also refer to the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
 
 IntelliJ IDEA's [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) contains a step-by-step [guide for setting up a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project).
 
