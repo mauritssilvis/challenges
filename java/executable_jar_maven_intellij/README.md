@@ -13,7 +13,9 @@ This project builds on [Setting up a basic Maven project using IntelliJ IDEA](..
 
 ## 1. Background
 
-### 1.1 Code
+### 1.1 Java
+
+#### 1.1.1 Code
 
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
