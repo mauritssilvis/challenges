@@ -40,8 +40,10 @@ Additional details regarding the IntelliJ IDEA run configurations of the current
 
 ##### 1.2.1.1 Run configurations
 
-This project comes with two run configuration, one for creating and one for executing the resulting JAR.
-Note that the latter run configuration will [fail](#24-maven-jar-plugin-issues).
+This project comes with three run configurations.
+This first run configuration is called `Main` and directly executes the `main` method of the `Main` class.
+The other two run configurations create and execute the resulting JAR, respectively.
+Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
