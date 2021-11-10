@@ -9,6 +9,8 @@ With this part of the [Challenges > Java](..) project, I provide the code and se
 Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
+This project builds on [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
+
 ## 1. Background
 
 ### 1.1 Java
