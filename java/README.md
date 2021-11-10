@@ -14,11 +14,16 @@ I also provide some [background information](#2-background) on [Java](#21-java) 
 Currently, Java solutions are available to challenges in the following categories.
 Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea).
 
-### Maven
+### General
 
 #### Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
+
+### Maven
+
+#### Projects
+
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
 
 #### JARs
