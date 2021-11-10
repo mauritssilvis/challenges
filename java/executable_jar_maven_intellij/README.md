@@ -78,7 +78,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -86,7 +86,7 @@ nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 
 #### 1.3.2 Build
 
-The executable JAR can be built using the command
+The executable JAR can be built using the command:
 
 ```shell
 $ mvn clean install
@@ -140,7 +140,7 @@ For the current project, the `build` section of `pom.xml` contains the following
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -185,7 +185,7 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -203,7 +203,7 @@ or a JavaFX application class must extend javafx.application.Application
 
 This error arises when the main class of your project doesn't contain a proper main method.
 
-To solve this problem, ensure that the main class of your project contains a method with the signature
+To solve this problem, ensure that the main class of your project contains a method with the signature:
 
 ```java
 public static void main(String[] args) {
@@ -236,7 +236,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
