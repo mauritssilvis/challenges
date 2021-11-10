@@ -257,7 +257,7 @@ For example, the Maven compiler plugin can be selected with the following `build
 
 #### 2.1.6 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
 
-When using Maven plugins, a warning similar to:
+When using Maven plugins, a warning may be shown that is similar to:
 
 ```text
 [WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.intellij.maven.projects:basic:jar:1.0-SNAPSHOT
@@ -267,8 +267,6 @@ When using Maven plugins, a warning similar to:
 [WARNING]
 [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
 ```
-
-may be shown.
 
 To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the project object model, `pom.xml`.
 
