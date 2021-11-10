@@ -6,7 +6,7 @@
 
 With this part of the [Challenges > Java](..) project, I provide the code and settings for a Maven project that can create an executable JAR.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven) .
+Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
 This project builds on [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
