@@ -72,6 +72,8 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 ##### 1.2.1.4 Run configurations
 
+This project comes with one run configuration for executing the `main` method of the `Main` class.
+
 ## 2. Issues and solutions
 
 ## License
