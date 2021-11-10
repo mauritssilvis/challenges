@@ -54,7 +54,7 @@ In addition, rulers are shown at 80 characters.
 
 ##### 1.2.1.2 Copyright
 
-Automatic copyright messages including the current year and a license identifier are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
+Automatic copyright messages including the current year and an [SPDX license identifier](https://spdx.dev/ids/) are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
 
 ```xml
 <component name="CopyrightManager">
