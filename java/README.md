@@ -36,6 +36,9 @@ C and C++ are, however, compiled into platform-specific machine code.
 Instead, Java compiles to platform-independent class files containing so-called bytecode.
 This bytecode can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
+To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of Java 17.
+To compile and build these projects, the [Java Development Kit 17](https://jdk.java.net/17/) is required.
+
 ### 2.2 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
