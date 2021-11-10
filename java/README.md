@@ -14,6 +14,12 @@ I also provide some [background information](#2-background) on [Java](#21-java) 
 Currently, Java solutions are available to challenges in the following categories.
 Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea).
 
+### General
+
+#### Projects
+
+* [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
+
 ### Maven
 
 #### Projects
@@ -36,7 +42,7 @@ C and C++ are, however, compiled into platform-specific machine code.
 Instead, Java compiles to platform-independent class files containing so-called bytecode.
 This bytecode can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
-To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of Java 17.
+To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of the latest long-term support (LTS) version of Java (currently Java 17).
 To compile and build these projects, the [Java Development Kit 17](https://jdk.java.net/17/) is required.
 
 ### 2.2 IntelliJ IDEA
