@@ -31,7 +31,8 @@ Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea)
 [Java](https://www.oracle.com/java/) is an object-oriented programming language with a syntax similar to that of C and C++.
 As is the case for C and C++ code, Java code has to be compiled before it can be executed.
 C and C++ are, however, compiled into platform-specific machine code.
-Instead, Java compiles to platform-independent bytecode, which can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
+Instead, Java compiles to platform-independent class files, containing so-called bytecode.
+This bytecode can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
 ### 2.2 IntelliJ IDEA
 
