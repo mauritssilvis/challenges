@@ -40,7 +40,7 @@ A few of these files are highlighted below.
 
 ##### 1.2.1.1 Code styles
 
-First, to make cross-platform coding easier, Unix line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
+First, to make cross-platform coding easier, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
 In addition, rulers are shown at 80 characters.
 
 ```xml
@@ -356,7 +356,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
 
-For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
+The source version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
@@ -419,7 +419,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
 
-For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
+The target version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line
 
 ```xml
 <project>
