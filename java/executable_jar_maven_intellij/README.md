@@ -9,7 +9,7 @@ With this part of the [Challenges > Java](..) project, I provide the code and se
 Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, and I provide possible solutions to these issues.
 
-This project builds on [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+This project builds on [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij) and [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
 
 ## 1. Background
 
@@ -33,7 +33,7 @@ public class Main {
 
 This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
 
-The basic configuration is described in the [IntelliJ IDEA section](../basic_maven_project_intellij#12-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+The basic configuration is described in the [IntelliJ IDEA section](../basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
 Additional details regarding the IntelliJ IDEA configuration of the current project are given in what follows.
 
 #### 1.2.1 Configuration

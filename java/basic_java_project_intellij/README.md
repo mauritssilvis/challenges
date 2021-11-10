@@ -72,9 +72,6 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 ##### 1.2.1.4 Run configurations
 
-The project comes with two run configuration, one for creating and one for executing the resulting JAR.
-Note that the latter run configuration will fail.
-
 ## 2. Issues and solutions
 
 ## License
