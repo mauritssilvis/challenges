@@ -41,7 +41,7 @@ A few of these files are highlighted below.
 ##### 1.2.1.1 Code styles
 
 First, to make cross-platform coding easier, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
-In addition, rulers are shown at 80 characters.
+In addition, rulers are shown at 80 characters:
 
 ```xml
 <component name="ProjectCodeStyleConfiguration">
@@ -85,7 +85,7 @@ The Maven configuration of the current project is detailed in what follows.
 
 ##### 1.3.1.1 Project coordinates
 
-In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to
+In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to:
 
 ```xml
 <project>
@@ -97,7 +97,7 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 
 ##### 1.3.1.2 Encoding
 
-The encoding of the source files is set to UTF-8 using
+The encoding of the source files is set to UTF-8 using:
 
 ```xml
 <project>
@@ -109,7 +109,7 @@ The encoding of the source files is set to UTF-8 using
 
 ##### 1.3.1.3 Maven compiler plugin
 
-Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as
+Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as:
 
 ```xml
 <project>
@@ -134,7 +134,7 @@ Moreover, to be up-to-date with recent developments, Java 17 is selected, which 
 
 #### 1.3.2 Build
 
-The project can be built using the command
+The project can be built using the command:
 
 ```shell
 $ mvn clean install
@@ -173,13 +173,13 @@ When executing Maven goals, the following error may occur:
 ```
 
 To solve this problem, ensure the project object model, `pom.xml`, contains at least the `project` root element.
-This root element can be included without,
+This root element can be included without any attributes:
 
 ```xml
 <project></project>
 ```
 
-or with the optional XML preamble and namespace information,
+Alternatively, specify the optional XML preamble and namespace information:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -219,7 +219,7 @@ When executing Maven goals, one or more of the following errors may occur:
 
 To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the project object model, `pom.xml`.
 
-For the current project, these coordinates are given by
+For the current project, these coordinates are given by:
 
 ```xml
 <project>
@@ -257,7 +257,7 @@ For example, the Maven compiler plugin can be selected with the following `build
 
 #### 2.1.6 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
 
-When using Maven plugins, a warning similar to
+When using Maven plugins, a warning similar to:
 
 ```text
 [WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.intellij.maven.projects:basic:jar:1.0-SNAPSHOT
@@ -272,7 +272,7 @@ may be shown.
 
 To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the project object model, `pom.xml`.
 
-For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
+For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with:
 
 ```xml
 <project>
@@ -296,7 +296,7 @@ At least one issue may be reported by the [Maven resources plugin](http://maven.
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-The Maven resources plugin may throw a warning of the form
+The Maven resources plugin may throw a warning of the form:
 
 ```text
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -320,7 +320,7 @@ Several issues may be reported by the [Maven compiler plugin](https://maven.apac
 
 #### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 
-Similar to the Maven resources plugin, the Maven compiler plugin may return
+Similar to the Maven resources plugin, the Maven compiler plugin may return:
 
 ```text
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
@@ -356,7 +356,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
 
-The source version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line
+The source version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line:
 
 ```xml
 <project>
@@ -419,7 +419,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
 
-The target version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line
+The target version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line:
 
 ```xml
 <project>
@@ -472,8 +472,6 @@ The Maven compiler plugin may encounter either of the following errors while com
 [ERROR] Failure executing javac, but could not parse the error
 ```
 
-or
-
 ```text
 source release 17 requires target release 17
 ```
@@ -481,7 +479,7 @@ source release 17 requires target release 17
 To solve this problem, ensure that both the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 
-Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
+Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines:
 
 ```xml
 <project>
