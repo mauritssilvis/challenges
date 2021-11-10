@@ -8,23 +8,23 @@ With this project, I provide solutions to common programming challenges in diffe
 
 ## Aims
 
-My aims with this project are to
+My aims with this project are to:
 
-* extend my knowledge of algorithms, data structures and design patterns; and
-* apply this knowledge in solving practical programming problems.
+* Extend my knowledge of algorithms, data structures and design patterns.
+* Apply this knowledge in solving practical programming problems.
 
-More generally, I strive to
+More generally, I strive to:
 
-* gain experience with different programming languages; and
-* get to know the specifics of these languages.
-  
-Finally, I aim to
+* Gain experience with different programming languages.
+* Get to know the specifics of these languages.
 
-* showcase this experience and knowledge.
+Finally, I aim to:
+
+* Showcase this experience and knowledge.
 
 ## Status
 
-Currently, solutions to common programming challenges are available in
+Currently, solutions to common programming challenges are available in:
 
 * [Java](java)
 
