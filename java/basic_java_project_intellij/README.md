@@ -7,7 +7,6 @@
 With this part of the [Challenges > Java](..) project, I provide the code and settings for a basic Java project, set up using IntelliJ IDEA.
 
 Below, I give an [overview](#1-background) of the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
-I also detail some [issues](#2-issues-and-solutions) that can occur when setting up a Java project, and I provide possible solutions to these issues.
 
 ## 1. Background
 
@@ -73,8 +72,6 @@ A profile in which only the default inspections are selected is stored in [Defau
 ##### 1.2.1.4 Run configurations
 
 This project comes with one run configuration for executing the `main` method of the `Main` class.
-
-## 2. Issues and solutions
 
 ## License
 
