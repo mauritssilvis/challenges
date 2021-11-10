@@ -26,7 +26,7 @@ Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea)
 
 ## 2. Background
 
-In this section, I provide some background information on [Java](#21-java) and the tools I used to solve programming challenges using Java, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
+In this section, I provide some background information on [Java](#21-java) and the tools I used to solve the above-mentioned programming challenges, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
 
 ### 2.1 Java
 
@@ -52,6 +52,7 @@ The [project object model](https://maven.apache.org/guides/introduction/introduc
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
 The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](basic_maven_project_intellij#13-maven) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
+A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
 
 ## License
 
