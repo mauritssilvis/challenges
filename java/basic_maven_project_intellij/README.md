@@ -42,7 +42,7 @@ Additional details regarding the IntelliJ IDEA run configurations of the current
 
 This project comes with three run configurations.
 This first run configuration is called `Main` and directly executes the `main` method of the `Main` class.
-The other two run configurations create and execute the resulting JAR, respectively.
+The other two run configurations, respectively, create a JAR and execute it.
 Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
