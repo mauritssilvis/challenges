@@ -239,6 +239,7 @@ When executing Maven goals, the following error may occur:
 ```
 
 To solve this problem, ensure all desired Maven plugins are identified using their artifact ID.
+
 For example, the Maven compiler plugin can be selected with the following `build` section of `pom.xml`:
 
 ```xml
@@ -270,6 +271,7 @@ When using Maven plugins, a warning similar to
 may be shown.
 
 To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the project object model, `pom.xml`.
+
 For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with
 
 ```xml
@@ -301,6 +303,7 @@ The Maven resources plugin may throw a warning of the form
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
+
 To set the file encoding to UTF-8, include the following line in the `properties` section of the project object model, `pom.xml`:
 
 ```xml
@@ -324,6 +327,7 @@ Similar to the Maven resources plugin, the Maven compiler plugin may return
 ```
 
 This warning indicates that no encoding has been set for the project files, i.e., for the source and resource files of the project.
+
 To set the file encoding to UTF-8, include the following line in the `properties` section in the project object model, `pom.xml`:
 
 ```xml
@@ -351,6 +355,7 @@ The Maven compiler plugin may halt with one of the following errors:
 ```
 
 To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
+
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -413,6 +418,7 @@ The Maven compiler plugin may halt with one of the following errors:
 ```
 
 To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
+
 For Java 17, this can be done by extending the `properties` section of `pom.xml` with the line
 
 ```xml
@@ -474,6 +480,7 @@ source release 17 requires target release 17
 
 To solve this problem, ensure that both the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
+
 Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines
 
 ```xml
