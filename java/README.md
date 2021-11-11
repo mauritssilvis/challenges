@@ -19,7 +19,7 @@ I solved the challenging in this section using the command line.
 
 #### 1.1.1 General
 
-##### 1.1.1.1 Projects
+##### Projects
 
 ### 1.2 IntelliJ IDEA
 
@@ -27,17 +27,17 @@ I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
 
 #### 1.2.1 General
 
-##### 1.2.1.1 Projects
+##### Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
 
 #### 1.2.2 Maven
 
-##### 1.2.2.1 Projects
+##### Projects
 
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
 
-##### 1.2.2.2 JARs
+##### JARs
 
 * [Creating an executable JAR using Maven](executable_jar_maven_intellij)
 

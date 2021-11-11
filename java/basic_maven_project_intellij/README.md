@@ -38,7 +38,7 @@ Additional details regarding the IntelliJ IDEA run configurations of the current
 
 #### 1.2.1 Configuration
 
-##### 1.2.1.1 Run configurations
+##### Run configurations
 
 This project comes with three run configurations.
 This first run configuration is called `Main` and directly executes the `main` method of the `Main` class.
@@ -53,7 +53,7 @@ The Maven configuration of the current project is detailed in what follows.
 
 #### 1.3.1 Configuration
 
-##### 1.3.1.1 Project coordinates
+##### Project coordinates
 
 In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to:
 
@@ -65,7 +65,7 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 </project>
 ```
 
-##### 1.3.1.2 Encoding
+##### Encoding
 
 The encoding of the source files is set to UTF-8 using:
 
@@ -77,7 +77,7 @@ The encoding of the source files is set to UTF-8 using:
 </project>
 ```
 
-##### 1.3.1.3 Maven compiler plugin
+##### Maven compiler plugin
 
 Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as:
 
