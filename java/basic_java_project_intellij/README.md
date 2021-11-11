@@ -17,7 +17,7 @@ Below, I give an [overview](#1-background) of the project's [code](#11-java) and
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
-package nl.mauritssilvis.challenges.java.intellij.java.projects.basic;
+package nl.mauritssilvis.challenges.java.intellij.general.projects.basic;
 
 public class Main {
   public static void main(String[] args) {
