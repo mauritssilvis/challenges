@@ -15,11 +15,13 @@ Currently, Java solutions are available to the following challenges, categorized
 
 ### 1.1 Command-line projects
 
-I solved the challenges in this section using the command line.
+I solved the challenges in this section using the [command line](#22-bash).
 
 #### 1.1.1 General
 
 ##### Projects
+
+* [Setting up a basic Java project using the command line](basic_java_project_cli)
 
 ### 1.2 IntelliJ IDEA projects
 
