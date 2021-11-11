@@ -100,7 +100,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (currently 3.8.1) is selected.
-Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (currently Java 17) is selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
+Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (currently Java 17) is selected, which requires the corresponding version of the Java Development Kit (JDK), [JDK 17](https://jdk.java.net/17/).
 
 #### 1.3.2 Build
 
