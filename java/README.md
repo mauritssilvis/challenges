@@ -67,7 +67,7 @@ IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
 The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic_maven_project_intellij#12-intellij-idea) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
 
-### 2.3 Maven
+### 2.4 Maven
 
 [Maven](https://maven.apache.org/) is a build tool that can be used to manage and build projects written in Java and other programming languages.
 The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to the use of Maven.
