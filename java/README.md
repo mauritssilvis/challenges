@@ -11,17 +11,17 @@ I also provide some [background information](#2-background) on [Java](#21-java) 
 
 ## 1. Status
 
-Currently, Java solutions are available to challenges in the following categories.
+Currently, Java solutions are available to the following challenges, categorized according to the primary tool used: the [command line](#11-command-line-projects) or [IntelliJ IDEA](#12-intellij-idea-projects). 
 
-### 1.1 Command line
+### 1.1 Command-line projects
 
-I solved the challenging in this section using the command line.
+I solved the challenges in this section using the command line.
 
 #### 1.1.1 General
 
 ##### Projects
 
-### 1.2 IntelliJ IDEA
+### 1.2 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
 
