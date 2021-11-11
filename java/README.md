@@ -12,21 +12,32 @@ I also provide some [background information](#2-background) on [Java](#21-java) 
 ## 1. Status
 
 Currently, Java solutions are available to challenges in the following categories.
-Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea).
 
-### General
+### 1.1 Command line
 
-#### Projects
+I solved the challenging in this section using the command line.
+
+#### 1.1.1 General
+
+##### 1.1.1.1 Projects
+
+### 1.2 IntelliJ IDEA
+
+I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
+
+#### 1.2.1 General
+
+##### 1.2.1.1 Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
 
-### Maven
+#### 1.2.2 Maven
 
-#### Projects
+##### 1.2.2.1 Projects
 
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
 
-#### JARs
+##### 1.2.2.2 JARs
 
 * [Creating an executable JAR using Maven](executable_jar_maven_intellij)
 
