@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of [Challenges > Java](..)).
 
 The basic configuration is described in the [IntelliJ IDEA section](../basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
@@ -47,7 +47,7 @@ Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
-This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](../#23-maven) of [Challenges > Java](..)).
+This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](../#24-maven) of [Challenges > Java](..)).
 
 The Maven configuration of the current project is detailed in what follows.
 

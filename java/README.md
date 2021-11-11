@@ -7,11 +7,11 @@
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
 Under [Status](#1-status), I give an overview of the challenges that I solved using Java so far.
-I also provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
+I also provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ## 1. Status
 
-Currently, Java solutions are available to the following challenges, categorized according to the primary tool used: the [command line](#11-command-line-projects) or [IntelliJ IDEA](#12-intellij-idea-projects). 
+Currently, Java solutions are available to the following challenges, categorized according to the tools I used.
 
 ### 1.1 Command-line projects
 
@@ -23,7 +23,7 @@ I solved the challenges in this section using the command line.
 
 ### 1.2 IntelliJ IDEA projects
 
-I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
+I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
 
 #### 1.2.1 General
 
@@ -43,7 +43,7 @@ I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
 
 ## 2. Background
 
-In this section, I provide some background information on [Java](#21-java) and the tools I used to solve the above-mentioned programming challenges, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
+In this section, I provide some background information on [Java](#21-java) and the tools I used to solve the above-mentioned programming challenges, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ### 2.1 Java
 
@@ -56,7 +56,9 @@ This bytecode can then be executed on a platform of choice by a platform-specifi
 To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of the latest long-term support (LTS) version of Java (currently Java 17).
 To compile and build these projects, the [Java Development Kit 17](https://jdk.java.net/17/) is required.
 
-### 2.2 IntelliJ IDEA
+### 2.2 Bash
+
+### 2.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
 This IDE supports Java and several other Java virtual machine languages, and can be extended with plugins to retrieve support for other programming languages.
