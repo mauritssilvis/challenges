@@ -25,7 +25,40 @@ public class Main {
 }
 ```
 
-#### 1.1.2 Folder structure
+#### 1.1.2 Directory structure
+
+The directory structure of this project is as follows:
+
+```text
+basic_java_project_cli
+├─ out
+│  └─ nl
+│      └─ mauritssilvis
+│          └─ challenges
+│              └─ java
+│                  └─ cli
+│                      └─ general
+│                          └─ projects
+│                              └─ basic
+│                                 └─ Main.class
+│
+├─ src
+│  └─ nl
+│      └─ mauritssilvis
+│          └─ challenges
+│              └─ java
+│                  └─ cli
+│                      └─ general
+│                          └─ projects
+│                              └─ basic
+│                                 └─ Main.java
+│
+├─ .gitignore
+└─ README.md
+```
+
+Here, the `src` folder contains the source file, Main.java, stored in a directory structure that matches the package `nl.mauritssilvis.challenges.java.cli.general.projects.basic` of the class `Main`.
+The `out` folder, which is created upon compilation (see the Compile section), has the same structure as the `src` folder, but contains the compiled bytecode instead of source code.
 
 #### 1.1.3 Compile
 
