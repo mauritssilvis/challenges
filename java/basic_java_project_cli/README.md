@@ -57,12 +57,31 @@ basic_java_project_cli
 └─ README.md
 ```
 
-Here, the `src` folder contains the source file, Main.java, stored in a directory structure that matches the package `nl.mauritssilvis.challenges.java.cli.general.projects.basic` of the class `Main`.
-The `out` folder, which is created upon compilation (see the Compile section), has the same structure as the `src` folder, but contains the compiled bytecode instead of source code.
+Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package `nl.mauritssilvis.challenges.java.cli.general.projects.basic` of the class `Main`.
+The `out` folder, which is created upon compilation (see the [Compilation section](#113-compilation)), has the same structure as the `src` folder, but is there to contain the compiled bytecode instead of source code.
 
-#### 1.1.3 Compile
+#### 1.1.3 Compilation
 
-#### 1.1.4 Run
+The most basic way to compile the Java code in `Main.java` consists in navigating to the directory of this source file and calling the Java compiler:
+
+```shell
+cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+javac Main.java
+```
+
+These commands will compile the Java code of `Main.java` into bytecode, which is stored in the class file `Main.class` in the directory where the source code is located.
+
+The class file, `Main.class`, cannot be executed from the folder in which it is stored.
+Moreover, Java source and class files are generally stored in different locations.
+Therefore, it is more convenient to compile the source file with the following command, which specifies the output directory:
+
+```shell
+javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+#### 1.1.4 Execution
+
+#### 1.1.5 Direct execution
 
 ## 2. Issues and solutions
 
