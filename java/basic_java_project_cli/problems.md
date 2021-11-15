@@ -4,9 +4,27 @@
 
 basic_java_project_cli
 ├─ out
-│  └─ ...
+│  └─ nl
+│      └─ mauritssilvis
+│          └─ challenges
+│              └─ java
+│                  └─ cli
+│                      └─ general
+│                          └─ projects
+│                              └─ basic
+│                                 └─ Main.class
+│
 ├─ src
-│  └─ ...
+│  └─ nl
+│      └─ mauritssilvis
+│          └─ challenges
+│              └─ java
+│                  └─ cli
+│                      └─ general
+│                          └─ projects
+│                              └─ basic
+│                                 └─ Main.java
+│
 ├─ .gitignore
 └─ README.md
 
