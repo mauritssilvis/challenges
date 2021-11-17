@@ -98,6 +98,7 @@ java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 Rather than navigating to a folder containing class files manually, it's more common to execute a Java class under specification of the class path.
+
 For the current project, this looks as follows:
 
 ```shell
@@ -114,10 +115,17 @@ Note that Java executes classes by their class name, not by their file name.
 Therefore, the above commands should not include the `.class` extension of the Java class file name `Main.class`.
 
 Moreover, for classes that are part of a package, the supplied class name should be the fully qualified name, which includes both the package and the class name.
-The folder from which such a class is executed has to contain a directory structure corresponding to the package name.
-Therefore, the Java class `Main.class` cannot be executed from any other folder than the `out` folder.
-In particular, it cannot be executed from its containing folder.
-As the above shows, class names can, however, be specified using both slashes and dots.
+For the current project, this fully qualified class name is:
+
+```text
+nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+The folder from which a class that is part of a package is executed has to contain a directory structure corresponding to the package name.
+Therefore, the Java class file `Main.class` cannot be executed from any other folder than the `out` folder.
+In particular, this class file cannot be executed from its containing folder.
+
+As the above shows, fully qualified class names can be specified using both slashes and dots.
 
 #### 1.1.5 Direct execution
 
