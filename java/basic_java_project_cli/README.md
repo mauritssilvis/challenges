@@ -58,7 +58,7 @@ basic_java_project_cli
 ```
 
 Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.general.projects.basic`.
-The `out` folder, which is created upon compilation (see the [Compilation section](#113-compilation)), has the same structure as the `src` folder, but is there to contain the compiled bytecode instead of source code.
+The `out` folder, which is created upon [compilation](#113-compilation), has the same structure as the `src` folder, but is there to contain the compiled bytecode instead of source code.
 
 #### 1.1.3 Compilation
 
@@ -80,6 +80,44 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Mai
 ```
 
 #### 1.1.4 Execution
+
+After [compilation](#113-compilation), the Java class file, `Main.class`, that is buried in the `out` folder can be executed in several ways.
+
+A convenient way to execute this class is given by:
+
+```shell
+cd out
+java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+```
+
+Equivalently, one could execute the following commands:
+
+```shell
+cd out
+java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+Rather than navigating to a folder containing class files manually, it's more common to execute a Java class under specification of the class path.
+For the current project, this looks as follows:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+All above commands will result in the following output:
+
+```text
+Hello world!
+```
+
+Note that Java executes classes by their class name, not by their file name.
+Therefore, the above commands should not include the `.class` extension of the Java class file name `Main.class`.
+
+Moreover, for classes that are part of a package, the supplied class name should be the fully qualified name, which includes both the package and the class name.
+The folder from which such a class is executed has to contain a directory structure corresponding to the package name.
+Therefore, the Java class `Main.class` cannot be executed from any other folder than the `out` folder.
+In particular, it cannot be executed from its containing folder.
+As the above shows, class names can, however, be specified using both slashes and dots.
 
 #### 1.1.5 Direct execution
 
