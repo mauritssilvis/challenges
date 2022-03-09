@@ -60,6 +60,8 @@ To compile and build these projects, the [Java Development Kit 17](https://jdk.j
 
 ### 2.2 Bash
 
+TODO
+
 ### 2.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
