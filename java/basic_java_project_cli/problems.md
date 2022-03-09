@@ -166,6 +166,8 @@ Do not run the Java compiler on class files.
 
 ## Java execution problems
 
+### Problem: Error: Invalid or corrupt jarfile
+
 ### Problem: Executing the class file including its extension
 
 ```
