@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main" />
-    <module name="standalone" />
+    <module name="executable_jar_maven_intellij" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.*" />
