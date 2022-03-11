@@ -71,7 +71,7 @@ javac Main.java
 
 These commands will compile the Java code of `Main.java` into bytecode, which is then stored in the class file `Main.class` in the directory where the source code is located.
 
-The class file, `Main.class`, cannot be executed from the folder in which it is stored.
+As we will see, the class file, `Main.class`, cannot be executed from the folder in which it is stored.
 Moreover, Java source and class files are generally stored in different locations.
 Therefore, it is more convenient to compile the source file from the project root folder with a directive that specifies the output directory:
 
@@ -90,6 +90,8 @@ cd out
 java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
 ```
 
+As is explained below, the `.class` extension of the class file should not be included.
+
 Equivalently, one could execute the following commands:
 
 ```shell
@@ -98,7 +100,6 @@ java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 Rather than navigating to a folder containing class files manually, it's more common to execute a Java class under specification of the class path.
-
 For the current project, this looks as follows:
 
 ```shell
@@ -121,11 +122,11 @@ For the current project, this fully qualified class name is:
 nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
+As the above shows, fully qualified class names can be specified using both slashes and dots.
+
 The folder from which a class that is part of a package is executed has to contain a directory structure corresponding to the package name.
 Therefore, the Java class file `Main.class` cannot be executed from any other folder than the `out` folder.
 In particular, this class file cannot be executed from its containing folder.
-
-As the above shows, fully qualified class names can be specified using both slashes and dots.
 
 #### 1.1.5 Direct execution
 
