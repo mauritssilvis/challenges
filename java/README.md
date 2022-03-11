@@ -6,8 +6,8 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
-Under [Status](#1-status), I give an overview of the challenges that I solved using Java so far.
-I also provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
+In the [Status](#1-status) section, I give an overview of the challenges that I solved using Java so far.
+I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ## 1. Status
 
