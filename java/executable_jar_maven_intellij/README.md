@@ -64,7 +64,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
         <configuration>
           <archive>
             <manifest>
@@ -80,7 +80,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.2.2 at the time of writing) is selected and the main class is defined as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -126,7 +126,7 @@ For the current project, the `build` section of `pom.xml` contains the following
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
         <configuration>
           <archive>
             <manifest>
@@ -142,7 +142,7 @@ For the current project, the `build` section of `pom.xml` contains the following
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.2.2 at the time of writing) is selected and the main class is specified as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -171,7 +171,7 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
         <configuration>
           <archive>
             <manifest>
@@ -187,7 +187,7 @@ For the current project, the configuration of the Maven JAR plugin looks as foll
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is specified as:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.2.2 at the time of writing) is selected and the main class is specified as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -222,7 +222,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
         <configuration>
           <archive>
             <manifest>
@@ -238,7 +238,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (currently 3.2.0) is selected and the main class is defined as:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.2.2 at the time of writing) is selected and the main class is defined as:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
