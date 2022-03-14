@@ -99,7 +99,7 @@ cd out
 java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
-Rather than navigating to a folder containing class files manually, it's more common to execute a Java class under specification of the class path.
+Rather than navigating to a folder containing class files manually, it is more common to execute a Java class under specification of the class path.
 For the current project, this looks as follows:
 
 ```shell
