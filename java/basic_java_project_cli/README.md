@@ -6,9 +6,16 @@
 
 With this part of the [Challenges > Java](..) project, I provide the code and settings for a basic Java project, set up using the command line.
 
+Below, I give detailed [background information](#1-background) on the project's [code](#11-java).
+In addition, I list several [issues](#2-issues-and-solutions) that can occur when setting up a Java project.
+I also describe solutions to these issues.
+
 ## 1. Background
 
 ### 1.1 Java
+
+This project makes use of Java.
+I describe this programming language in the [Java section](../#21-java) of [Challenges > Java](..).
 
 #### 1.1.1 Code
 
@@ -126,7 +133,7 @@ As the above shows, fully qualified class names can be specified using both slas
 
 The folder from which a class that is part of a package is executed has to contain a directory structure corresponding to the package name.
 Therefore, the Java class file `Main.class` cannot be executed from any other folder than the `out` folder.
-In particular, this class file cannot be executed from its containing folder.
+In particular, this class file cannot be executed from its containing parent folder.
 
 #### 1.1.5 Direct execution
 

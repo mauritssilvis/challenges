@@ -2,11 +2,14 @@
 
 > A collection of programming challenges, solved using different programming languages
 
-## About
+## Introduction
 
 With this project, I provide solutions to common programming challenges in different programming languages.
 
-## Aims
+Below, I first describe the [aims](#1-aims) I have with the current project.
+I then [list](#2-overview) the languages I used to solve programming challenges.
+
+## 1. Aims
 
 My aims with this project are to:
 
@@ -22,7 +25,7 @@ Finally, I aim to:
 
 - Showcase this experience and knowledge.
 
-## Status
+## 2. Overview
 
 Currently, solutions to common programming challenges are available in:
 
