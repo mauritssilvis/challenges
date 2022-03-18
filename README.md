@@ -7,7 +7,7 @@
 With this project, I provide solutions to common programming challenges in different programming languages.
 
 Below, I first describe the [aims](#1-aims) I have with the current project.
-I then [list](#2-overview) the languages I used to solve programming challenges.
+I then [list](#2-overview) the programming languages I used to solve programming challenges.
 
 ## 1. Aims
 
