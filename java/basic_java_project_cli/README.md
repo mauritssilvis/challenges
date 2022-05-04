@@ -167,13 +167,13 @@ In particular, I discuss problems related to [compilation](#21-compilation-issue
 
 #### 2.1.1 file not found
 
-Since class names can be specified using both slashes and dots, one may be tempted to also use dots in paths to Java source files:
+Since class names can be specified using both slashes and dots, one may be tempted to also use dots in paths to Java source files in calls to the Java compiler:
 
 ```shell
 javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
 ```
 
-Such a command will, however, result in an error of the form:
+Such commands will, however, result in an error of the form:
 
 ```text
 error: file not found: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
@@ -184,7 +184,58 @@ use --help for a list of possible options
 To solve this problem, do not use dots instead of slashes where a file path to a source file is expected:
 
 ```shell
-javac src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+#### 2.1.2 Class names are only accepted if annotation processing is explicitly requested
+
+When working with Java, you may encounter errors of the following form:
+
+```text
+error: Class names, 'Main', are only accepted if annotation processing is explicitly requested
+1 error
+```
+
+```text
+error: Class names, 'nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main', are only accepted if annotation processing is explicitly requested
+1 error
+```
+
+```text
+error: Class names, 'src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main', are only accepted if annotation processing is explicitly requested
+1 error
+```
+
+Such errors respectively result from using the Java compiler in commands of the form:
+
+```shell
+cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+javac Main
+```
+
+```shell
+cd src
+javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+```shell
+javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+Here, the Java compiler is supplied with class-name-like paths.
+
+To solve the above problem, do not supply the Java compiler with a class-name-like path when a file path to a source file is expected.
+In addition, ensure the `.java` file extension is present in paths to source files:
+
+```shell
+javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+Alternatively, ensure that you called the right tool.
+You may have wanted to call the Java interpreter instead of the Java compiler:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 ### 2.2 Execution issues

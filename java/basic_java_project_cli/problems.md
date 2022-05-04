@@ -2,31 +2,6 @@
 
 ## Java compilation problems
 
-### Class names are only accepted if annotation processing is explicitly requested
-
-Using a class-name-like path:
-
-```
-cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
-javac Main
-```
-
-```
-error: Class names, 'Main', are only accepted if annotation processing is explicitly requested
-1 error
-```
-
-```
-javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
-```
-
-```
-error: Class names, 'src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main', are only accepted if annotation processing is explicitly requested
-1 error
-```
-
-Do not use class-name-like paths.
-
 ### error: invalid flag
 
 Using a class-name-like path with a .class ending:
