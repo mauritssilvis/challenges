@@ -92,11 +92,11 @@ mvn clean install
 
 ## 2. Issues and solutions
 
-While setting up and building a Maven project, several problems may occur.
-I partly documented these problems in the [Issues and solutions section](../basic_maven_project_intellij#2-issues-and-solutions) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
+While setting up and building a Maven project, several issues may occur.
+I partly documented these issues in the [Issues and solutions section](../basic_maven_project_intellij#2-issues-and-solutions) of [Setting up a basic Maven project using IntelliJ IDEA](../basic_maven_project_intellij).
 
 Additional problems may occur when trying to execute a JAR created using Maven.
-I describe the problems related to the [Maven JAR plugin](#21-maven-jar-plugin-issues), including possible solutions.
+I describe the issues related to the [Maven JAR plugin](#21-maven-jar-plugin-issues), including possible solutions, below.
 
 ### 2.1 Maven JAR plugin issues
 

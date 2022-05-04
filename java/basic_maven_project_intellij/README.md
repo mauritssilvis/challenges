@@ -118,8 +118,8 @@ Note that this JAR will [not be executable](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
-While setting up and building a Maven project, several problems may occur.
-I list several of such problems, here, including possible solutions.
+While setting up and building a Maven project, several issues may occur.
+I list several such issues, below, including possible solutions.
 Specifically, I discuss problems related to the [project object model](#21-project-object-model-issues), the [Maven resources plugin](#22-maven-resources-plugin-issues), the [Maven compiler plugin](#23-maven-compiler-plugin-issues) and the [Maven JAR plugin](#24-maven-jar-plugin-issues).
 
 ### 2.1 Project object model issues
