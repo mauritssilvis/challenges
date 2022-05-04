@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this project, I provide solutions to common programming challenges in different programming languages.
+With this project, I provide solutions to challenges one commonly encounters when working with different programming languages.
 
 Below, I first describe the [aims](#1-aims) I have with the current project.
 I then [list](#2-overview) the programming languages I used to solve programming challenges.
@@ -13,7 +13,7 @@ I then [list](#2-overview) the programming languages I used to solve programming
 
 My aims with this project are to:
 
-- Extend my knowledge of algorithms, data structures and design patterns.
+- Extend my knowledge of different programming tools.
 - Apply this knowledge in solving practical programming problems.
 
 More generally, I strive to:
