@@ -336,7 +336,46 @@ cd out
 java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
 ```
 
-As noted before, a more common way of writing this above command is given by:
+As noted before, a more common way of writing this command is given by:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+#### 2.2.2 Could not find or load main class / java.lang.NoClassDefFoundError
+
+When trying to execute Java programs, you may encounter errors of the following form:
+
+```text
+Error: Could not find or load main class Main
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main (wrong name: Main)
+```
+
+```text
+Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main (wrong name: out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main)
+```
+
+Such errors result from calling the Java interpreter using commands of the form:
+
+```shell
+cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+java Main
+```
+
+```shell
+java out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+```
+
+To solve the above problem, ensure that classes that belong to a package are executed from a folder that contains a directory structure corresponding to the package name.
+For the current project, the following command could be used:
+
+```shell
+cd out
+java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+```
+
+As noted before, a more common way of writing this command is given by:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
