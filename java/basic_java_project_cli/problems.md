@@ -1,40 +1,5 @@
 # Problems
 
-## Java compilation problems
-
-### error: invalid flag
-
-Using a class-name-like path with a .class ending:
-/
-Running the Java compiler on a class file:
-/
-Any invalid flag:
-
-(
-    ```
-    javac out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-    ```
-
-    ```
-    error: invalid flag: out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-    Usage: javac <options> <source files>
-    use --help for a list of possible options
-    ```
-)
-
-```
-cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
-javac Main.class
-```
-
-```
-error: invalid flag: Main.class
-Usage: javac <options> <source files>
-use --help for a list of possible options
-```
-
-Do not run the Java compiler on class files.
-
 ## Java execution problems
 
 ### Problem: Error: Invalid or corrupt jarfile

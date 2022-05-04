@@ -181,7 +181,7 @@ Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
 
-To solve this problem, do not use dots instead of slashes where a file path to a source file is expected:
+To solve this problem, do not use dots instead of slashes when a file path to a source file is expected:
 
 ```shell
 javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
@@ -233,6 +233,59 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Mai
 
 Alternatively, ensure that you called the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
+#### 2.1.3 invalid flag
+
+When working with Java, you may encounter errors of the following form:
+
+```text
+error: invalid flag: Main.class
+Usage: javac <options> <source files>
+use --help for a list of possible options
+```
+
+```text
+error: invalid flag: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+Usage: javac <options> <source files>
+use --help for a list of possible options
+```
+
+```text
+error: invalid flag: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+Usage: javac <options> <source files>
+use --help for a list of possible options
+```
+
+Such errors respectively results from using the Java compiler with commands of the form:
+
+```shell
+cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+javac Main.class
+```
+
+```shell
+cd src
+javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+```
+
+```shell
+javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+```
+
+To solve issues of the above form, do not provide the Java compiler with a class-name-like path when a file path to a source file is expected.
+In addition, ensure the `.java` file extension (instead of `.class`) is present in paths to source files:
+
+```shell
+javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+Alternatively, ensure that you called the right tool.
+You may have wanted to call the Java interpreter instead of the Java compiler.
+In that case, note that the `.class` extension of the Java class file name has to be omitted to refer to the class:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
