@@ -181,7 +181,7 @@ Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
 
-To solve this problem, do not use dots instead of slashes when a file path to a source file is expected:
+To solve this problem, use slashes when a file path to a source file is expected:
 
 ```shell
 javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
@@ -260,7 +260,7 @@ Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
 
-Such errors respectively results from using the Java compiler with commands of the form:
+Such errors respectively result from using the Java compiler with commands of the form:
 
 ```shell
 cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
