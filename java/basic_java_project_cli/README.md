@@ -284,30 +284,11 @@ Error: Could not find or load main class Main.class
 Caused by: java.lang.ClassNotFoundException: Main.class
 ```
 
-```text
-Error: Could not find or load main class nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-```
-
-```text
-Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-Caused by: java.lang.ClassNotFoundException: out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-```
-
-Such errors result from calling the Java interpreter using commands of the form:
+Such errors result from calling the Java interpreter on class files:
 
 ```shell
 cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
 java Main.class
-```
-
-```shell
-cd out
-java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
-```
-
-```shell
-java out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
 ```
 
 To solve the above problem, do not include the `.class` extension when referring to Java classes.
