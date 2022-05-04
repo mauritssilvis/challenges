@@ -137,7 +137,25 @@ In particular, this class file cannot be executed from its containing parent fol
 
 #### 1.1.5 Direct execution
 
-TODO
+Since Java 11, programs consisting of only a single source file can be executed directly, without the need for an explicit compilation step.
+For the current project, the following command directly executes our source file from its containing folder:
+
+```shell
+cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+java Main.java
+```
+
+Alternatively, direct execution from the main project folder can be started using:
+
+```bash
+java src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+As expected, the output of the above commands is:
+
+```text
+Hello world!
+```
 
 ## 2. Issues and solutions
 

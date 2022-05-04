@@ -1,20 +1,3 @@
-# Background
-
-## Java execution
-
-### Directly executing the Java source file using Java from any folder
-
-```
-cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
-java Main.java
-```
-
-```
-java src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
-```
-
-Hello world!
-
 # Problems
 
 ## Java compilation problems
