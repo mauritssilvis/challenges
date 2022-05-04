@@ -159,7 +159,13 @@ Hello world!
 
 ## 2. Issues and solutions
 
-TODO
+While setting up a Java project, several issues may occur.
+I list several such issues, here, including possible solutions.
+In particular, I discuss problems related to [compilation](#21-compilation-issues) and [execution](#22-execution-issues) of Java programs.
+
+### 2.1 Compilation issues
+
+### 2.2 Execution issues
 
 ## License
 
