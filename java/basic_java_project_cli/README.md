@@ -122,30 +122,32 @@ Hello world!
 Note that Java executes classes by their class name, not by their file name.
 Therefore, the above commands should not include the `.class` extension of the Java class file name `Main.class`.
 
-Moreover, for classes that are part of a package, the supplied class name should be the fully qualified name, which includes both the package and the class name.
+Moreover, for classes that are part of a package, the supplied class name should be the so-called fully qualified name, which includes both the package and the class name.
 For the current project, this fully qualified class name is:
 
 ```text
 nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
-As the above shows, fully qualified class names can be specified using both slashes and dots.
+As the above shows, fully qualified class names can be provided to the Java interpreter using both slashes and dots.
 
-The folder from which a class that is part of a package is executed has to contain a directory structure corresponding to the package name.
+Class files of Java classes that are part of a package have to be stored in a directory structure corresponding to the package name.
+Otherwise, these classes cannot be executed.
+More specifically, the folder from which a class is executed should contain a directory structure corresponding to the package name of that class.
 Therefore, the Java class file `Main.class` cannot be executed from any other folder than the `out` folder.
 In particular, this class file cannot be executed from its containing parent folder.
 
 #### 1.1.5 Direct execution
 
 Since Java 11, programs consisting of only a single source file can be executed directly, without the need for an explicit compilation step.
-For the current project, the following command directly executes our source file from its containing folder:
+For the current project, the following command directly executes the source file `Main.java` from its containing folder:
 
 ```shell
 cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
 java Main.java
 ```
 
-Alternatively, direct execution from the main project folder can be started using:
+Alternatively, direct execution from the main project folder is possible:
 
 ```bash
 java src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
@@ -167,7 +169,7 @@ In particular, I discuss problems related to [compilation](#21-compilation-issue
 
 #### 2.1.1 file not found
 
-Since class names can be specified using both slashes and dots, one may be tempted to also use dots in paths to Java source files in calls to the Java compiler:
+Since the Java interpreter accepts class names with slashes and dots, one may be tempted to use dots in paths to Java source files in calls to the Java compiler:
 
 ```shell
 javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
@@ -328,7 +330,8 @@ java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
 java out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
 ```
 
-To solve the above problem, do not include the `.class` extension when referring to Java classes and ensure execution takes place from the proper path.
+To solve the above problem, do not include the `.class` extension when referring to Java classes.
+In addition, ensure execution takes place from the proper path.
 For the current project, these two conditions are fulfilled for the following command:
 
 ```shell
