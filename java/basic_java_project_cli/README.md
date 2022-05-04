@@ -293,6 +293,55 @@ java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 
 ### 2.2 Execution issues
 
+#### 2.2.1 Could not find or load main class / java.lang.ClassNotFoundException
+
+When trying to execute Java programs, you may encounter errors of the following form:
+
+```text
+Error: Could not find or load main class Main.class
+Caused by: java.lang.ClassNotFoundException: Main.class
+```
+
+```text
+Error: Could not find or load main class nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+Caused by: java.lang.ClassNotFoundException: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+```
+
+```text
+Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+Caused by: java.lang.ClassNotFoundException: out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
+```
+
+Such errors result from calling the Java interpreter using commands of the form:
+
+```shell
+cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+java Main.class
+```
+
+```shell
+cd out
+java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
+```
+
+```shell
+java out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.class
+```
+
+To solve the above problem, do not include the `.class` extension when referring to Java classes and ensure execution takes place from the proper path.
+For the current project, these two conditions are fulfilled for the following command:
+
+```shell
+cd out
+java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+```
+
+As noted before, a more common way of writing this above command is given by:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+```
+
 ## License
 
 Copyright © 2021, 2022 Maurits H. Silvis
