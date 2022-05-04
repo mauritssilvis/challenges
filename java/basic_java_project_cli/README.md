@@ -172,13 +172,14 @@ In particular, I discuss problems related to [compilation](#21-compilation-issue
 Since the Java interpreter accepts class names with slashes and dots, one may be tempted to use dots in paths to Java source files in calls to the Java compiler:
 
 ```shell
-javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+cd src
+javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
 ```
 
 Such commands will, however, result in an error of the form:
 
 ```text
-error: file not found: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+error: file not found: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
 Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
@@ -187,6 +188,14 @@ To solve this problem, use slashes when a file path to a source file is expected
 
 ```shell
 javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
+Alternatively, ensure that you called the right tool.
+You may have wanted to call the Java interpreter instead of the Java compiler.
+In that case, ensure you drop any file extensions and you execute the class from the proper location:
+
+```shell
+java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 #### 2.1.2 Class names are only accepted if annotation processing is explicitly requested
@@ -203,11 +212,6 @@ error: Class names, 'nl.mauritssilvis.challenges.java.cli.general.projects.basic
 1 error
 ```
 
-```text
-error: Class names, 'src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main', are only accepted if annotation processing is explicitly requested
-1 error
-```
-
 Such errors respectively result from using the Java compiler in commands of the form:
 
 ```shell
@@ -218,10 +222,6 @@ javac Main
 ```shell
 cd src
 javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
-```
-
-```shell
-javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 Here, the Java compiler is supplied with class-name-like paths.
@@ -242,7 +242,7 @@ java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 
 #### 2.1.3 invalid flag
 
-When working with Java, you may encounter errors of the following form:
+When working with Java, you may encounter an error of the following form:
 
 ```text
 error: invalid flag: Main.class
@@ -250,36 +250,15 @@ Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
 
-```text
-error: invalid flag: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-Usage: javac <options> <source files>
-use --help for a list of possible options
-```
-
-```text
-error: invalid flag: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-Usage: javac <options> <source files>
-use --help for a list of possible options
-```
-
-Such errors respectively result from using the Java compiler with commands of the form:
+Such an error may result from calling the Java compiler on a Java class file:
 
 ```shell
 cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
 javac Main.class
 ```
 
-```shell
-cd src
-javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-```
-
-```shell
-javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.class
-```
-
-To solve issues of the above form, do not provide the Java compiler with a class-name-like path when a file path to a source file is expected.
-In addition, ensure the `.java` file extension (instead of `.class`) is present in paths to source files:
+To solve the above problem, do not provide the Java compiler with the path of a class file when a path path to a source file is expected.
+In addition, ensure the `.java` file extension (instead of `.class`) is used in paths to source files:
 
 ```shell
 javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
