@@ -80,7 +80,7 @@ These commands will compile the Java code of `Main.java` into bytecode, which is
 
 As we will see, the class file, `Main.class`, cannot be executed from the folder in which it is stored.
 Moreover, Java source and class files are generally stored in different locations.
-Therefore, it is more convenient to compile the source file from the project root folder with a directive that specifies the output directory:
+Therefore, it is more convenient to compile the source file from the project root folder with a `-d` option that specifies the output directory:
 
 ```shell
 javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
@@ -106,8 +106,8 @@ cd out
 java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
-Rather than navigating to a folder containing class files manually, it is more common to execute a Java class under specification of the class path.
-For the current project, this looks as follows:
+Rather than manually navigating to a folder containing class files, it is more common to execute a Java class relative to a so-called class path.
+For the current project, the following command involving the `-cp` option executes the previously compiled class from the class path `out`:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
