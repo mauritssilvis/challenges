@@ -103,6 +103,8 @@ Do not run the Java compiler on class files.
 
 ### Problem: Executing the class file including its extension
 
+Error: Could not find or load main class / Caused by: java.lang.ClassNotFoundException
+
 ```
 cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
 java Main.class
@@ -147,6 +149,8 @@ java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
 ### Problem: Executing a class from the wrong folder
+
+Error: Could not find or load main class / Caused by: java.lang.NoClassDefFoundError
 
 ```
 cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
