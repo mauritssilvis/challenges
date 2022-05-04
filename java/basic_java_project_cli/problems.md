@@ -2,26 +2,6 @@
 
 ## Java compilation problems
 
-### file not found
-
-Using dots instead of slashes in the Java source file path:
-
-```
-javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
-```
-
-```
-error: file not found: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
-Usage: javac <options> <source files>
-use --help for a list of possible options
-```
-
-Use normal paths, not using dots to separate folder names:
-
-```
-javac src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
-```
-
 ### Class names are only accepted if annotation processing is explicitly requested
 
 Using a class-name-like path:

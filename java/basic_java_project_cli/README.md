@@ -165,6 +165,28 @@ In particular, I discuss problems related to [compilation](#21-compilation-issue
 
 ### 2.1 Compilation issues
 
+#### 2.1.1 file not found
+
+Since class names can be specified using both slashes and dots, one may be tempted to also use dots in paths to Java source files:
+
+```shell
+javac src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+```
+
+Such a command will, however, result in an error of the form:
+
+```text
+error: file not found: src.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+```
+
+To solve this problem, do not use dots instead of slashes where a file path to a source file is expected:
+
+```shell
+javac src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+```
+
 ### 2.2 Execution issues
 
 ## License
