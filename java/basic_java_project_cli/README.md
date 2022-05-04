@@ -192,7 +192,7 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Mai
 
 Alternatively, ensure that you called the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler.
-In that case, ensure you drop any file extensions and you execute the class from the proper location:
+In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
@@ -224,9 +224,9 @@ cd src
 javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 ```
 
-Here, the Java compiler is supplied with class-name-like paths.
+Here, the Java compiler is supplied with class names.
 
-To solve the above problem, do not supply the Java compiler with a class-name-like path when a file path to a source file is expected.
+To solve the above problem, do not supply the Java compiler with a class name when a path to a source file is expected.
 In addition, ensure the `.java` file extension is present in paths to source files:
 
 ```shell
@@ -234,7 +234,8 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Mai
 ```
 
 Alternatively, ensure that you called the right tool.
-You may have wanted to call the Java interpreter instead of the Java compiler:
+You may have wanted to call the Java interpreter instead of the Java compiler
+In that case, ensure you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
@@ -257,7 +258,7 @@ cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
 javac Main.class
 ```
 
-To solve the above problem, do not provide the Java compiler with the path of a class file when a path path to a source file is expected.
+To solve the above problem, do not provide the Java compiler with the path of a class file when a path to a source file is expected.
 In addition, ensure the `.java` file extension (instead of `.class`) is used in paths to source files:
 
 ```shell
@@ -266,7 +267,7 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Mai
 
 Alternatively, ensure that you called the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler.
-In that case, note that the `.class` extension of the Java class file name has to be omitted to refer to the class:
+In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
