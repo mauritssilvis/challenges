@@ -13,7 +13,7 @@ Below, I give [background information](#1-background) on the project's [code](#1
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](../#21-java) of [Challenges > Java](..).
+I describe this programming language in the [Java section](https://github.com/mauritssilvis/challenges/tree/main/java#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project.
 
 #### 1.1.1 Code
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
 
 The used IntelliJ IDEA configuration is described in what follows.
 

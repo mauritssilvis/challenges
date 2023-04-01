@@ -9,14 +9,14 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
-This project builds on [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
+This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
 
 ## 1. Background
 
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](../#21-java) of [Challenges > Java](..).
+I describe this programming language in the [Java section](https://github.com/mauritssilvis/challenges/tree/main/java#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project.
 
 #### 1.1.1 Code
 
@@ -34,9 +34,9 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of [Challenges > Java](..)).
+This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
 
-The basic configuration is described in the [IntelliJ IDEA section](../basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
+The basic configuration is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -50,7 +50,7 @@ Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
-This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](../#23-maven) of [Challenges > Java](..)).
+This Java project is managed and built using [Maven](https://maven.apache.org/) (see, e.g., the [Maven section](https://github.com/mauritssilvis/challenges/tree/main/java#23-maven) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
 
 The Maven configuration of the current project is detailed in what follows.
 
@@ -509,7 +509,7 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable_jar_maven_intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](../executable_jar_maven_intellij).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](https://github.com/mauritssilvis/challenges/tree/main/java/executable_jar_maven_intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](https://github.com/mauritssilvis/challenges/tree/main/java/executable_jar_maven_intellij).
 
 ## License
 
