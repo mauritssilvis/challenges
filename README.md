@@ -4,10 +4,10 @@
 
 ## Introduction
 
-With this educational project, I provide solutions to common programming problems.
+With this educational project, I provide solutions to common programming challenges.
 
 Below, I first describe the [aims](#1-aims) I have with the current project.
-I then [list](#2-overview) the programming languages for which I solved programming challenges.
+I then [list](#2-overview) the programming languages for which I solved challenges.
 
 ## 1. Aims
 
