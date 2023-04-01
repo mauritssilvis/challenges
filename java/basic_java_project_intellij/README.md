@@ -6,11 +6,14 @@
 
 With this part of the [Challenges > Java](..) project, I provide the code and settings for a basic Java project, set up using IntelliJ IDEA.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
+Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
 
 ## 1. Background
 
 ### 1.1 Java
+
+This project makes use of Java.
+I describe this programming language in the [Java section](../#21-java) of [Challenges > Java](..).
 
 #### 1.1.1 Code
 

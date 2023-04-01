@@ -6,14 +6,17 @@
 
 With this part of the [Challenges > Java](..) project, I provide the code and settings for a basic Maven project, set up using IntelliJ IDEA.
 
-Below, I give an [overview](#1-background) of the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
-I also detail several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
+Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
+I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
 
 This project builds on [Setting up a basic Java project using IntelliJ IDEA](../basic_java_project_intellij).
 
 ## 1. Background
 
 ### 1.1 Java
+
+This project makes use of Java.
+I describe this programming language in the [Java section](../#21-java) of [Challenges > Java](..).
 
 #### 1.1.1 Code
 
@@ -100,7 +103,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.10.1 at the time of writing) is selected.
-Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (Java 17 at the time of writing) is selected, which requires the [Java Development Kit 17](https://jdk.java.net/17/).
+Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (Java 17 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK), [JDK 17](https://jdk.java.net/17/).
 
 #### 1.3.2 Build
 
@@ -115,8 +118,8 @@ Note that this JAR will [not be executable](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
-While setting up and building a Maven project, several problems may occur.
-I list several of such problems, here, including possible solutions.
+While setting up and building a Maven project, several issues may occur.
+I list several such issues, below, including possible solutions.
 Specifically, I discuss problems related to the [project object model](#21-project-object-model-issues), the [Maven resources plugin](#22-maven-resources-plugin-issues), the [Maven compiler plugin](#23-maven-compiler-plugin-issues) and the [Maven JAR plugin](#24-maven-jar-plugin-issues).
 
 ### 2.1 Project object model issues
