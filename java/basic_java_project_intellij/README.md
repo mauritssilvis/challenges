@@ -37,7 +37,7 @@ The used IntelliJ IDEA configuration is described in what follows.
 The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related configuration files.
 A few of these files are highlighted below.
 
-##### 1.2.1.1 Code styles
+##### Code styles
 
 First, to make cross-platform coding easier, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
 In addition, rulers are shown at 80 characters:
@@ -51,7 +51,7 @@ In addition, rulers are shown at 80 characters:
 </component>
 ```
 
-##### 1.2.1.2 Copyright
+##### Copyright
 
 Automatic copyright messages including the current year and an [SPDX license identifier](https://spdx.dev/ids/) for the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
 
@@ -64,12 +64,12 @@ Automatic copyright messages including the current year and an [SPDX license ide
 </component>
 ```
 
-##### 1.2.1.3 Inspection profiles
+##### Inspection profiles
 
 To learn about possible code improvements and optimizations, a code inspection profile in which all Java-17-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
 
-##### 1.2.1.4 Run configurations
+##### Run configurations
 
 This project comes with one run configuration for executing the `main` method of the `Main` class.
 

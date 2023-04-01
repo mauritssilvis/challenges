@@ -38,7 +38,7 @@ Additional details regarding the IntelliJ IDEA run configurations of the current
 
 #### 1.2.1 Configuration
 
-##### 1.2.1.1 Run configurations
+##### Run configurations
 
 This project comes with three run configurations.
 This first run configuration is called `Main` and directly executes the `main` method of the `Main` class.
@@ -53,7 +53,7 @@ Additional details regarding the Maven configuration of the current project are 
 
 #### 1.3.1 Configuration
 
-##### 1.3.1.1 Maven JAR plugin
+##### Maven JAR plugin
 
 To ensure that the JAR created by Maven is executable, the project object model of the current project, [pom.xml](pom.xml), contains the following configuration for the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/):
 
