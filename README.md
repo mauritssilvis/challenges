@@ -1,16 +1,19 @@
 # Challenges
 
-> A collection of programming challenges, solved using different programming languages
+> A collection of programming challenges
 
-## About
+## Introduction
 
-With this project, I provide solutions to common programming challenges in different programming languages.
+With this educational project, I provide solutions to common programming problems.
 
-## Aims
+Below, I first describe the [aims](#1-aims) I have with the current project.
+I then [list](#2-overview) the programming languages for which I solved programming challenges.
+
+## 1. Aims
 
 My aims with this project are to:
 
-- Extend my knowledge of algorithms, data structures and design patterns.
+- Extend my knowledge of different programming tools.
 - Apply this knowledge in solving practical programming problems.
 
 More generally, I strive to:
@@ -22,9 +25,9 @@ Finally, I aim to:
 
 - Showcase this experience and knowledge.
 
-## Status
+## 2. Overview
 
-Currently, solutions to common programming challenges are available in:
+Currently, solutions to common programming challenges are available for the following languages:
 
 - [Java](java)
 
