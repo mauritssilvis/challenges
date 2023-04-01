@@ -1,12 +1,12 @@
-# Challenges > Java
+# Java challenges
 
-> A collection of programming challenges, solved using Java
+> A collection of programming challenges solved using Java
 
 ## Introduction
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
-Below, I first give an [overview](#1-overview) of the challenges that I solved using Java so far.
+Below, I first give an [overview](#1-overview) of the challenges that I solved so far.
 I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ## 1. Overview
@@ -85,6 +85,6 @@ A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be f
 
 ## License
 
-Copyright © 2021, 2022 Maurits H. Silvis
+Copyright © 2021–2023 Maurits Silvis
 
 This source code package is subject to the terms and conditions defined in the GNU General Public License v3.0, which can be found in the file [LICENSE.md](../LICENSE.md), or later.
