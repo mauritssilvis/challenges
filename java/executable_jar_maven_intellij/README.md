@@ -1,4 +1,4 @@
-# Challenges > Java > Creating an executable JAR using Maven
+# Creating an executable JAR using Maven
 
 > A Maven project that creates an executable JAR
 

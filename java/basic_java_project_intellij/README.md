@@ -1,6 +1,6 @@
-# Challenges > Java > Setting up a basic Java project using IntelliJ IDEA
+# Setting up a basic Java project using IntelliJ IDEA
 
-> A basic Java project, set up using IntelliJ IDEA
+> A basic Java project set up using IntelliJ IDEA
 
 ## Introduction
 
