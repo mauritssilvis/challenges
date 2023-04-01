@@ -84,7 +84,7 @@ nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 
 #### 1.3.2 Build
 
-The executable JAR can be built using the command:
+The executable JAR can be built using the following command:
 
 ```shell
 mvn clean install
@@ -201,7 +201,7 @@ or a JavaFX application class must extend javafx.application.Application
 
 This error arises when the main class of your project does not contain a proper main method.
 
-To solve this problem, ensure that your project's main class contains a method with the signature:
+To solve this problem, ensure that your project's main class contains a method with the following signature:
 
 ```java
 public static void main(String[] args) {

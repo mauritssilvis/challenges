@@ -82,7 +82,7 @@ The encoding of the source files is set to UTF-8:
 
 ##### Maven compiler plugin
 
-Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as:
+Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is configured as follows:
 
 ```xml
 <project>
@@ -107,7 +107,7 @@ Additionally, the latest long-term support (LTS) version of Java (Java 20 at the
 
 #### 1.3.2 Build
 
-The project can be built using the command:
+The project can be built using the following command:
 
 ```shell
 mvn clean install
@@ -192,7 +192,7 @@ When executing Maven goals, one or more of the following errors may occur:
 
 To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the project object model, `pom.xml`.
 
-For the current project, these coordinates are given by:
+For the current project, these coordinates are defined by the following elements:
 
 ```xml
 <project>
@@ -230,7 +230,7 @@ For example, the Maven compiler plugin can be selected with the following `build
 
 #### 2.1.6 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing
 
-When using Maven plugins, a warning may be shown that is similar to:
+When using Maven plugins, a warning may be shown that is similar to the following:
 
 ```text
 [WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.intellij.maven.projects:basic:jar:1.0-SNAPSHOT
@@ -267,7 +267,7 @@ The [Maven resources plugin](http://maven.apache.org/plugins/maven-resources-plu
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
-The Maven resources plugin may throw a warning of the form:
+The Maven resources plugin may throw a warning of the following form:
 
 ```text
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -291,7 +291,7 @@ The [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plug
 
 #### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 
-Similar to the Maven resources plugin, the Maven compiler plugin may return:
+Similar to the Maven resources plugin, the Maven compiler plugin may return the following warning:
 
 ```text
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
@@ -450,7 +450,7 @@ source release 20 requires target release 20
 To solve these problems, ensure the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 
-Java 20 can be selected by extending the `properties` section of `pom.xml` with the lines:
+Java 20 can be selected by extending the `properties` section of `pom.xml` with the following lines:
 
 ```xml
 <project>
