@@ -46,8 +46,9 @@ C and C++ are, however, compiled into platform-specific machine code.
 Instead, Java compiles to platform-independent class files containing so-called bytecode.
 This bytecode can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
-To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of the latest long-term support (LTS) version of Java (Java 17 at the time of writing).
-To compile and build these projects, the [Java Development Kit 17](https://jdk.java.net/17/) is required.
+To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of the latest long-term support (LTS) version of Java (Java 20 at the time of writing).
+These projects can only be compiled and built with the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
+
 
 ### 2.2 IntelliJ IDEA
 

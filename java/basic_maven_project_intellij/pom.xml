@@ -33,9 +33,9 @@
                 <version>3.10.1</version>
                 <configuration>
                     <!-- Set the Java source version >= 7 -->
-                    <source>17</source>
+                    <source>20</source>
                     <!-- Set the Java target version >= 7 -->
-                    <target>17</target>
+                    <target>20</target>
                 </configuration>
             </plugin>
         </plugins>

@@ -93,8 +93,8 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
-          <source>17</source>
-          <target>17</target>
+          <source>20</source>
+          <target>20</target>
         </configuration>
       </plugin>
     </plugins>
@@ -103,7 +103,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.10.1 at the time of writing) is selected.
-Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (Java 17 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK), [JDK 17](https://jdk.java.net/17/).
+Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK), (see, e.g., https://adoptium.net/temurin/releases/).
 
 #### 1.3.2 Build
 
@@ -327,12 +327,12 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
 
-The source version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line:
+The source version can be set to Java 20 by extending the `properties` section of `pom.xml` with the line:
 
 ```xml
 <project>
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.source>20</maven.compiler.source>
   </properties>
 </project>
 ```
@@ -364,7 +364,7 @@ Alternatively, configure both the Java source and Maven compiler plugin versions
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
-          <source>17</source>
+          <source>20</source>
         </configuration>
       </plugin>
     </plugins>
@@ -390,12 +390,12 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
 
-The target version can be set to Java 17 by extending the `properties` section of `pom.xml` with the line:
+The target version can be set to Java 20 by extending the `properties` section of `pom.xml` with the line:
 
 ```xml
 <project>
   <properties>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.target>20</maven.compiler.target>
   </properties>
 </project>
 ```
@@ -427,7 +427,7 @@ Alternatively, configure both the Java target and Maven compiler plugin versions
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
-          <target>17</target>
+          <target>20</target>
         </configuration>
       </plugin>
     </plugins>
@@ -435,7 +435,7 @@ Alternatively, configure both the Java target and Maven compiler plugin versions
 </project>
 ```
 
-#### 2.3.4 Failure executing javac, but could not parse the error / Source release 17 requires target release 17
+#### 2.3.4 Failure executing javac, but could not parse the error / Source release 20 requires target release 20
 
 The Maven compiler plugin may encounter either of the following errors while compiling:
 
@@ -444,19 +444,19 @@ The Maven compiler plugin may encounter either of the following errors while com
 ```
 
 ```text
-source release 17 requires target release 17
+source release 20 requires target release 20
 ```
 
 To solve this problem, ensure that both the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 
-Java 17 can be selected by extending the `properties` section of `pom.xml` with the lines:
+Java 20 can be selected by extending the `properties` section of `pom.xml` with the lines:
 
 ```xml
 <project>
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>20</maven.compiler.source>
+    <maven.compiler.target>20</maven.compiler.target>
   </properties>
 </project>
 ```
@@ -488,8 +488,8 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
-          <source>17</source>
-          <target>17</target>
+          <source>20</source>
+          <target>20</target>
         </configuration>
       </plugin>
     </plugins>
