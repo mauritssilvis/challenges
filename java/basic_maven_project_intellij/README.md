@@ -4,10 +4,10 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Maven project, set up using IntelliJ IDEA.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Maven project set up using IntelliJ IDEA.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
-I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, and I provide possible solutions to these issues.
+I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
 
 This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
 
@@ -58,7 +58,7 @@ The Maven configuration of the current project is detailed in what follows.
 
 ##### Project coordinates
 
-In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set to:
+In the project object model of the current project, [pom.xml](pom.xml), the so-called project coordinates are set as follows:
 
 ```xml
 <project>
@@ -70,7 +70,7 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 
 ##### Encoding
 
-The encoding of the source files is set to UTF-8 using:
+The encoding of the source files is set to UTF-8:
 
 ```xml
 <project>
@@ -103,7 +103,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) is selected.
-Moreover, to be up-to-date with recent developments, the latest long-term support (LTS) version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK), (see, e.g., https://adoptium.net/temurin/releases/).
+Additionally, the latest long-term support (LTS) version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
 
 #### 1.3.2 Build
 
@@ -113,18 +113,18 @@ The project can be built using the command:
 mvn clean install
 ```
 
-Execution of this command will compile the above-mentioned Java class file, package it as a JAR and make this JAR available in your local Maven repository.
+Execution of this command will compile the above-mentioned Java class file, package it as a JAR file and make this JAR available in your local Maven repository.
 Note that this JAR will [not be executable](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
 While setting up and building a Maven project, several issues may occur.
-I list several such issues, below, including possible solutions.
+I list several such issues below, including possible solutions.
 Specifically, I discuss problems related to the [project object model](#21-project-object-model-issues), the [Maven resources plugin](#22-maven-resources-plugin-issues), the [Maven compiler plugin](#23-maven-compiler-plugin-issues) and the [Maven JAR plugin](#24-maven-jar-plugin-issues).
 
 ### 2.1 Project object model issues
 
-Several issues may arise in relation to the [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html).
+Several issues may arise concerning the [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html).
 
 #### 2.1.1 The goal you specified requires a project to execute but there is no POM in this directory
 
@@ -134,7 +134,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] The goal you specified requires a project to execute but there is no POM in this directory. Please verify you invoked Maven from the correct directory.
 ```
 
-To solve this problem, ensure the top-level directory of the project contains a project object model file called `pom.xml` and ensure Maven is run in this directory.
+To solve this problem, ensure the project's top-level directory contains a project object model file called `pom.xml` and that Maven is run in this directory.
 
 #### 2.1.2 Non-readable POM: input contained no data
 
@@ -241,9 +241,9 @@ When using Maven plugins, a warning may be shown that is similar to:
 [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
 ```
 
-To prevent this warning as well as potential future problems with your project, select the latest version of the Maven plugin in the project object model, `pom.xml`.
+To prevent this warning and potential future problems with your project, select the latest Maven plugin version in the project object model, `pom.xml`.
 
-For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with:
+For example, for the Maven compiler plugin, extend the `build` section of `pom.xml` with the following elements:
 
 ```xml
 <project>
@@ -263,7 +263,7 @@ Here, the latest version of the [Maven compiler plugin](https://maven.apache.org
 
 ### 2.2 Maven resources plugin issues
 
-At least one issue may be reported by the [Maven resources plugin](http://maven.apache.org/plugins/maven-resources-plugin/).
+The [Maven resources plugin](http://maven.apache.org/plugins/maven-resources-plugin/) may report at least one issue.
 
 #### 2.2.1 Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 
@@ -287,7 +287,7 @@ To set the file encoding to UTF-8, include the following line in the `properties
 
 ### 2.3 Maven compiler plugin issues
 
-Several issues may be reported by the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).
+The [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) may report several issues.
 
 #### 2.3.1 File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 
@@ -327,7 +327,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
 
-The source version can be set to Java 20 by extending the `properties` section of `pom.xml` with the line:
+The source version can be set to Java 20 by extending the `properties` section of `pom.xml` with the following line:
 
 ```xml
 <project>
@@ -390,7 +390,7 @@ The Maven compiler plugin may halt with one of the following errors:
 
 To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
 
-The target version can be set to Java 20 by extending the `properties` section of `pom.xml` with the line:
+The target version can be set to Java 20 by extending the `properties` section of `pom.xml` with the following line:
 
 ```xml
 <project>
@@ -447,7 +447,7 @@ The Maven compiler plugin may encounter either of the following errors while com
 source release 20 requires target release 20
 ```
 
-To solve this problem, ensure that both the Java source and target versions are set in the project object model, `pom.xml`.
+To solve this problem, ensure the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 
 Java 20 can be selected by extending the `properties` section of `pom.xml` with the lines:
@@ -499,7 +499,7 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 
 ### 2.4 Maven JAR plugin issues
 
-At least one issue may arise in relation to the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
+At least one issue may arise with the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
 #### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 
