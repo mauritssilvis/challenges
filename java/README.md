@@ -54,7 +54,7 @@ These projects require the installation of the Java Development Kit (JDK) 20 or 
 ### 2.2 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
-This IDE supports Java and several other Java virtual machine languages and can be extended with plugins to retrieve support for other programming languages.
+This IDE supports Java and several other JVM languages and can be extended with plugins to retrieve support for other programming languages.
 IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
