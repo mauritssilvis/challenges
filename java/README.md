@@ -6,21 +6,25 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
-Below, I first give an [overview](#1-overview) of the challenges that I solved using Java so far.
+Below, I first give an [overview](#1-overview) of the challenges that I solved so far.
 I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
 
 ## 1. Overview
 
-Currently, Java solutions are available to challenges in the following categories.
-Note that I solved all these challenges using [IntelliJ IDEA](#22-intellij-idea).
+Currently, Java solutions are available to the following challenges, categorized according to the tools I used.
 
-### General
+### 1.1 IntelliJ IDEA projects
+
+I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
+For these challenges, I either did not make use of a build tool (general) or I made use of Maven.
+
+#### 1.1.1 General
 
 #### Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
 
-### Maven
+### 1.1.2 Maven
 
 #### Projects
 
