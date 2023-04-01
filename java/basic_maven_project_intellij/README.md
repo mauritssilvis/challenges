@@ -325,7 +325,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Source option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java source version in the project object model, `pom.xml`.
+To solve these problems, explicitly set the Java source version in the project object model, `pom.xml`.
 
 The source version can be set to Java 20 by extending the `properties` section of `pom.xml` with the following line:
 
@@ -388,7 +388,7 @@ The Maven compiler plugin may halt with one of the following errors:
 [ERROR] Target option 6 is no longer supported. Use 7 or later.
 ```
 
-To solve this problem, explicitly set the Java target version in the project object model, `pom.xml`.
+To solve these problems, explicitly set the Java target version in the project object model, `pom.xml`.
 
 The target version can be set to Java 20 by extending the `properties` section of `pom.xml` with the following line:
 
@@ -447,7 +447,7 @@ The Maven compiler plugin may encounter either of the following errors while com
 source release 20 requires target release 20
 ```
 
-To solve this problem, ensure the Java source and target versions are set in the project object model, `pom.xml`.
+To solve these problems, ensure the Java source and target versions are set in the project object model, `pom.xml`.
 Additionally, ensure that the target version is not smaller than the source version.
 
 Java 20 can be selected by extending the `properties` section of `pom.xml` with the lines:
