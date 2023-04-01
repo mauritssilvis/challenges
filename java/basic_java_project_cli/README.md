@@ -19,7 +19,7 @@ I describe this programming language in the [Java section](../#21-java) of [Chal
 
 #### 1.1.1 Code
 
-For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`. 
+For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`.
 This class contains a `main` method outputting a well-known message:
 
 ```java
