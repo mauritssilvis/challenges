@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using [IntelliJ IDEA](https://www.jetbrains.com/idea/) (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
+This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
 
 The used IntelliJ IDEA configuration is described in what follows.
 
