@@ -15,9 +15,6 @@ This project builds on [Setting up a basic Java project using IntelliJ IDEA](htt
 
 ### 1.1 Java
 
-This project makes use of Java.
-I describe this programming language in the [Java section](https://github.com/mauritssilvis/challenges/tree/main/java#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project.
-
 #### 1.1.1 Code
 
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
@@ -34,9 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
-
-The basic configuration is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
