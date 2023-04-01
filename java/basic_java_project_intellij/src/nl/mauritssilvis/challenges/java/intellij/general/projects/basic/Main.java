@@ -1,9 +1,9 @@
 /*
- * Copyright © 2021 Maurits H. Silvis
+ * Copyright © 2021, 2023 Maurits Silvis
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package nl.mauritssilvis.challenges.java.intellij.java.projects.basic;
+package nl.mauritssilvis.challenges.java.intellij.general.projects.basic;
 
 public class Main {
     public static void main(String[] args) {

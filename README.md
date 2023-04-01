@@ -1,16 +1,19 @@
 # Challenges
 
-> A collection of programming challenges, solved using different programming languages
+> A collection of programming challenges
 
-## About
+## Introduction
 
-With this project, I provide solutions to common programming challenges in different programming languages.
+With this educational project, I provide solutions to common programming challenges.
 
-## Aims
+Below, I first describe the [aims](#1-aims) I have with the current project.
+I then [list](#2-overview) the programming languages for which I solved several challenges.
+
+## 1. Aims
 
 My aims with this project are to:
 
-- Extend my knowledge of algorithms, data structures and design patterns.
+- Extend my knowledge of different programming tools.
 - Apply this knowledge in solving practical programming problems.
 
 More generally, I strive to:
@@ -22,14 +25,14 @@ Finally, I aim to:
 
 - Showcase this experience and knowledge.
 
-## Status
+## 2. Overview
 
-Currently, solutions to common programming challenges are available in:
+Currently, solutions to common programming challenges are available for the following languages:
 
 - [Java](java)
 
 ## License
 
-Copyright © 2021, 2022 Maurits H. Silvis
+Copyright © 2021–2023 Maurits Silvis
 
 This source code package is subject to the terms and conditions defined in the GNU General Public License v3.0, which can be found in the file [LICENSE.md](LICENSE.md), or later.
