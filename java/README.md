@@ -6,12 +6,12 @@
 
 With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
 
-Below, I first give an [overview](#1-overview) of the challenges that I solved so far.
+Below, I first give an [overview](#1-overview) of the challenges that I have solved so far.
 I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ## 1. Overview
 
-Currently, Java solutions are available to the following challenges, categorized according to the tools I used.
+Currently, Java solutions are available for the following challenges, categorized according to the tools I used.
 
 ### 1.1 Command-line projects
 
@@ -28,7 +28,8 @@ The challenges listed below were solved without a build tool.
 ### 1.2 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
-For these challenges, I either did not make use of a build tool (general) or I made use of Maven.
+For some challenges, I did not use a build tool ([general](#121-general)).
+For others, I used [Maven](#122-maven).
 
 #### 1.2.1 General
 
@@ -52,14 +53,15 @@ In this section, I provide some background information on [Java](#21-java) and t
 
 ### 2.1 Java
 
-[Java](https://www.oracle.com/java/) is an object-oriented programming language with a syntax similar to that of C and C++.
+[Java](https://www.oracle.com/java/) is an object-oriented programming language with a syntax similar to C and C++.
 As is the case for C and C++ code, Java code has to be compiled before it can be executed.
 C and C++ are, however, compiled into platform-specific machine code.
 Instead, Java compiles to platform-independent class files containing so-called bytecode.
-This bytecode can then be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
+This bytecode can be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
-To be up-to-date with recent developments, most of the above-mentioned projects are configured to make use of the latest long-term support (LTS) version of Java (Java 17 at the time of writing).
-To compile and build these projects, the [Java Development Kit 17](https://jdk.java.net/17/) is required.
+Most of the above-mentioned projects are configured to use the latest long-term support (LTS) version of Java (Java 20 at the time of writing).
+These projects require the installation of the Java Development Kit (JDK) 20 or later (see, e.g., https://adoptium.net/temurin/releases/).
+
 
 ### 2.2 Bash
 
@@ -68,8 +70,8 @@ TODO
 ### 2.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
-This IDE supports Java and several other Java virtual machine languages, and can be extended with plugins to retrieve support for other programming languages.
-IntelliJ IDEA comes with a [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html) and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
+This IDE supports Java and several other JVM languages and can be extended with plugins to retrieve support for other programming languages.
+IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
 The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij).
@@ -77,7 +79,7 @@ The basic IntelliJ IDEA configuration used in the above-mentioned projects is de
 ### 2.4 Maven
 
 [Maven](https://maven.apache.org/) is a build tool that can be used to manage and build projects written in Java and other programming languages.
-The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to the use of Maven.
+The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to using Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
 The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](basic_maven_project_intellij#13-maven) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
