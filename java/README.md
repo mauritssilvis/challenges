@@ -20,17 +20,17 @@ For these challenges, I either did not make use of a build tool (general) or I m
 
 #### 1.1.1 General
 
-#### Projects
+##### Projects
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
 
-### 1.1.2 Maven
+#### 1.1.2 Maven
 
-#### Projects
+##### Projects
 
 * [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
 
-#### JARs
+##### JARs
 
 * [Creating an executable JAR using Maven](executable_jar_maven_intellij)
 
