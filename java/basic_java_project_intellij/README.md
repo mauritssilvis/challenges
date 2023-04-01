@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Java project, set up using IntelliJ IDEA.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Java project set up using IntelliJ IDEA.
 
 Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
 
@@ -42,7 +42,7 @@ A few of these files are highlighted below.
 
 ##### Code styles
 
-First, to make cross-platform coding easier, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml).
+First, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml), which facilitates cross-platform coding.
 In addition, rulers are shown at 80 characters:
 
 ```xml
@@ -56,7 +56,7 @@ In addition, rulers are shown at 80 characters:
 
 ##### Copyright
 
-Automatic copyright messages including the current year and an [SPDX license identifier](https://spdx.dev/ids/) for the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
+Automatic copyright messages, including the current year and an [SPDX license identifier](https://spdx.dev/ids/) for the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), are configured in the file [GNU_GPL_v3.xml](.idea/copyright/GNU_GPL_v3.xml):
 
 ```xml
 <component name="CopyrightManager">
@@ -69,7 +69,8 @@ Automatic copyright messages including the current year and an [SPDX license ide
 
 ##### Inspection profiles
 
-To learn about possible code improvements and optimizations, a code inspection profile in which all Java-20-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
+A code inspection profile in which all Java-20-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
+This profile facilitates learning about possible code improvements and optimizations.
 A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
 
 ##### Run configurations
