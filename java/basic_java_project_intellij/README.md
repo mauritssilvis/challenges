@@ -58,7 +58,7 @@ Automatic copyright messages including the current year and an [SPDX license ide
 ```xml
 <component name="CopyrightManager">
   <copyright>
-    <option name="notice" value="Copyright © &amp;#36;today.year Maurits H. Silvis&#10;SPDX-License-Identifier: GPL-3.0-or-later" />
+    <option name="notice" value="Copyright © &amp;#36;today.year Maurits Silvis&#10;SPDX-License-Identifier: GPL-3.0-or-later" />
     <option name="myName" value="GNU GPL v3" />
   </copyright>
 </component>
@@ -75,6 +75,6 @@ This project comes with one run configuration for executing the `main` method of
 
 ## License
 
-Copyright © 2021 Maurits H. Silvis
+Copyright © 2021, 2023 Maurits Silvis
 
 This source code package is subject to the terms and conditions defined in the GNU General Public License v3.0, which can be found in the file [LICENSE.md](../../LICENSE.md), or later.
