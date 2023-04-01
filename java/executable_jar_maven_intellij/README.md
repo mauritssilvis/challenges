@@ -91,7 +91,7 @@ nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
 The executable JAR can be built using the command:
 
 ```shell
-$ mvn clean install
+mvn clean install
 ```
 
 ## 2. Issues and solutions

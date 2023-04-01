@@ -107,7 +107,7 @@ Moreover, to be up-to-date with recent developments, the latest long-term suppor
 The project can be built using the command:
 
 ```shell
-$ mvn clean install
+mvn clean install
 ```
 
 Execution of this command will compile the above-mentioned Java class file, package it as a JAR and make this JAR available in your local Maven repository.
