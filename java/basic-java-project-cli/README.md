@@ -347,6 +347,6 @@ java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
 
 ## License
 
-Copyright © 2021, 2022 Maurits H. Silvis
+Copyright © 2021–2023 Maurits Silvis
 
 This source code package is subject to the terms and conditions defined in the GNU General Public License v3.0, which can be found in the file [LICENSE.md](../../LICENSE.md), or later.
