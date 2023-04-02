@@ -1,6 +1,6 @@
-# Challenges > Java > Setting up a basic Java project using the command line
+# Setting up a basic Java project using the command line
 
-> A basic Java project, set up using the command line
+> A basic Java project set up using the command line
 
 ## Introduction
 
