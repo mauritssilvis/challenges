@@ -9,7 +9,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
 
-This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
+This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij).
 
 ## 1. Background
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -504,7 +504,7 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](https://github.com/mauritssilvis/challenges/tree/main/java/executable_jar_maven_intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](https://github.com/mauritssilvis/challenges/tree/main/java/executable_jar_maven_intellij).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](https://github.com/mauritssilvis/challenges/tree/main/java/executable-jar-maven-intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](https://github.com/mauritssilvis/challenges/tree/main/java/executable-jar-maven-intellij).
 
 ## License
 
