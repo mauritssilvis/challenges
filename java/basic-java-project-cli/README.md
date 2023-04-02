@@ -37,7 +37,7 @@ public class Main {
 The directory structure of this project is as follows:
 
 ```text
-basic_java_project_cli
+basic-java-project-cli
 ├─ out
 │  └─ nl
 │      └─ mauritssilvis
