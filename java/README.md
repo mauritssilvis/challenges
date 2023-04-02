@@ -33,7 +33,7 @@ For others, I made use of [Maven](#112-maven).
 
 ##### JARs
 
-* [Creating an executable JAR using Maven](executable_jar_maven_intellij)
+* [Creating an executable JAR using Maven](executable-jar-maven-intellij)
 
 ## 2. Background
 
