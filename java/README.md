@@ -35,17 +35,17 @@ For others, I used [Maven](#122-maven).
 
 ##### Projects
 
-* [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij)
+* [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij)
 
 #### 1.2.2 Maven
 
 ##### Projects
 
-* [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij)
+* [Setting up a basic Maven project using IntelliJ IDEA](basic-maven-project-intellij)
 
 ##### JARs
 
-* [Creating an executable JAR using Maven](executable_jar_maven_intellij)
+* [Creating an executable JAR using Maven](executable-jar-maven-intellij)
 
 ## 2. Background
 
@@ -74,7 +74,7 @@ This IDE supports Java and several other JVM languages and can be extended with 
 IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
-The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](basic_java_project_intellij).
+The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic-java-project-intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij).
 
 ### 2.4 Maven
 
@@ -82,7 +82,7 @@ The basic IntelliJ IDEA configuration used in the above-mentioned projects is de
 The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to using Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
-The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](basic_maven_project_intellij#13-maven) of [Setting up a basic Maven project using IntelliJ IDEA](basic_maven_project_intellij).
+The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](basic-maven-project-intellij#13-maven) of [Setting up a basic Maven project using IntelliJ IDEA](basic-maven-project-intellij).
 A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
 
 ## License
