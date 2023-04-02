@@ -9,7 +9,7 @@ With this part of the [Challenges](https://github.com/mauritssilvis/challenges) 
 Below, I give [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, for which I provide possible solutions.
 
-This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij) and [Setting up a basic Maven project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_maven_project_intellij).
+This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij) and [Setting up a basic Maven project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_maven_project_intellij).
 
 ## 1. Background
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic_java_project_intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
