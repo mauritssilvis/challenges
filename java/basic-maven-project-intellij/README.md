@@ -1,10 +1,10 @@
-# Setting up a basic Maven project using IntelliJ IDEA
+# Setting up a Java project using Maven and IntelliJ IDEA
 
-> A basic Maven project set up using IntelliJ IDEA
+> A Java project set up using Maven and IntelliJ IDEA
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Maven project set up using IntelliJ IDEA.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a Java project set up using Maven and IntelliJ IDEA.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
