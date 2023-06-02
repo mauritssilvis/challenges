@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project, I provide the code and settings for a Java project set up using Maven and IntelliJ IDEA.
+With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project set up using Maven and IntelliJ IDEA.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
@@ -45,7 +45,7 @@ Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
-This Java project is managed and built using Maven (see, e.g., the [Maven section](../#23-maven) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project).
+This Java project is managed and built using Maven (see, e.g., the [Maven section](../#23-maven) of the [Challenges](../..) > [Java](..) project).
 
 The Maven configuration of the current project is detailed in what follows.
 

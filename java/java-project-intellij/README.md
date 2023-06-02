@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
+With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
 
 Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
 
@@ -13,7 +13,7 @@ Below, I give [background information](#1-background) on the project's [code](#1
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](../#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project.
+I describe this programming language in the [Java section](../#21-java) of the [Challenges](../..) > [Java](..) project.
 
 #### 1.1.1 Code
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project).
+This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of the [Challenges](../..) > [Java](..) project).
 
 The used IntelliJ IDEA configuration is described in what follows.
 
