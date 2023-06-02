@@ -20,7 +20,7 @@ I describe this programming language in the [Java section](https://github.com/ma
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
-package nl.mauritssilvis.challenges.java.intellij.general.projects.basic;
+package nl.mauritssilvis.challenges.java.intellij.manual.projects.basic;
 
 public class Main {
   public static void main(String[] args) {
