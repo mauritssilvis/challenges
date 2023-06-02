@@ -10,14 +10,15 @@ Below, I give detailed [background information](#1-background) on the project's 
 In addition, I list several [issues](#2-issues-and-solutions) that can occur when setting up a Java project.
 I also describe solutions to these issues.
 
+Listed commands can, for example, be executed using Bash.
+I describe this command-line interface in the [Bash section](../#22-bash) of the [Challenges](../..) > [Java](..) project.
+
 ## 1. Background
 
 ### 1.1 Java
 
 This project makes use of Java.
 I describe this programming language in the [Java section](../#21-java) of the [Challenges](../..) > [Java](..) project.
-The commands in this section can, for example, be executed using Bash.
-I describe this command-line interface in the [Bash section](../#22-bash) of the [Challenges](../..) > [Java](..) project.
 
 #### 1.1.1 Code
 
