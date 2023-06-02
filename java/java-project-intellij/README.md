@@ -1,10 +1,10 @@
-# Setting up a basic Java project using IntelliJ IDEA
+# Setting up a Java project using IntelliJ IDEA
 
-> A basic Java project set up using IntelliJ IDEA
+> A Java project set up using IntelliJ IDEA
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Java project set up using IntelliJ IDEA.
+With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
 
 Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
 
@@ -13,14 +13,14 @@ Below, I give [background information](#1-background) on the project's [code](#1
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](https://github.com/mauritssilvis/challenges/tree/main/java#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project.
+I describe this programming language in the [Java section](../#21-java) of the [Challenges](../..) > [Java](..) project.
 
 #### 1.1.1 Code
 
 For demonstrative purposes, the current project contains only a single Java class called `Main`, which consists of a `main` method outputting a well-known message:
 
 ```java
-package nl.mauritssilvis.challenges.java.intellij.general.projects.basic;
+package nl.mauritssilvis.challenges.java.intellij.manual.projects.basic;
 
 public class Main {
   public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java#23-intellij-idea) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
+This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of the [Challenges](../..) > [Java](..) project).
 
 The used IntelliJ IDEA configuration is described in what follows.
 
@@ -71,7 +71,7 @@ Automatic copyright messages, including the current year and an [SPDX license id
 
 A code inspection profile in which all Java-20-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 This profile facilitates learning about possible code improvements and optimizations.
-A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
+A profile in which only the default inspections are selected is stored in [Default.xml](.idea/inspectionProfiles/Default.xml).
 
 ##### Run configurations
 
