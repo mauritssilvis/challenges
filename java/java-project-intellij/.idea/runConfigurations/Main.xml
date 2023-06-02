@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="nl.mauritssilvis.challenges.java.intellij.manual.projects.basic.Main" />
-    <module name="basic-java-project-intellij" />
+    <module name="java-project-intellij" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="nl.mauritssilvis.challenges.java.intellij.manual.projects.basic.*" />
