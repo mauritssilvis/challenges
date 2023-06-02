@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) project, I provide solutions to common programming challenges in Java.
+With this part of the [Challenges](..) project, I provide solutions to common programming challenges in Java.
 
 Below, I first give an [overview](#1-overview) of the challenges that I have solved so far.
 I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
