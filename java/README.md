@@ -15,11 +15,7 @@ Currently, Java solutions are available for the following challenges, categorize
 
 ### 1.1 Command-line projects
 
-I solved the challenges in this section using the [command line](#22-bash).
-
-#### 1.1.1 Manual
-
-The challenges listed below were solved without a build tool.
+I solved the challenges in this section using the [command line](#22-bash) but without a build tool.
 
 * [Setting up a Java project using the command line](java-project-cli)
 
