@@ -23,7 +23,7 @@ For others, I made use of [Maven](#112-maven).
 
 ##### Projects
 
-* [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij)
+* [Setting up a Java project using IntelliJ IDEA](basic-java-project-intellij)
 
 #### 1.1.2 Maven
 
@@ -58,7 +58,7 @@ This IDE supports Java and several other JVM languages and can be extended with 
 IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
-The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic-java-project-intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij).
+The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](basic-java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](basic-java-project-intellij).
 
 ### 2.3 Maven
 
