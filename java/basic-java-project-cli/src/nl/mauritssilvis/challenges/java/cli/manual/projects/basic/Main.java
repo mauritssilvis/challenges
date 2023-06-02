@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package nl.mauritssilvis.challenges.java.cli.general.projects.basic;
+package nl.mauritssilvis.challenges.java.cli.manual.projects.basic;
 
 public class Main {
     public static void main(String[] args) {

@@ -19,11 +19,11 @@ I describe this programming language in the [Java section](https://github.com/ma
 
 #### 1.1.1 Code
 
-For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`.
+For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`.
 This class contains a `main` method outputting a well-known message:
 
 ```java
-package nl.mauritssilvis.challenges.java.cli.general.projects.basic;
+package nl.mauritssilvis.challenges.java.cli.manual.projects.basic;
 
 public class Main {
   public static void main(String[] args) {
@@ -44,7 +44,7 @@ basic-java-project-cli
 │          └─ challenges
 │              └─ java
 │                  └─ cli
-│                      └─ general
+│                      └─ manual
 │                          └─ projects
 │                              └─ basic
 │                                 └─ Main.class
@@ -55,7 +55,7 @@ basic-java-project-cli
 │          └─ challenges
 │              └─ java
 │                  └─ cli
-│                      └─ general
+│                      └─ manual
 │                          └─ projects
 │                              └─ basic
 │                                 └─ Main.java
@@ -64,7 +64,7 @@ basic-java-project-cli
 └─ README.md
 ```
 
-Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.general.projects.basic`.
+Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.manual.projects.basic`.
 The `out` folder, which is created upon [compilation](#113-compilation), has the same structure as the `src` folder, but is there to contain the compiled bytecode instead of source code.
 
 #### 1.1.3 Compilation
@@ -72,7 +72,7 @@ The `out` folder, which is created upon [compilation](#113-compilation), has the
 The most basic way to compile the Java source code in `Main.java` consists in navigating to the directory of this file and calling the Java compiler:
 
 ```shell
-cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 javac Main.java
 ```
 
@@ -83,7 +83,7 @@ Moreover, Java source and class files are generally stored in different location
 Therefore, it is more convenient to compile the source file from the project root folder with a `-d` option that specifies the output directory:
 
 ```shell
-javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
 #### 1.1.4 Execution
@@ -94,7 +94,7 @@ A convenient way to execute this class is given by:
 
 ```shell
 cd out
-java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+java nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
 As is explained below, the `.class` extension of the class file should not be included.
@@ -103,14 +103,14 @@ Equivalently, one could execute the following commands:
 
 ```shell
 cd out
-java nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 Rather than manually navigating to a folder containing class files, it is more common to execute a Java class relative to a so-called class path.
 For the current project, the following command involving the `-cp` option executes the previously compiled class from the class path `out`:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 All above commands will result in the following output:
@@ -126,7 +126,7 @@ Moreover, for classes that are part of a package, the supplied class name should
 For the current project, this fully qualified class name is:
 
 ```text
-nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 As the above shows, fully qualified class names can be provided to the Java interpreter using both slashes and dots.
@@ -143,14 +143,14 @@ Since Java 11, programs consisting of only a single source file can be executed 
 For the current project, the following command directly executes the source file `Main.java` from its containing folder:
 
 ```shell
-cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 java Main.java
 ```
 
 Alternatively, direct execution from the main project folder is possible:
 
 ```bash
-java src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+java src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
 As expected, the output of the above commands is:
@@ -173,13 +173,13 @@ Since the Java interpreter accepts class names with slashes and dots, one may be
 
 ```shell
 cd src
-javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+javac nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main.java
 ```
 
 Such commands will, however, result in an error of the form:
 
 ```text
-error: file not found: nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main.java
+error: file not found: nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main.java
 Usage: javac <options> <source files>
 use --help for a list of possible options
 ```
@@ -187,7 +187,7 @@ use --help for a list of possible options
 To solve this problem, use slashes when a file path to a source file is expected:
 
 ```shell
-javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
 Alternatively, ensure that you called the right tool.
@@ -195,7 +195,7 @@ You may have wanted to call the Java interpreter instead of the Java compiler.
 In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 #### 2.1.2 Class names are only accepted if annotation processing is explicitly requested
@@ -208,20 +208,20 @@ error: Class names, 'Main', are only accepted if annotation processing is explic
 ```
 
 ```text
-error: Class names, 'nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main', are only accepted if annotation processing is explicitly requested
+error: Class names, 'nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main', are only accepted if annotation processing is explicitly requested
 1 error
 ```
 
 Such errors respectively result from using the Java compiler in commands of the form:
 
 ```shell
-cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 javac Main
 ```
 
 ```shell
 cd src
-javac nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+javac nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 Here, the Java compiler is supplied with class names.
@@ -230,7 +230,7 @@ To solve the above problem, do not supply the Java compiler with a class name wh
 In addition, ensure the `.java` file extension is present in paths to source files:
 
 ```shell
-javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
 Alternatively, ensure that you called the right tool.
@@ -238,7 +238,7 @@ You may have wanted to call the Java interpreter instead of the Java compiler
 In that case, ensure you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 #### 2.1.3 invalid flag
@@ -254,7 +254,7 @@ use --help for a list of possible options
 Such an error may result from calling the Java compiler on a Java class file:
 
 ```shell
-cd src/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 javac Main.class
 ```
 
@@ -262,7 +262,7 @@ To solve the above problem, do not provide the Java compiler with the path of a 
 In addition, ensure the `.java` file extension (instead of `.class`) is used in paths to source files:
 
 ```shell
-javac -d out src/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main.java
+javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
 Alternatively, ensure that you called the right tool.
@@ -270,7 +270,7 @@ You may have wanted to call the Java interpreter instead of the Java compiler.
 In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 ### 2.2 Execution issues
@@ -287,7 +287,7 @@ Caused by: java.lang.ClassNotFoundException: Main.class
 Such errors result from calling the Java interpreter on class files:
 
 ```shell
-cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 java Main.class
 ```
 
@@ -297,13 +297,13 @@ For the current project, these two conditions are fulfilled for the following co
 
 ```shell
 cd out
-java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+java nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
 As noted before, a more common way of writing this command is given by:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 #### 2.2.2 Could not find or load main class / java.lang.NoClassDefFoundError
@@ -312,23 +312,23 @@ When trying to execute Java programs, you may encounter errors of the following 
 
 ```text
 Error: Could not find or load main class Main
-Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main (wrong name: Main)
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main (wrong name: Main)
 ```
 
 ```text
-Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
-Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main (wrong name: out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main)
+Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main (wrong name: out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main)
 ```
 
 Such errors result from calling the Java interpreter using commands of the form:
 
 ```shell
-cd out/nl/mauritssilvis/challenges/java/cli/general/projects/basic
+cd out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 java Main
 ```
 
 ```shell
-java out/nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+java out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
 To solve the above problem, ensure that classes that belong to a package are executed from a folder that contains a directory structure corresponding to the package name.
@@ -336,13 +336,13 @@ For the current project, the following command could be used:
 
 ```shell
 cd out
-java nl/mauritssilvis/challenges/java/cli/general/projects/basic/Main
+java nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
 As noted before, a more common way of writing this command is given by:
 
 ```shell
-java -cp out nl.mauritssilvis.challenges.java.cli.general.projects.basic.Main
+java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
 ## License
