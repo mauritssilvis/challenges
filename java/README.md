@@ -21,8 +21,6 @@ I solved the challenges in this section using the [command line](#22-bash).
 
 The challenges listed below were solved without a build tool.
 
-##### Projects
-
 * [Setting up a Java project using the command line](java-project-cli)
 
 ### 1.2 IntelliJ IDEA projects
@@ -33,18 +31,11 @@ For others, I used [Maven](#122-maven).
 
 #### 1.2.1 General
 
-##### Projects
-
 * [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij)
 
 #### 1.2.2 Maven
 
-##### Projects
-
 * [Setting up a basic Maven project using IntelliJ IDEA](basic-maven-project-intellij)
-
-##### JARs
-
 * [Creating an executable JAR using Maven](executable-jar-maven-intellij)
 
 ## 2. Background
