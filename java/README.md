@@ -17,7 +17,7 @@ Currently, Java solutions are available for the following challenges, categorize
 
 I solved the challenges in this section using the [command line](#22-bash).
 
-#### 1.1.1 General
+#### 1.1.1 Manual
 
 The challenges listed below were solved without a build tool.
 
@@ -26,10 +26,10 @@ The challenges listed below were solved without a build tool.
 ### 1.2 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
-For some challenges, I did not use a build tool ([general](#121-general)).
+For some challenges, I did not use a build tool ([manual](#121-manual)).
 For others, I used [Maven](#122-maven).
 
-#### 1.2.1 General
+#### 1.2.1 Manual
 
 * [Setting up a basic Java project using IntelliJ IDEA](basic-java-project-intellij)
 
