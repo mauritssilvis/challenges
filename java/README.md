@@ -16,10 +16,10 @@ Currently, Java solutions are available for the following challenges, categorize
 ### 1.1 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
-For some challenges, I did not use a build tool ([general](#111-general)).
+For some challenges, I did not use a build tool ([manual](#111-manual)).
 For others, I made use of [Maven](#112-maven).
 
-#### 1.1.1 General
+#### 1.1.1 Manual
 
 ##### Projects
 
