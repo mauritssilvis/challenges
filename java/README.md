@@ -52,7 +52,9 @@ These projects require the installation of the Java Development Kit (JDK) 20 or 
 
 ### 2.2 Bash
 
-TODO
+[Bash](https://www.gnu.org/software/bash/) is a commonly-used command-line interface for  Unix-like operating systems.
+Bash can execute both user-provided commands and so-called shell scripts.
+Windows users can obtain Bash by installing [Git for Windows](https://git-scm.com/download/win).
 
 ### 2.3 IntelliJ IDEA
 
