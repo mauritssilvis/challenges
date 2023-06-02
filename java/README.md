@@ -23,7 +23,7 @@ The challenges listed below were solved without a build tool.
 
 ##### Projects
 
-* [Setting up a basic Java project using the command line](basic-java-project-cli)
+* [Setting up a Java project using the command line](basic-java-project-cli)
 
 ### 1.2 IntelliJ IDEA projects
 

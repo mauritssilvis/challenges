@@ -1,10 +1,10 @@
-# Setting up a basic Java project using the command line
+# Setting up a Java project using the command line
 
-> A basic Java project set up using the command line
+> A Java project set up using the command line
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Java project, set up using the command line.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a Java project, set up using the command line.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java).
 In addition, I list several [issues](#2-issues-and-solutions) that can occur when setting up a Java project.
