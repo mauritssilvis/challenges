@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a Java project, set up using the command line.
+With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project, set up using the command line.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java).
 In addition, I list several [issues](#2-issues-and-solutions) that can occur when setting up a Java project.
@@ -15,7 +15,7 @@ I also describe solutions to these issues.
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](https://github.com/mauritssilvis/challenges/tree/main/java#21-java) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project.
+I describe this programming language in the [Java section](../#21-java) of the [Challenges](../..) > [Java](..) project.
 
 #### 1.1.1 Code
 
