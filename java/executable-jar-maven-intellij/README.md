@@ -4,12 +4,12 @@
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a project that can create an executable JAR using Maven and IntelliJ IDEA.
+With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](..) project, I provide the code and settings for a project that can create an executable JAR using Maven and IntelliJ IDEA.
 
 Below, I give [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, for which I provide possible solutions.
 
-This project builds on [Setting up a Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-intellij) and [Setting up a Java project using Maven and IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-maven-intellij).
+This project builds on [Setting up a Java project using IntelliJ IDEA](../java-project-intellij) and [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
 
 ## 1. Background
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -44,7 +44,7 @@ The other two run configurations, respectively, create a JAR and execute it.
 
 ### 1.3 Maven
 
-The configuration used in this project extends the [Maven configuration](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-maven-intellij#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-maven-intellij).
+The configuration used in this project extends the [Maven configuration](../java-project-maven-intellij#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
 Additional details regarding the Maven configuration of the current project are given in what follows.
 
 #### 1.3.1 Configuration
@@ -93,7 +93,7 @@ mvn clean install
 ## 2. Issues and solutions
 
 While setting up and building a Maven project, several issues may occur.
-I partly documented these issues in the [Issues and solutions section](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-maven-intellij#2-issues-and-solutions) of [Setting up a Java project using Maven and IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/java-project-maven-intellij).
+I partly documented these issues in the [Issues and solutions section](../java-project-maven-intellij#2-issues-and-solutions) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
 
 Additional problems may occur when trying to execute a JAR created using Maven.
 Below, I describe the issues related to the [Maven JAR plugin](#21-maven-jar-plugin-issues), including possible solutions.
