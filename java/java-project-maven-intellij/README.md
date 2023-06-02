@@ -1,15 +1,15 @@
-# Setting up a basic Maven project using IntelliJ IDEA
+# Setting up a Java project using Maven and IntelliJ IDEA
 
-> A basic Maven project set up using IntelliJ IDEA
+> A Java project set up using Maven and IntelliJ IDEA
 
 ## Introduction
 
-With this part of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project, I provide the code and settings for a basic Maven project set up using IntelliJ IDEA.
+With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project set up using Maven and IntelliJ IDEA.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
 
-This project builds on [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij).
+This project builds on [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
 
 ## 1. Background
 
@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij#12-intellij-idea) of [Setting up a basic Java project using IntelliJ IDEA](https://github.com/mauritssilvis/challenges/tree/main/java/basic-java-project-intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -45,7 +45,7 @@ Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
-This Java project is managed and built using Maven (see, e.g., the [Maven section](https://github.com/mauritssilvis/challenges/tree/main/java#23-maven) of the [Challenges](https://github.com/mauritssilvis/challenges) > [Java](https://github.com/mauritssilvis/challenges/tree/main/java) project).
+This Java project is managed and built using Maven (see, e.g., the [Maven section](../#23-maven) of the [Challenges](../..) > [Java](..) project).
 
 The Maven configuration of the current project is detailed in what follows.
 
@@ -98,7 +98,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) is selected.
-Additionally, the latest long-term support (LTS) version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
+Additionally, the latest version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
 
 #### 1.3.2 Build
 
@@ -504,7 +504,7 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](https://github.com/mauritssilvis/challenges/tree/main/java/executable-jar-maven-intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven](https://github.com/mauritssilvis/challenges/tree/main/java/executable-jar-maven-intellij).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable-jar-maven-intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven and IntelliJ IDEA](../executable-jar-maven-intellij).
 
 ## License
 
