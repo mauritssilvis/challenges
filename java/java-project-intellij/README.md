@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#22-intellij-idea) of the [Challenges](../..) > [Java](..) project).
+This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of the [Challenges](../..) > [Java](..) project).
 
 The used IntelliJ IDEA configuration is described in what follows.
 

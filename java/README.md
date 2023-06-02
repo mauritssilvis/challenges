@@ -7,30 +7,36 @@
 With this part of the [Challenges](..) project, I provide solutions to common programming challenges in Java.
 
 Below, I first give an [overview](#1-overview) of the challenges that I have solved so far.
-I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
+I then provide some [background information](#2-background) on [Java](#21-java) and the tools I used, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ## 1. Overview
 
 Currently, Java solutions are available for the following challenges, categorized according to the tools I used.
 
-### 1.1 IntelliJ IDEA projects
+### 1.1 Command-line projects
 
-I solved the following challenges using [IntelliJ IDEA](#22-intellij-idea).
-For some challenges, I did not use a build tool ([manual](#111-manual)).
-For others, I made use of [Maven](#112-maven).
+I solved the challenges in this section using the [command line](#22-bash) but without a build tool.
 
-#### 1.1.1 Manual
+* [Setting up a Java project using the command line](java-project-cli)
+
+### 1.2 IntelliJ IDEA projects
+
+I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
+For some challenges, I did not use a build tool ([manual](#121-manual)).
+For others, I used [Maven](#122-maven).
+
+#### 1.2.1 Manual
 
 * [Setting up a Java project using IntelliJ IDEA](java-project-intellij)
 
-#### 1.1.2 Maven
+#### 1.2.2 Maven
 
 * [Setting up a Java project using Maven and IntelliJ IDEA](java-project-maven-intellij)
 * [Creating an executable JAR using Maven and IntelliJ IDEA](executable-jar-maven-intellij)
 
 ## 2. Background
 
-In this section, I provide some background information on [Java](#21-java) and the tools I used to solve the above-mentioned programming challenges, namely, [IntelliJ IDEA](#22-intellij-idea) and [Maven](#23-maven).
+In this section, I provide some background information on [Java](#21-java) and the tools I used to solve the above-mentioned programming challenges, namely, [Bash](#22-bash), [IntelliJ IDEA](#23-intellij-idea) and [Maven](#24-maven).
 
 ### 2.1 Java
 
@@ -44,7 +50,13 @@ Most of the above-mentioned projects are configured to use the latest version of
 These projects require the installation of the Java Development Kit (JDK) 20 or later (see, e.g., https://adoptium.net/temurin/releases/).
 
 
-### 2.2 IntelliJ IDEA
+### 2.2 Bash
+
+[Bash](https://www.gnu.org/software/bash/) is a commonly-used command-line interface for Unix-like operating systems.
+Bash can execute both user-provided commands and so-called shell scripts.
+Windows users can obtain Bash by installing [Git for Windows](https://git-scm.com/download/win).
+
+### 2.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
 This IDE supports Java and several other JVM languages and can be extended with plugins to retrieve support for other programming languages.
@@ -53,7 +65,7 @@ IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
 The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](java-project-intellij).
 
-### 2.3 Maven
+### 2.4 Maven
 
 [Maven](https://maven.apache.org/) is a build tool that can be used to manage and build projects written in Java and other programming languages.
 The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to using Maven.
