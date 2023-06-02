@@ -98,7 +98,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 ```
 
 Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) is selected.
-Additionally, the latest long-term support (LTS) version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
+Additionally, the latest version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
 
 #### 1.3.2 Build
 
