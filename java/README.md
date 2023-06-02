@@ -21,18 +21,11 @@ For others, I made use of [Maven](#112-maven).
 
 #### 1.1.1 Manual
 
-##### Projects
-
 * [Setting up a Java project using IntelliJ IDEA](java-project-intellij)
 
 #### 1.1.2 Maven
 
-##### Projects
-
 * [Setting up a Java project using Maven and IntelliJ IDEA](java-project-maven-intellij)
-
-##### JARs
-
 * [Creating an executable JAR using Maven and IntelliJ IDEA](executable-jar-maven-intellij)
 
 ## 2. Background
