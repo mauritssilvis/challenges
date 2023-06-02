@@ -71,7 +71,7 @@ Automatic copyright messages, including the current year and an [SPDX license id
 
 A code inspection profile in which all Java-20-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 This profile facilitates learning about possible code improvements and optimizations.
-A profile in which only the default inspections are selected is stored in [Defaults.xml](.idea/inspectionProfiles/Default.xml).
+A profile in which only the default inspections are selected is stored in [Default.xml](.idea/inspectionProfiles/Default.xml).
 
 ##### Run configurations
 
