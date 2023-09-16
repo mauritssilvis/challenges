@@ -9,6 +9,8 @@ With this educational project, I provide solutions to common programming challen
 Below, I first describe the [aims](#1-aims) I have with the current project.
 I then [list](#2-overview) the programming languages for which I solved several challenges.
 
+The release history of this project is contained in the [changelog](CHANGELOG.md).
+
 ## 1. Aims
 
 My aims with this project are to:
@@ -35,4 +37,4 @@ Currently, solutions to common programming challenges are available for the foll
 
 Copyright © 2021–2023 Maurits Silvis
 
-This source code package is subject to the terms and conditions defined in the GNU General Public License v3.0, which can be found in the file [LICENSE.md](LICENSE.md), or later.
+This source code package is subject to the terms and conditions defined in the [GNU General Public License v3.0](LICENSE.md) or later.
