@@ -70,7 +70,7 @@ java-project-cli
 ```
 
 Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.manual.projects.basic`.
-The `out` folder, which is created upon [compilation](#113-compilation), has the same structure as the `src` folder, but is there to contain the compiled bytecode instead of source code.
+The `out` folder, which is created upon [compilation](#113-compilation), has the same structure as the `src` folder but is there to contain the compiled bytecode instead of source code.
 
 #### 1.1.3 Compilation
 
@@ -168,7 +168,7 @@ Hello world!
 
 While setting up a Java project, several issues may occur.
 I list several such issues, here, including possible solutions.
-In particular, I discuss problems related to [compilation](#21-compilation-issues) and [execution](#22-execution-issues) of Java programs.
+In particular, I discuss problems related to the [compilation](#21-compilation-issues) and [execution](#22-execution-issues) of Java programs.
 
 <!-- TODO: Discuss installation issues. -->
 
@@ -197,7 +197,7 @@ To solve this problem, use slashes when a file path to a source file is expected
 javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
-Alternatively, ensure that you called the right tool.
+Alternatively, ensure that you call the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler.
 In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 
@@ -240,7 +240,7 @@ In addition, ensure the `.java` file extension is present in paths to source fil
 javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
-Alternatively, ensure that you called the right tool.
+Alternatively, ensure that you call the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler
 In that case, ensure you use the fully qualified class name and you execute the class from the proper location:
 
@@ -272,7 +272,7 @@ In addition, ensure the `.java` file extension (instead of `.class`) is used in 
 javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
-Alternatively, ensure that you called the right tool.
+Alternatively, ensure that you call the right tool.
 You may have wanted to call the Java interpreter instead of the Java compiler.
 In that case, ensure you drop any file extensions, you use the fully qualified class name and you execute the class from the proper location:
 

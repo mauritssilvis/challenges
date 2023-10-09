@@ -33,7 +33,7 @@ public class Main {
 
 This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of the [Java challenges](..) project).
 
-The used IntelliJ IDEA configuration is described in what follows.
+The IntelliJ IDEA configuration is described in what follows.
 
 #### 1.2.1 Configuration
 
@@ -77,7 +77,7 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 ##### Run configurations
 
-This project comes with one run configuration for executing the `main` method of the `Main` class.
+This project comes with a run configuration for executing the `main` method of the `Main` class.
 
 <!-- TODO: Discuss the execution of the code. -->
 
