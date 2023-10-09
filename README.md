@@ -33,6 +33,13 @@ Currently, solutions to common programming challenges are available for the foll
 
 - [Java](java)
 
+Specifically, I solved the following challenges:
+
+- [Setting up a Java project using the command line](java/java-project-cli)
+- [Setting up a Java project using IntelliJ IDEA](java/java-project-intellij)
+- [Setting up a Java project using Maven and IntelliJ IDEA](java/java-project-maven-intellij)
+- [Creating an executable JAR using Maven and IntelliJ IDEA](java/executable-jar-maven-intellij)
+
 ## License
 
 Copyright © 2021–2023 Maurits Silvis
