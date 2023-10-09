@@ -20,6 +20,8 @@ I describe this command-line interface in the [Bash section](../#22-bash) of the
 This project makes use of Java.
 I describe this programming language in the [Java section](../#21-java) of the [Java challenges](..) project.
 
+<!-- TODO: Discuss the installation and configuration of Java. -->
+
 #### 1.1.1 Code
 
 For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`.
@@ -167,6 +169,8 @@ Hello world!
 While setting up a Java project, several issues may occur.
 I list several such issues, here, including possible solutions.
 In particular, I discuss problems related to [compilation](#21-compilation-issues) and [execution](#22-execution-issues) of Java programs.
+
+<!-- TODO: Discuss installation issues. -->
 
 ### 2.1 Compilation issues
 
