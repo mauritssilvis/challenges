@@ -31,7 +31,7 @@ public class Main {
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij/#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -504,7 +504,7 @@ When trying to execute a JAR, an error similar to the following may occur:
 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
 ```
 
-To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable-jar-maven-intellij#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven and IntelliJ IDEA](../executable-jar-maven-intellij).
+To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable-jar-maven-intellij/#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven and IntelliJ IDEA](../executable-jar-maven-intellij).
 
 ## License
 
