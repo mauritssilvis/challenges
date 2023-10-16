@@ -186,7 +186,42 @@ In particular, I discuss problems related to the [installation](#21-installation
 
 ### 2.1 Installation issues
 
-<!-- TODO: Describe problems with a missing java command, a mismatch in output version and a mismatch in class version (Java is not up-to-date / java.lang.UnsupportedClassVersionError). -->
+#### 2.1.1 The `java` command was not found / The `javac` command was not found
+
+While trying to invoke the Java interpreter, `java`, or the Java compiler, `javac`, you may encounter errors of the following form:
+
+```text
+java: command not found
+```
+
+```text
+'java' is not recognized as an internal or external command, operable program
+or batch file.
+```
+
+```text
+java : The term 'java' is not recognized as the name of a cmdlet, function,
+script file, or operable program.
+```
+
+These errors indicate Java was not installed or the Java installation was not found.
+
+To solve these problems, install the JDK according to the [installation instructions](#111-installation) given above.
+In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
+
+#### 2.1.2 The Java version does not match
+
+When checking the Java version using `java --version`, you may encounter unexpected output.
+For example, the output may show a lower version than expected:
+
+```text
+openjdk 20.0.2 2023-07-18
+OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
+OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode, sharing)
+```
+
+To solve this problem, install the JDK according to the [installation instructions](#111-installation) given above.
+In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ### 2.2 Compilation issues
 
@@ -368,7 +403,20 @@ As noted before, a more common way of writing this command is given by:
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-<!-- TODO: Describe problems with a mismatch in class version: Java is not up-to-date / java.lang.UnsupportedClassVersionError -->
+#### 2.3.3 Java is not up-to-date / java.lang.UnsupportedClassVersionError
+
+When trying to execute Java programs, you may encounter errors of the following form:
+
+```text
+Error: LinkageError occurred while loading main class nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
+        java.lang.UnsupportedClassVersionError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
+        has been compiled by a more recent version of the Java Runtime (class
+        file version ...), this version of the Java Runtime only recognizes
+        class file versions up to ...
+```
+
+To solve this problem, install the JDK according to the [installation instructions](#111-installation) given above.
+In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ## License
 
