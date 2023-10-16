@@ -74,7 +74,7 @@ The [project object model](https://maven.apache.org/guides/introduction/introduc
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
 The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](java-project-maven-intellij/#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](java-project-maven-intellij).
-A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
+A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
 
 ## License
 
