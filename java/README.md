@@ -52,8 +52,8 @@ The installation of the latest JDK is described in the [Installation section](ja
 
 ### 2.2 Bash
 
-[Bash](https://www.gnu.org/software/bash/) is a commonly used command-line interface for Unix-like operating systems.
-Bash can execute both user-provided commands and so-called shell scripts.
+[Bash](https://www.gnu.org/software/bash/) is a commonly used command-line interface for Unix-based operating systems.
+Bash can both execute commands interactively and run so-called shell scripts.
 Windows users can obtain Bash by installing [Git for Windows](https://git-scm.com/download/win).
 
 ### 2.3 IntelliJ IDEA
