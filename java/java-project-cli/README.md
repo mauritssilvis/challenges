@@ -22,7 +22,19 @@ I describe this programming language in the [Java section](../#21-java) of the [
 
 #### 1.1.1 Installation
 
-<!-- TODO: Discuss the installation and configuration of Java. -->
+To work with Java code, you have to install the Java Development Kit (JDK).
+You can install the latest version of the JDK as follows:
+
+- Go to https://adoptium.net/temurin/releases/.
+- Select the latest long-term support (LTS) version of Java (Java 21 at the time of writing).
+- Download the archive or installer matching your system.
+- Extract or install the files in a convenient location.
+- Add the full path of the created `jdk-X+Y/bin` folder to your `PATH` environment variable. Here, `X` and `Y` are placeholders for version numbers.
+
+You can verify your Java installation using the following steps:
+
+- Run the command `java --version`.
+- Verify that the output matches the desired version of the JDK.
 
 #### 1.1.2 Code
 
