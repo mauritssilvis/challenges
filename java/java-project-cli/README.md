@@ -182,13 +182,13 @@ Hello world!
 
 While setting up a Java project, several issues may occur.
 I list several such issues, here, including possible solutions.
-In particular, I discuss problems related to the [compilation](#21-compilation-issues) and [execution](#22-execution-issues) of Java programs.
+In particular, I discuss problems related to the [installation](#21-installation-issues) of Java and the [compilation](#22-compilation-issues) and [execution](#23-execution-issues) of Java programs.
 
-<!-- TODO: Discuss installation issues. -->
+### 2.1 Installation issues
 
-### 2.1 Compilation issues
+### 2.2 Compilation issues
 
-#### 2.1.1 file not found
+#### 2.2.1 file not found
 
 Since the Java interpreter accepts class names with slashes and dots, one may be tempted to use dots in paths to Java source files in calls to the Java compiler:
 
@@ -219,7 +219,7 @@ In that case, ensure you drop any file extensions, you use the fully qualified c
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-#### 2.1.2 Class names are only accepted if annotation processing is explicitly requested
+#### 2.2.2 Class names are only accepted if annotation processing is explicitly requested
 
 When working with Java, you may encounter errors of the following form:
 
@@ -262,7 +262,7 @@ In that case, ensure you use the fully qualified class name and you execute the 
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-#### 2.1.3 invalid flag
+#### 2.2.3 invalid flag
 
 When working with Java, you may encounter an error of the following form:
 
@@ -294,9 +294,9 @@ In that case, ensure you drop any file extensions, you use the fully qualified c
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-### 2.2 Execution issues
+### 2.3 Execution issues
 
-#### 2.2.1 Could not find or load main class / java.lang.ClassNotFoundException
+#### 2.3.1 Could not find or load main class / java.lang.ClassNotFoundException
 
 When trying to execute Java programs, you may encounter errors of the following form:
 
@@ -327,7 +327,7 @@ As noted before, a more common way of writing this command is given by:
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-#### 2.2.2 Could not find or load main class / java.lang.NoClassDefFoundError
+#### 2.3.2 Could not find or load main class / java.lang.NoClassDefFoundError
 
 When trying to execute Java programs, you may encounter errors of the following form:
 
