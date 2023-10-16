@@ -7,7 +7,7 @@
 With this educational project, I provide solutions to common programming challenges.
 
 Below, I first describe the [aims](#1-aims) I have with the current project.
-I then [list](#2-overview) the programming languages for which I solved several challenges.
+I then give an [overview](#2-overview) of the challenges I have solved thus far.
 
 The release history of this project is contained in the [changelog](CHANGELOG.md).
 
