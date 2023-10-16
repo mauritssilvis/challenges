@@ -53,7 +53,7 @@ The installation of the latest JDK is described in the [Installation section](ja
 ### 2.2 Bash
 
 [Bash](https://www.gnu.org/software/bash/) is a commonly used command-line interface for Unix-based operating systems.
-Bash can both execute commands interactively and run so-called shell scripts.
+Bash can both interactively execute commands and run so-called shell scripts.
 MacOS and most Linux distributions come with Bash or a Bash-like shell.
 Windows users can obtain Bash by installing [Git for Windows](https://git-scm.com/download/win).
 
