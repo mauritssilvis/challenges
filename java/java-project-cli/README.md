@@ -20,9 +20,11 @@ I describe this command-line interface in the [Bash section](../#22-bash) of the
 This project makes use of Java.
 I describe this programming language in the [Java section](../#21-java) of the [Java challenges](..) project.
 
+#### 1.1.1 Installation
+
 <!-- TODO: Discuss the installation and configuration of Java. -->
 
-#### 1.1.1 Code
+#### 1.1.2 Code
 
 For demonstrative purposes, the current project contains only a single Java file, [Main.java](src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java), which comprises a Java class with the corresponding name `Main`.
 This class contains a `main` method outputting a well-known message:
@@ -37,7 +39,7 @@ public class Main {
 }
 ```
 
-#### 1.1.2 Directory structure
+#### 1.1.3 Directory structure
 
 The directory structure of this project is as follows:
 
@@ -70,9 +72,9 @@ java-project-cli
 ```
 
 Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.manual.projects.basic`.
-The `out` folder, which is created upon [compilation](#113-compilation), has the same structure as the `src` folder but is there to contain the compiled bytecode instead of source code.
+The `out` folder, which is created upon [compilation](#114-compilation), has the same structure as the `src` folder but is there to contain the compiled bytecode instead of source code.
 
-#### 1.1.3 Compilation
+#### 1.1.4 Compilation
 
 The most basic way to compile the Java source code in `Main.java` consists in navigating to the directory of this file and calling the Java compiler:
 
@@ -91,9 +93,9 @@ Therefore, it is more convenient to compile the source file from the project roo
 javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
-#### 1.1.4 Execution
+#### 1.1.5 Execution
 
-After [compilation](#113-compilation), the Java class file, `Main.class`, that is buried in the `out` folder can be executed in several ways.
+After [compilation](#114-compilation), the Java class file, `Main.class`, that is buried in the `out` folder can be executed in several ways.
 
 A convenient way to execute this class is given by:
 
@@ -142,7 +144,7 @@ More specifically, the folder from which a class is executed should contain a di
 Therefore, the Java class file `Main.class` cannot be executed from any other folder than the `out` folder.
 In particular, this class file cannot be executed from its containing parent folder.
 
-#### 1.1.5 Direct execution
+#### 1.1.6 Direct execution
 
 Since Java 11, programs consisting of only a single source file can be executed directly, without the need for an explicit compilation step.
 For the current project, the following command directly executes the source file `Main.java` from its containing folder:
