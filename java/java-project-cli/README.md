@@ -107,7 +107,7 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 
 #### 1.1.5 Execution
 
-After [compilation](#114-compilation), the Java class file, `Main.class`, that is buried in the `out` folder can be executed in several ways.
+After [compilation](#114-compilation), the Java class file, `Main.class`, which is buried in the `out` folder, can be executed in several ways.
 
 A convenient way to execute this class is given by:
 
@@ -125,7 +125,7 @@ cd out
 java nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-Rather than manually navigating to a folder containing class files, it is more common to execute a Java class relative to a so-called class path.
+Rather than manually navigating to a folder containing (a hierarchy of directories with) class files, it is more common to execute a Java class relative to a so-called class path.
 For the current project, the following command involving the `-cp` option executes the previously compiled class from the class path `out`:
 
 ```shell
