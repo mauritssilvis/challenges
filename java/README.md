@@ -22,8 +22,8 @@ I solved the challenges in this section using the [command line](#22-bash) but w
 ### 1.2 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
-For some challenges, I did not use a build tool ([manual](#121-manual)).
-For others, I used [Maven](#122-maven).
+For some challenges, I did not use a build tool (manual).
+For others, I used [Maven](#24-maven).
 
 #### 1.2.1 Manual
 
