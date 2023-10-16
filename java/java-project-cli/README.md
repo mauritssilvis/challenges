@@ -34,7 +34,7 @@ You can install the latest version of the JDK as follows:
 You can verify your Java installation using the following steps:
 
 - Run the command `java --version`.
-- Verify that the output matches the desired version of the JDK.
+- Verify that the output matches the desired JDK version.
 
 #### 1.1.2 Code
 
