@@ -40,8 +40,6 @@ The IntelliJ IDEA configuration is described in what follows.
 The [.idea](.idea) folder of this project contains several IntelliJ-IDEA-related configuration files.
 A few of these files are highlighted below.
 
-<!-- TODO: Discuss the project JDK choice. -->
-
 ##### Code styles
 
 First, Unix-style line endings are selected in the file [Project.xml](.idea/codeStyles/Project.xml), which facilitates cross-platform coding.
@@ -80,6 +78,10 @@ A profile in which only the default inspections are selected is stored in [Defau
 This project comes with a run configuration for executing the `main` method of the `Main` class.
 
 <!-- TODO: Discuss the execution of the code. -->
+
+<!-- TODO: Discuss the project JDK choice. -->
+
+<!-- TODO: Discuss problems with a non-existing JDK. -->
 
 ## License
 
