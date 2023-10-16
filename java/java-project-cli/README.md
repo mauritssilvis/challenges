@@ -23,7 +23,7 @@ I describe this programming language in the [Java section](../#21-java) of the [
 #### 1.1.1 Installation
 
 To work with Java code, you have to install the Java Development Kit (JDK).
-You can install the latest version of the JDK as follows:
+You can install the JDK as follows:
 
 - Go to https://adoptium.net/temurin/releases/.
 - Select the latest long-term support (LTS) version of Java (Java 21 at the time of writing).
