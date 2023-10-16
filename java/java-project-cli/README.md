@@ -186,6 +186,8 @@ In particular, I discuss problems related to the [installation](#21-installation
 
 ### 2.1 Installation issues
 
+<!-- TODO: Describe problems with a missing java command, a mismatch in output version and a mismatch in class version (Java is not up-to-date / java.lang.UnsupportedClassVersionError). -->
+
 ### 2.2 Compilation issues
 
 #### 2.2.1 file not found
@@ -365,6 +367,8 @@ As noted before, a more common way of writing this command is given by:
 ```shell
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
+
+<!-- TODO: Describe problems with a mismatch in class version: Java is not up-to-date / java.lang.UnsupportedClassVersionError -->
 
 ## License
 
