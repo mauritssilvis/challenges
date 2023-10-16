@@ -88,7 +88,7 @@ The `out` folder, which is created upon [compilation](#114-compilation), has the
 
 #### 1.1.4 Compilation
 
-The most basic way to compile the Java source code in `Main.java` consists in navigating to the directory of this file and calling the Java compiler:
+The most basic way to compile the Java source code in `Main.java` consists in navigating to the directory of this file and calling the Java compiler, `javac`:
 
 ```shell
 cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
@@ -109,7 +109,7 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 
 After [compilation](#114-compilation), the Java class file, `Main.class`, which is buried in the `out` folder, can be executed in several ways.
 
-A convenient way to execute this class is given by:
+A convenient way to execute this class is given by the following commands involving the Java interpreter, `java`:
 
 ```shell
 cd out
