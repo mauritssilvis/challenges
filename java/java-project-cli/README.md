@@ -4,7 +4,7 @@
 
 ## Introduction
 
-With this part of the [Java challenges](..) project, I provide the code and settings for a Java project, set up using the command line.
+With this part of the [Java challenges](..) project, I provide the code and settings for a Java project set up using the command line.
 
 Below, I give detailed [background information](#1-background) on the project's [code](#11-java).
 In addition, I list several [issues](#2-issues-and-solutions) that can occur when setting up a Java project.
