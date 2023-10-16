@@ -64,6 +64,8 @@ IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
 The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](java-project-intellij/#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](java-project-intellij).
+A step-by-step guide for setting up a Java project using IntelliJ IDEA can be found in the [Create a new project section](https://www.jetbrains.com/help/idea/new-project-wizard.html) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
+
 
 ### 2.4 Maven
 
