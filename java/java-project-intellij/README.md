@@ -77,11 +77,26 @@ A profile in which only the default inspections are selected is stored in [Defau
 
 This project comes with a run configuration for executing the `main` method of the `Main` class.
 
-<!-- TODO: Discuss the execution of the code. -->
+##### Java Development Kit
 
-<!-- TODO: Discuss the project JDK choice. -->
+This project is configured to run with the Adoptium distribution of the Java Development Kit (JDK) 21.
+This setting can be reviewed in IntelliJ IDEA's project settings or the file [misc.xml](.idea/misc.xml):
 
-<!-- TODO: Discuss problems with a non-existing JDK. -->
+```xml
+<project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+```
+
+## 2. Issues and solutions
+
+### 2.1 Configuration issues
+
+#### 2.1.1 Project JDK is not defined / JDK "temurin-21" is missing
+
+<!-- TODO: Discuss problem with a non-existing JDK. -->
 
 ## License
 
