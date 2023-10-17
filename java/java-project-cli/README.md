@@ -23,7 +23,7 @@ I describe this programming language in the [Java section](../#21-java) of the [
 #### 1.1.1 Installation
 
 To work with Java code, you have to install the Java Development Kit (JDK).
-You can install the JDK as follows:
+You can install the Adoptium distribution of the JDK as follows:
 
 - Go to https://adoptium.net/temurin/releases/.
 - Select the latest long-term support (LTS) version of Java (Java 21 at the time of writing).
@@ -206,7 +206,7 @@ script file, or operable program.
 
 These errors indicate Java was not installed or the Java installation was not found.
 
-To solve these problems, install the JDK according to the [installation instructions](#111-installation) given above.
+To solve these problems, install the JDK, for example, according to the [installation instructions](#111-installation) given above.
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 #### 2.1.2 The Java version does not match
@@ -220,7 +220,7 @@ OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
 OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode, sharing)
 ```
 
-To solve this problem, install the desired JDK according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the desired JDK, for example, according to the [installation instructions](#111-installation) given above.
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ### 2.2 Compilation issues
@@ -415,7 +415,7 @@ Error: LinkageError occurred while loading main class nl.mauritssilvis.challenge
         class file versions up to ...
 ```
 
-To solve this problem, install the latest JDK according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the latest JDK, for example, according to the [installation instructions](#111-installation) given above.
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ## License
