@@ -185,7 +185,7 @@ Hello world!
 ## 2. Issues and solutions
 
 While setting up a Java project, several issues may occur.
-I list several such issues, here, including possible solutions.
+I list several such issues here, including possible solutions.
 In particular, I discuss problems related to the [installation](#21-installation-issues) of Java and the [compilation](#22-compilation-issues) and [execution](#23-execution-issues) of Java programs.
 
 ### 2.1 Installation issues
@@ -216,7 +216,7 @@ In the process, ensure the `PATH` environment variable contains a reference to t
 #### 2.1.2 The Java version does not match
 
 When checking the Java version using the command `java --version`, you may encounter unexpected output.
-For example, the output may show a lower version than expected:
+For example, the output may show a lower version of Java than expected:
 
 ```text
 openjdk 20.0.2 2023-07-18
@@ -409,7 +409,7 @@ java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 
 #### 2.3.3 Java is not up-to-date / java.lang.UnsupportedClassVersionError
 
-When trying to execute Java programs, you may encounter errors of the following form:
+When trying to execute Java programs, you may encounter an error of the following form:
 
 ```text
 Error: LinkageError occurred while loading main class nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
