@@ -23,15 +23,19 @@ I describe this programming language in the [Java section](../#21-java) of the [
 #### 1.1.1 Installation
 
 To work with Java code, you have to install the Java Development Kit (JDK).
-You can install the Adoptium distribution of the JDK as follows:
+
+You can install the [Adoptium](https://adoptium.net/) distribution of the JDK as follows:
 
 - Go to https://adoptium.net/temurin/releases/.
 - Select the latest long-term support (LTS) version of Java (Java 21 at the time of writing).
 - Download the archive or installer matching your system.
 - Extract or install the files in a convenient location.
+
+If you want to work with Java from the command line, as is done in this project, you have to add the Java executables to your path:
+
 - Add the full path of the created `jdk-X+Y/bin` folder to your `PATH` environment variable. Here, `X` and `Y` are placeholders for version numbers.
 
-You can verify your Java installation using the following steps:
+You can then verify your Java installation using the following steps:
 
 - Run the command `java --version`.
 - Verify that the output matches the desired JDK version.
