@@ -5,6 +5,11 @@ All notable changes to the [Challenges](https://github.com/mauritssilvis/challen
 The file format is based on [keep a changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+- Improve the project documentation.
+- Update the Java version from 20 to 21.
+
 ## [0.3.1] - 2023-09-16
 
 ### Changed
