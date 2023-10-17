@@ -220,7 +220,7 @@ OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
 OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode, sharing)
 ```
 
-To solve this problem, install the JDK according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the desired JDK according to the [installation instructions](#111-installation) given above.
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ### 2.2 Compilation issues
@@ -415,7 +415,7 @@ Error: LinkageError occurred while loading main class nl.mauritssilvis.challenge
         class file versions up to ...
 ```
 
-To solve this problem, install the JDK according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the latest JDK according to the [installation instructions](#111-installation) given above.
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ## License
