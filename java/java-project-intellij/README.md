@@ -80,7 +80,7 @@ This project comes with a run configuration for executing the `main` method of t
 
 ##### Java Development Kit
 
-This project is configured to run with the Adoptium distribution of the Java Development Kit (JDK) 21.
+This project is configured to run with the [Adoptium](https://adoptium.net/) distribution of the Java Development Kit (JDK) 21.
 This setting can be reviewed in IntelliJ IDEA's project settings or the file [misc.xml](.idea/misc.xml).
 
 ## 2. Issues and solutions
@@ -103,7 +103,7 @@ JDK "temurin-21" is missing
 ```
 
 To solve these warnings and be able to execute the project's code, configure the project JDK in IntelliJ IDEA's project settings.
-You can either select one of the listed JDKs or go for the Adoptium distribution of the Java Development Kit (JDK) by following the [Installation section](../java-project-cli/#111-installation) of [Setting up a Java project using the command line](../java-project-cli) and selecting that JDK.
+You can either select one of the listed JDKs or opt for the Adoptium distribution of the Java Development Kit (JDK) by following the [Installation section](../java-project-cli/#111-installation) of [Setting up a Java project using the command line](../java-project-cli) and selecting that JDK.
 
 ## License
 
