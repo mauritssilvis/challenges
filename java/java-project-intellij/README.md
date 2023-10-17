@@ -80,15 +80,7 @@ This project comes with a run configuration for executing the `main` method of t
 ##### Java Development Kit
 
 This project is configured to run with the Adoptium distribution of the Java Development Kit (JDK) 21.
-This setting can be reviewed in IntelliJ IDEA's project settings or the file [misc.xml](.idea/misc.xml):
-
-```xml
-<project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
-</project>
-```
+This setting can be reviewed in IntelliJ IDEA's project settings or the file [misc.xml](.idea/misc.xml).
 
 ## 2. Issues and solutions
 
