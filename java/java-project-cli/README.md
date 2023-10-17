@@ -84,7 +84,7 @@ java-project-cli
 ```
 
 Here, the `src` folder contains the source file, `Main.java`, stored in a directory structure that matches the package of the class `Main`, i.e., `nl.mauritssilvis.challenges.java.cli.manual.projects.basic`.
-The `out` folder, which is created upon [compilation](#114-compilation), has the same structure as the `src` folder but is there to contain the compiled bytecode instead of source code.
+The `out` folder, which is created upon [compilation](#114-compilation), has the same structure as the `src` folder but is there to contain compiled bytecode instead of source code.
 
 #### 1.1.4 Compilation
 
@@ -211,7 +211,7 @@ In the process, ensure the `PATH` environment variable contains a reference to t
 
 #### 2.1.2 The Java version does not match
 
-When checking the Java version using `java --version`, you may encounter unexpected output.
+When checking the Java version using the command `java --version`, you may encounter unexpected output.
 For example, the output may show a lower version than expected:
 
 ```text
