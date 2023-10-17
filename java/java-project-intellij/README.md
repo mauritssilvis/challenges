@@ -7,6 +7,7 @@
 With this part of the [Java challenges](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
 
 Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
+I also discuss [issues](#2-issues-and-solutions) that can occur when setting up a Java project using IntelliJ IDEA.
 
 ## 1. Background
 
@@ -84,11 +85,25 @@ This setting can be reviewed in IntelliJ IDEA's project settings or the file [mi
 
 ## 2. Issues and solutions
 
+While setting up and executing a Java project using IntelliJ IDEA, you may encounter several issues.
+Below, I discuss problems related to the [configuration](#21-configuration-issues) of IntelliJ IDEA.
+
 ### 2.1 Configuration issues
 
 #### 2.1.1 Project JDK is not defined / JDK "temurin-21" is missing
 
-<!-- TODO: Discuss problem with a non-existing JDK. -->
+When you open this project, IntelliJ IDEA may show one or more of the following warnings:
+
+```text
+Project JDK is not defined
+```
+
+```text
+JDK "temurin-21" is missing
+```
+
+To solve these warnings and be able to execute the project's code, configure the project JDK in IntelliJ IDEA's project settings.
+You can either select one of the listed JDKs or go for the Adoptium distribution of the Java Development Kit (JDK) by following the [Installation section](../java-project-cli/#111-installation) of [Setting up a Java project using the command line](../java-project-cli) and selecting that JDK.
 
 ## License
 
