@@ -271,7 +271,7 @@ error: Class names, 'Main', are only accepted if annotation processing is explic
 
 ```text
 error: Class names, 'nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main',
-are only accepted if annotation processing is explicitly requested
+    are only accepted if annotation processing is explicitly requested
 1 error
 ```
 
