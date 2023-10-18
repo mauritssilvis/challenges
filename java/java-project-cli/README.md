@@ -49,9 +49,9 @@ This class contains a `main` method outputting a well-known message:
 package nl.mauritssilvis.challenges.java.cli.manual.projects.basic;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 

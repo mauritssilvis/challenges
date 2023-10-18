@@ -23,9 +23,9 @@ For demonstrative purposes, the current project contains only a single Java clas
 package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 
@@ -205,7 +205,7 @@ To solve this problem, ensure that your project's main class contains a method w
 
 ```java
 public static void main(String[] args) {
-  // ...
+    // ...
 }
 ```
 
@@ -246,9 +246,9 @@ This main class contains a main method with a recognized signature:
 package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 

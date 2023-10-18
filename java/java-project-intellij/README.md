@@ -24,9 +24,9 @@ For demonstrative purposes, the current project contains only a single Java clas
 package nl.mauritssilvis.challenges.java.intellij.manual.projects.basic;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 
