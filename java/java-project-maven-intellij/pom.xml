@@ -15,6 +15,7 @@
 
     <!-- Set the project coordinates -->
     <groupId>nl.mauritssilvis.challenges.java.intellij.maven.projects</groupId>
+    <!-- TODO: Use the folder name as the artifact ID. -->
     <artifactId>basic</artifactId>
     <version>1.0-SNAPSHOT</version>
 
