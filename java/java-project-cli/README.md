@@ -375,12 +375,14 @@ When trying to execute Java programs, you may encounter errors of the following 
 
 ```text
 Error: Could not find or load main class Main
-Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main (wrong name: Main)
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
+    (wrong name: Main)
 ```
 
 ```text
 Error: Could not find or load main class out.nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
-Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main (wrong name: out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main)
+Caused by: java.lang.NoClassDefFoundError: nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
+    (wrong name: out/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main)
 ```
 
 Such errors result from calling the Java interpreter using commands of the form:
