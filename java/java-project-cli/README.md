@@ -297,7 +297,7 @@ javac -d out src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
 Alternatively, ensure that you call the right tool.
-You may have wanted to call the Java interpreter instead of the Java compiler
+You may have wanted to call the Java interpreter instead of the Java compiler.
 In that case, ensure you use the fully qualified class name and execute the class from the proper location:
 
 ```shell
