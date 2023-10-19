@@ -136,7 +136,7 @@ Several issues may arise concerning the [project object model](https://maven.apa
 When executing Maven goals, the following error may occur:
 
 ```text
-[ERROR] The goal you specified requires a project to execute but there is no POM in this directory. Please verify you invoked Maven from the correct directory.
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory ... Please verify you invoked Maven from the correct directory.
 ```
 
 To solve this problem, ensure the project's top-level directory contains a project object model file called `pom.xml` and that Maven is run in this directory.
@@ -147,7 +147,7 @@ When executing Maven goals, the following error may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] Non-readable POM: input contained no data
+[FATAL] Non-readable POM ...: input contained no data
 ```
 
 To solve this problem, ensure the project object model, `pom.xml`, contains at least the `project` root element.
@@ -173,7 +173,7 @@ When executing Maven goals, the following error may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[ERROR] 'modelVersion' is missing. @ line 1, column 9
+[ERROR] 'modelVersion' is missing. @ line 1, column 10
 ```
 
 To solve this problem, set the model version in the project object model, `pom.xml`:
@@ -190,9 +190,9 @@ When executing Maven goals, one or more of the following errors may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] 'groupId' is missing. @ line 1, column 9
-[FATAL] 'artifactId' is missing. @ line 1, column 9
-[FATAL] 'version' is missing. @ line 1, column 9
+[FATAL] 'groupId' is missing. @ line 1, column 10
+[FATAL] 'artifactId' is missing. @ line 1, column 10
+[FATAL] 'version' is missing. @ line 1, column 10
 ```
 
 To solve these problems, include the project coordinates, i.e., the group ID, the ID and the version of the artifact, in the project object model, `pom.xml`.
@@ -213,7 +213,7 @@ When executing Maven goals, the following error may occur:
 
 ```text
 [ERROR] Some problems were encountered while processing the POMs:
-[FATAL] 'build.plugins.plugin.(groupId:artifactId)' artifactId of a plugin must be defined.  @ line 21, column 21
+[FATAL] 'build.plugins.plugin.(groupId:artifactId)' artifactId of a plugin must be defined.  @ line 10, column 21
 ```
 
 To solve this problem, ensure all desired Maven plugins are identified using their artifact ID.
@@ -238,8 +238,8 @@ For example, the Maven compiler plugin can be selected with the following `build
 When using Maven plugins, a warning may be shown that is similar to the following:
 
 ```text
-[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.intellij.maven.projects:basic:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 23, column 21
+[WARNING] Some problems were encountered while building the effective model for nl.mauritssilvis.challenges.java.intellij.maven.projects:java-project-maven-intellij:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 9, column 21
 [WARNING]
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
 [WARNING]
