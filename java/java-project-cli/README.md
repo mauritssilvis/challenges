@@ -172,7 +172,7 @@ java Main.java
 
 Alternatively, direct execution from the main project folder is possible:
 
-```bash
+```shell
 java src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main.java
 ```
 
