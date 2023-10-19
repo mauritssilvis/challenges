@@ -58,7 +58,7 @@ In the project object model of the current project, [pom.xml](pom.xml), the so-c
 ```xml
 <project>
   <groupId>nl.mauritssilvis.challenges.java.intellij.maven.projects</groupId>
-  <artifactId>basic</artifactId>
+  <artifactId>java-project-maven-intellij</artifactId>
   <version>1.0-SNAPSHOT</version>
 </project>
 ```
@@ -194,7 +194,7 @@ For the current project, these coordinates are defined by the following elements
 ```xml
 <project>
   <groupId>nl.mauritssilvis.challenges.java.intellij.maven.projects</groupId>
-  <artifactId>basic</artifactId>
+  <artifactId>java-project-maven-intellij</artifactId>
   <version>1.0-SNAPSHOT</version>
 </project>
 ```
