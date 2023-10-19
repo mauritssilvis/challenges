@@ -97,7 +97,7 @@ Finally, the [Maven compiler plugin](https://maven.apache.org/plugins/maven-comp
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) is selected.
+Here, version 3.11.0 of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is selected, which is the latest version at the time of writing.
 Additionally, the latest version of Java (Java 20 at the time of writing) is selected, which requires the corresponding version of the Java Development Kit (JDK) (see, e.g., https://adoptium.net/temurin/releases/).
 
 #### 1.3.2 Build
@@ -256,7 +256,7 @@ For example, for the Maven compiler plugin, extend the `build` section of `pom.x
 </project>
 ```
 
-Here, the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) is selected.
+Here, version 3.11.0 of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) is selected, which is the latest version at the time of writing.
 
 ### 2.2 Maven resources plugin issues
 
