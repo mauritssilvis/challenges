@@ -102,14 +102,22 @@ Additionally, Java 21 is selected, which is the latest long-term support (LTS) v
 
 #### 1.3.2 Build
 
-The project can be built using the following command:
+The project can, for example, be built using the following command:
+
+```shell
+mvn clean package
+```
+
+Execution of this command will compile the above-mentioned Java class file and package it as a JAR file.
+
+Alternatively, execute the following command:
 
 ```shell
 mvn clean install
 ```
 
-Execution of this command will compile the above-mentioned Java class file, package it as a JAR file and make this JAR available in your local Maven repository.
-Note that this JAR will [not be executable](#24-maven-jar-plugin-issues).
+In addition to the previous command, this command will make the JAR available in your local Maven repository.
+Note that the JAR will [not be executable](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
