@@ -314,12 +314,11 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-#### 2.3.2 Bootstrap class path not set in conjunction with -source 8 / Source value 8 is obsolete and will be removed in a future release / Target value 8 is obsolete and will be removed in a future release
+#### 2.3.2 Source value 8 is obsolete and will be removed in a future release / Target value 8 is obsolete and will be removed in a future release
 
 The Maven compiler plugin may return the following warnings:
 
 ```text
-[WARNING] bootstrap class path not set in conjunction with -source 8
 [WARNING] source value 8 is obsolete and will be removed in a future release
 [WARNING] target value 8 is obsolete and will be removed in a future release
 ```
