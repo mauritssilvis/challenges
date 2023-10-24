@@ -32,9 +32,9 @@
                 <!-- Set the latest version of the Maven compiler plugin -->
                 <version>3.11.0</version>
                 <configuration>
-                    <!-- Set the Java source version >= 7 -->
+                    <!-- Set the Java source version >= 9 -->
                     <source>21</source>
-                    <!-- Set the Java target version >= 7 -->
+                    <!-- Set the Java target version >= 9 -->
                     <target>21</target>
                 </configuration>
             </plugin>
