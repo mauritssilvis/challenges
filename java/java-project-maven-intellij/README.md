@@ -314,7 +314,67 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-#### 2.3.2 Source option is no longer supported. Use 7 or later.
+#### 2.3.2 Bootstrap class path not set in conjunction with -source 8 / Source value 8 is obsolete and will be removed in a future release / Target value 8 is obsolete and will be removed in a future release
+
+The Maven compiler plugin may return the following warnings:
+
+```text
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+```
+
+To solve these warnings, ensure the Java source and target versions are explicitly set in the project object model, `pom.xml`, and are higher than 8.
+Additionally, ensure that the target version is not smaller than the source version.
+
+Java 21 can be selected by extending the `properties` section of `pom.xml` with the following lines:
+
+```xml
+<project>
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
+</project>
+```
+
+In addition, select the latest version of the [Maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) (3.11.0 at the time of writing) in the `build` section of `pom.xml`:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+Alternatively, configure the Java target, source and Maven compiler plugin versions in the `build` section:
+
+```xml
+<project>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>21</source>
+          <target>21</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+#### 2.3.3 Source option is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with one of the following errors:
 
@@ -377,7 +437,7 @@ Alternatively, configure both the Java source and Maven compiler plugin versions
 </project>
 ```
 
-#### 2.3.3 Target option is no longer supported. Use 7 or later.
+#### 2.3.4 Target option is no longer supported. Use 7 or later.
 
 The Maven compiler plugin may halt with one of the following errors:
 
@@ -440,7 +500,7 @@ Alternatively, configure both the Java target and Maven compiler plugin versions
 </project>
 ```
 
-#### 2.3.4 Failure executing javac, but could not parse the error / Source release 21 requires target release 21
+#### 2.3.5 Failure executing javac, but could not parse the error / Source release 21 requires target release 21
 
 The Maven compiler plugin may encounter either of the following errors while compiling:
 
