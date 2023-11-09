@@ -35,3 +35,9 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 - Add a Java project set up using IntelliJ IDEA.
 - Add a Java project set up using Maven and IntelliJ IDEA.
 - Add a project that can create an executable JAR using Maven and IntelliJ IDEA.
+
+## License
+
+Copyright © 2023 Maurits Silvis
+
+This source code package is subject to the terms and conditions defined in the [GNU General Public License v3.0](LICENSE.md) or later.
