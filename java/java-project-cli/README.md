@@ -99,7 +99,7 @@ cd src/nl/mauritssilvis/challenges/java/cli/manual/projects/basic
 javac Main.java
 ```
 
-These commands will compile the Java code of `Main.java` into bytecode, which is then stored in the class file `Main.class` in the directory where the source code is located.
+These commands compile the Java code of `Main.java` into bytecode, which is then stored in the class file `Main.class` in the directory where the source code is located.
 
 As we will see, the class file, `Main.class`, cannot be executed from the folder in which it is stored.
 Moreover, Java source and class files are generally stored in different locations.
@@ -120,7 +120,7 @@ cd out
 java nl/mauritssilvis/challenges/java/cli/manual/projects/basic/Main
 ```
 
-As is explained below, the `.class` extension of the class file should not be included.
+As explained below, the `.class` extension of the class file should not be included.
 
 Equivalently, one could execute the following commands:
 
@@ -136,13 +136,13 @@ For the current project, the following command involving the `-cp` option execut
 java -cp out nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main
 ```
 
-All above commands will result in the following output:
+All the above commands result in the following output:
 
 ```text
 Hello world!
 ```
 
-Note that Java executes classes by their class name, not by their file name.
+Note that Java executes classes by their class name, not their file name.
 Therefore, the above commands should not include the `.class` extension of the Java class file name `Main.class`.
 
 Moreover, for classes that are part of a package, the supplied class name should be the so-called fully qualified name, which includes both the package and the class name.
@@ -162,7 +162,7 @@ In particular, this class file cannot be executed from its containing parent fol
 
 #### 1.1.6 Direct execution
 
-Since Java 11, programs consisting of only a single source file can be executed directly, without the need for an explicit compilation step.
+Since Java 11, programs consisting of only a single source file can be executed directly without an explicit compilation step.
 For the current project, the following command directly executes the source file `Main.java` from its containing folder:
 
 ```shell
@@ -210,7 +210,7 @@ script file, or operable program.
 
 These errors indicate Java was not installed or the Java installation was not found.
 
-To solve these problems, install the JDK, for example, according to the [installation instructions](#111-installation) given above.
+To solve these problems, install the JDK, for example, according to the [installation instructions](#111-installation).
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 #### 2.1.2 The Java version does not match
@@ -224,7 +224,7 @@ OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
 OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode, sharing)
 ```
 
-To solve this problem, install the desired JDK, for example, according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the desired JDK, for example, according to the [installation instructions](#111-installation).
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ### 2.2 Compilation issues
@@ -238,7 +238,7 @@ cd src
 javac nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main.java
 ```
 
-Such commands will, however, result in an error of the form:
+Such commands, however, result in an error of the form:
 
 ```text
 error: file not found: nl.mauritssilvis.challenges.java.cli.manual.projects.basic.Main.java
@@ -422,7 +422,7 @@ Error: LinkageError occurred while loading main class nl.mauritssilvis.challenge
         class file versions up to ...
 ```
 
-To solve this problem, install the latest JDK, for example, according to the [installation instructions](#111-installation) given above.
+To solve this problem, install the latest JDK, for example, according to the [installation instructions](#111-installation).
 In the process, ensure the `PATH` environment variable contains a reference to the proper JDK folder.
 
 ## License

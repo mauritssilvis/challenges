@@ -41,7 +41,7 @@ Additional details regarding the IntelliJ IDEA run configurations of the current
 This project comes with three run configurations.
 This first run configuration is called `Main` and directly executes the `main` method of the `Main` class.
 The other two run configurations, respectively, create a JAR and execute it.
-Note that execution of the JAR will [fail](#24-maven-jar-plugin-issues).
+Note that execution of the JAR [fails](#24-maven-jar-plugin-issues).
 
 ### 1.3 Maven
 
@@ -108,7 +108,7 @@ The project can be built using the following command:
 mvn clean package
 ```
 
-Execution of this command will clean the build folder, compile the above-mentioned Java class file and package it as a JAR file.
+Execution of this command cleans the build folder, compiles the above-mentioned Java class file and packages it as a JAR file.
 
 Alternatively, execute the following command:
 
@@ -116,8 +116,8 @@ Alternatively, execute the following command:
 mvn clean install
 ```
 
-In addition to the previous command, this command will make the JAR available in your local Maven repository.
-Note that the JAR will [not be executable](#24-maven-jar-plugin-issues).
+In addition to the previous command, this command makes the JAR available in your local Maven repository.
+Note that the JAR is [not executable](#24-maven-jar-plugin-issues).
 
 ## 2. Issues and solutions
 
