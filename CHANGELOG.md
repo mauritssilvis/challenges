@@ -9,10 +9,11 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Improve and extend the general project documentation.
-- Improve and extend the documentation of the command-line Java project.
-- Improve and extend the documentation of the IntelliJ Java project.
-- Improve and extend the documentation of the Maven Java project.
+- Extend and improve the general documentation.
+- Extend and improve the documentation of the command-line Java project.
+- Extend and improve the documentation of the IntelliJ Java project.
+- Extend and improve the documentation of the Maven Java project.
+- Improve the documentation of the executable JAR project.
 - Update the Java version from 20 to 21.
 
 ## [0.3.1] - 2023-09-16
