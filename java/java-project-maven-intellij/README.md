@@ -504,7 +504,7 @@ Alternatively, configure both the Java target and Maven compiler plugin versions
 The Maven compiler plugin may encounter the following error while compiling:
 
 ```text
-source release 21 requires target release 21
+[ERROR] source release 21 requires target release 21
 ```
 
 To solve these problems, ensure the Java source and target versions are set in the project object model, `pom.xml`.
