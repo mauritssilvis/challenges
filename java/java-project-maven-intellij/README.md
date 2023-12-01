@@ -6,7 +6,7 @@
 
 With this part of the [Java challenges](..) project, I provide the code and settings for a Java project set up using Maven and IntelliJ IDEA.
 
-Below, I give detailed [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
+Below, I give detailed [background information](#1-background) on the project’s [code](#11-java), [IntelliJ IDEA’s configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also describe several [issues](#2-issues-and-solutions) that can occur when setting up a Maven project, for which I provide possible solutions.
 
 This project builds on [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
@@ -139,7 +139,7 @@ When executing Maven goals, the following error may occur:
 [ERROR] The goal you specified requires a project to execute but there is no POM in this directory ... Please verify you invoked Maven from the correct directory.
 ```
 
-To solve this problem, ensure the project's top-level directory contains a project object model file called `pom.xml` and that Maven is run in this directory.
+To solve this problem, ensure the project’s top-level directory contains a project object model file called `pom.xml` and that Maven is run in this directory.
 
 #### 2.1.2 Non-readable POM: input contained no data
 

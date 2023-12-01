@@ -6,7 +6,7 @@
 
 With this part of the [Java challenges](..) project, I provide the code and settings for a project that can create an executable JAR using Maven and IntelliJ IDEA.
 
-Below, I give [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
+Below, I give [background information](#1-background) on the project’s [code](#11-java), [IntelliJ IDEA’s configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, for which I provide possible solutions.
 
 This project builds on [Setting up a Java project using IntelliJ IDEA](../java-project-intellij) and [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
@@ -201,7 +201,7 @@ or a JavaFX application class must extend javafx.application.Application
 
 This error arises when the main class of your project does not contain a proper main method.
 
-To solve this problem, ensure that your project's main class contains a method with the following signature:
+To solve this problem, ensure that your project’s main class contains a method with the following signature:
 
 ```java
 public static void main(String[] args) {

@@ -6,7 +6,7 @@
 
 With this part of the [Java challenges](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
 
-Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
+Below, I give [background information](#1-background) on the project’s [code](#11-java) and [IntelliJ IDEA’s configuration](#12-intellij-idea).
 I also discuss [issues](#2-issues-and-solutions) that can occur when setting up a Java project using IntelliJ IDEA.
 
 ## 1. Background
@@ -81,7 +81,7 @@ This project comes with a run configuration for executing the `main` method of t
 ##### Java Development Kit
 
 This project is configured to run with the [Adoptium](https://adoptium.net/) distribution of the Java Development Kit (JDK) 21.
-This setting can be reviewed in IntelliJ IDEA's project settings or the file [misc.xml](.idea/misc.xml).
+This setting can be reviewed in IntelliJ IDEA’s project settings or the file [misc.xml](.idea/misc.xml).
 
 ## 2. Issues and solutions
 
@@ -102,7 +102,7 @@ Project JDK is not defined
 JDK "temurin-21" is missing
 ```
 
-To solve these warnings and be able to execute the project's code, configure the project JDK in IntelliJ IDEA's project settings.
+To solve these warnings and be able to execute the project’s code, configure the project JDK in IntelliJ IDEA’s project settings.
 You can either select one of the listed JDKs or opt for the Adoptium distribution of the Java Development Kit (JDK) by following the [Installation section](../java-project-cli/#111-installation) of [Setting up a Java project using the command line](../java-project-cli) and selecting that JDK.
 
 ## License
