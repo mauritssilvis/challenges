@@ -125,8 +125,6 @@ While setting up and building a Maven project, several issues may occur.
 I list several such issues below, including possible solutions.
 Specifically, I discuss problems related to the [project object model](#21-project-object-model-issues), the [Maven resources plugin](#22-maven-resources-plugin-issues), the [Maven compiler plugin](#23-maven-compiler-plugin-issues) and the [Maven JAR plugin](#24-maven-jar-plugin-issues).
 
-<!-- TODO: Describe what happens when the required Java version is not installed. -->
-
 ### 2.1 Project object model issues
 
 Several issues may arise concerning the [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html).
