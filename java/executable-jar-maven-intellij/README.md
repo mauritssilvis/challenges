@@ -76,7 +76,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is defined as follows:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is configured to be:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -234,7 +234,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is defined as follows:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is configured to be:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
