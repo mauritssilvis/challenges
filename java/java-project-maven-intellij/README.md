@@ -314,16 +314,16 @@ To set the file encoding to UTF-8, include the following line in the `properties
 </project>
 ```
 
-#### 2.3.2 Source value 8 is obsolete and will be removed in a future release / Target value 8 is obsolete and will be removed in a future release
+#### 2.3.2 Source value 7 is obsolete and will be removed in a future release / Target value 7 is obsolete and will be removed in a future release
 
 The Maven compiler plugin may return the following warnings:
 
 ```text
-[WARNING] source value 8 is obsolete and will be removed in a future release
-[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] source value 7 is obsolete and will be removed in a future release
+[WARNING] target value 7 is obsolete and will be removed in a future release
 ```
 
-To solve these warnings, ensure the Java source and target versions are explicitly set in the project object model, `pom.xml`, and are higher than 8.
+To solve these warnings, ensure the Java source and target versions are explicitly set in the project object model, `pom.xml`, and are higher than 7.
 Additionally, ensure that the target version is not smaller than the source version.
 
 Java 21 can be selected by extending the `properties` section of `pom.xml` with the following lines:
@@ -373,20 +373,20 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 </project>
 ```
 
-#### 2.3.3 Source option is no longer supported. Use 7 or later.
+#### 2.3.3 Source option is no longer supported. Use 8 or later.
 
 The Maven compiler plugin may halt with one of the following errors:
 
 ```text
-[ERROR] Source option 1.3 is no longer supported. Use 7 or later.
+[ERROR] Source option 1.3 is no longer supported. Use 8 or later.
 ```
 
 ```text
-[ERROR] Source option 5 is no longer supported. Use 7 or later.
+[ERROR] Source option 5 is no longer supported. Use 8 or later.
 ```
 
 ```text
-[ERROR] Source option 6 is no longer supported. Use 7 or later.
+[ERROR] Source option 6 is no longer supported. Use 8 or later.
 ```
 
 To solve these problems, explicitly set the Java source version in the project object model, `pom.xml`.
@@ -436,20 +436,20 @@ Alternatively, configure both the Java source and Maven compiler plugin versions
 </project>
 ```
 
-#### 2.3.4 Target option is no longer supported. Use 7 or later.
+#### 2.3.4 Target option is no longer supported. Use 8 or later.
 
 The Maven compiler plugin may halt with one of the following errors:
 
 ```text
-[ERROR] Target option 1.1 is no longer supported. Use 7 or later.
+[ERROR] Target option 1.1 is no longer supported. Use 8 or later.
 ```
 
 ```text
-[ERROR] Target option 5 is no longer supported. Use 7 or later.
+[ERROR] Target option 5 is no longer supported. Use 8 or later.
 ```
 
 ```text
-[ERROR] Target option 6 is no longer supported. Use 7 or later.
+[ERROR] Target option 6 is no longer supported. Use 8 or later.
 ```
 
 To solve these problems, explicitly set the Java target version in the project object model, `pom.xml`.
