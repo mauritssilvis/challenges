@@ -4,9 +4,9 @@
 
 ## Introduction
 
-With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a project that can create an executable JAR using Maven and IntelliJ IDEA.
+With this part of the [Java challenges](..) project, I provide the code and settings for a project that can create an executable JAR using Maven and IntelliJ IDEA.
 
-Below, I give [background information](#1-background) on the project's [code](#11-java), [IntelliJ IDEA's configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
+Below, I give [background information](#1-background) on the project’s [code](#11-java), [IntelliJ IDEA’s configuration](#12-intellij-idea) and the used [Maven configuration](#13-maven).
 I also detail some [issues](#2-issues-and-solutions) that can occur when creating an executable JAR using Maven, for which I provide possible solutions.
 
 This project builds on [Setting up a Java project using IntelliJ IDEA](../java-project-intellij) and [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
@@ -23,15 +23,15 @@ For demonstrative purposes, the current project contains only a single Java clas
 package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 
 ### 1.2 IntelliJ IDEA
 
-The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
+The basic configuration of this project is described in the [IntelliJ IDEA section](../java-project-intellij/#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](../java-project-intellij).
 Additional details regarding the IntelliJ IDEA run configurations of the current project are given in what follows.
 
 #### 1.2.1 Configuration
@@ -44,7 +44,7 @@ The other two run configurations, respectively, create a JAR and execute it.
 
 ### 1.3 Maven
 
-The configuration used in this project extends the [Maven configuration](../java-project-maven-intellij#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
+The configuration used in this project extends the [Maven configuration](../java-project-maven-intellij/#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
 Additional details regarding the Maven configuration of the current project are given in what follows.
 
 #### 1.3.1 Configuration
@@ -76,7 +76,7 @@ To ensure that the JAR created by Maven is executable, the project object model 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is defined as follows:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is configured to be:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -93,7 +93,7 @@ mvn clean install
 ## 2. Issues and solutions
 
 While setting up and building a Maven project, several issues may occur.
-I partly documented these issues in the [Issues and solutions section](../java-project-maven-intellij#2-issues-and-solutions) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
+I partly documented these issues in the [Issues and solutions section](../java-project-maven-intellij/#2-issues-and-solutions) of [Setting up a Java project using Maven and IntelliJ IDEA](../java-project-maven-intellij).
 
 Additional problems may occur when trying to execute a JAR created using Maven.
 Below, I describe the issues related to the [Maven JAR plugin](#21-maven-jar-plugin-issues), including possible solutions.
@@ -102,12 +102,12 @@ Below, I describe the issues related to the [Maven JAR plugin](#21-maven-jar-plu
 
 Several issues may arise with the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
-#### 2.1.1 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
+#### 2.1.1 no main manifest attribute, in executable-jar-maven-intellij-1.0-SNAPSHOT.jar
 
 When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
-no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
+no main manifest attribute, in executable-jar-maven-intellij-1.0-SNAPSHOT.jar
 ```
 
 To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin.
@@ -201,11 +201,11 @@ or a JavaFX application class must extend javafx.application.Application
 
 This error arises when the main class of your project does not contain a proper main method.
 
-To solve this problem, ensure that your project's main class contains a method with the following signature:
+To solve this problem, ensure that your project’s main class contains a method with the following signature:
 
 ```java
 public static void main(String[] args) {
-  // ...
+    // ...
 }
 ```
 
@@ -234,7 +234,7 @@ For the current project, the configuration of the Maven JAR plugin that is part 
 </project>
 ```
 
-Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is defined as follows:
+Here, the latest version of the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/) (3.3.0 at the time of writing) is selected, and the main class is configured to be:
 
 ```text
 nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone.Main
@@ -246,9 +246,9 @@ This main class contains a main method with a recognized signature:
 package nl.mauritssilvis.challenges.java.intellij.maven.jars.executable.standalone;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 

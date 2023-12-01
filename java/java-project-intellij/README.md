@@ -4,16 +4,17 @@
 
 ## Introduction
 
-With this part of the [Challenges](../..) > [Java](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
+With this part of the [Java challenges](..) project, I provide the code and settings for a Java project set up using IntelliJ IDEA.
 
-Below, I give [background information](#1-background) on the project's [code](#11-java) and [IntelliJ IDEA's configuration](#12-intellij-idea).
+Below, I give [background information](#1-background) on the project’s [code](#11-java) and [IntelliJ IDEA’s configuration](#12-intellij-idea).
+I also discuss [issues](#2-issues-and-solutions) that can occur when setting up a Java project using IntelliJ IDEA.
 
 ## 1. Background
 
 ### 1.1 Java
 
 This project makes use of Java.
-I describe this programming language in the [Java section](../#21-java) of the [Challenges](../..) > [Java](..) project.
+I describe this programming language in the [Java section](../#21-java) of the [Java challenges](..) project.
 
 #### 1.1.1 Code
 
@@ -23,17 +24,17 @@ For demonstrative purposes, the current project contains only a single Java clas
 package nl.mauritssilvis.challenges.java.intellij.manual.projects.basic;
 
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
 }
 ```
 
 ### 1.2 IntelliJ IDEA
 
-This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of the [Challenges](../..) > [Java](..) project).
+This project is set up using IntelliJ IDEA (see, e.g., the [IntelliJ IDEA section](../#23-intellij-idea) of the [Java challenges](..) project).
 
-The used IntelliJ IDEA configuration is described in what follows.
+The IntelliJ IDEA configuration is described in what follows.
 
 #### 1.2.1 Configuration
 
@@ -69,13 +70,40 @@ Automatic copyright messages, including the current year and an [SPDX license id
 
 ##### Inspection profiles
 
-A code inspection profile in which all Java-20-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
+A code inspection profile in which all Java-21-compatible IntelliJ IDEA inspections are turned on is provided in [All.xml](.idea/inspectionProfiles/All.xml).
 This profile facilitates learning about possible code improvements and optimizations.
 A profile in which only the default inspections are selected is stored in [Default.xml](.idea/inspectionProfiles/Default.xml).
 
 ##### Run configurations
 
-This project comes with one run configuration for executing the `main` method of the `Main` class.
+This project comes with a run configuration for executing the `main` method of the `Main` class.
+
+##### Java Development Kit
+
+This project is configured to run with the [Adoptium](https://adoptium.net/) distribution of the Java Development Kit (JDK) 21.
+This setting can be reviewed in IntelliJ IDEA’s project settings or the file [misc.xml](.idea/misc.xml).
+
+## 2. Issues and solutions
+
+While setting up and executing a Java project using IntelliJ IDEA, you may encounter several issues.
+Below, I discuss problems related to the [configuration](#21-configuration-issues) of IntelliJ IDEA.
+
+### 2.1 Configuration issues
+
+#### 2.1.1 Project JDK is not defined / JDK "temurin-21" is missing
+
+When you open this project, IntelliJ IDEA may show one or more of the following warnings:
+
+```text
+Project JDK is not defined
+```
+
+```text
+JDK "temurin-21" is missing
+```
+
+To solve these warnings and be able to execute the project’s code, configure the project JDK in IntelliJ IDEA’s project settings.
+You can either select one of the listed JDKs or opt for the Adoptium distribution of the Java Development Kit (JDK) by following the [Installation section](../java-project-cli/#111-installation) of [Setting up a Java project using the command line](../java-project-cli) and selecting that JDK.
 
 ## License
 

@@ -7,7 +7,7 @@
 With this educational project, I provide solutions to common programming challenges.
 
 Below, I first describe the [aims](#1-aims) I have with the current project.
-I then [list](#2-overview) the programming languages for which I solved several challenges.
+I then give an [overview](#2-overview) of the challenges I have solved thus far.
 
 The release history of this project is contained in the [changelog](CHANGELOG.md).
 
@@ -32,6 +32,13 @@ Finally, I aim to:
 Currently, solutions to common programming challenges are available for the following languages:
 
 - [Java](java)
+
+Specifically, I solved the following challenges:
+
+- [Setting up a Java project using the command line](java/java-project-cli)
+- [Setting up a Java project using IntelliJ IDEA](java/java-project-intellij)
+- [Setting up a Java project using Maven and IntelliJ IDEA](java/java-project-maven-intellij)
+- [Creating an executable JAR using Maven and IntelliJ IDEA](java/executable-jar-maven-intellij)
 
 ## License
 

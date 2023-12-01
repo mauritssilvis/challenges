@@ -22,8 +22,8 @@ I solved the challenges in this section using the [command line](#22-bash) but w
 ### 1.2 IntelliJ IDEA projects
 
 I solved the following challenges using [IntelliJ IDEA](#23-intellij-idea).
-For some challenges, I did not use a build tool ([manual](#121-manual)).
-For others, I used [Maven](#122-maven).
+For some challenges, I did not use a build tool (manual).
+For others, I used [Maven](#24-maven).
 
 #### 1.2.1 Manual
 
@@ -46,24 +46,27 @@ C and C++ are, however, compiled into platform-specific machine code.
 Instead, Java compiles to platform-independent class files containing so-called bytecode.
 This bytecode can be executed on a platform of choice by a platform-specific Java virtual machine (JVM).
 
-Most of the above-mentioned projects are configured to use the latest version of Java (Java 20 at the time of writing).
-These projects require the installation of the Java Development Kit (JDK) 20 or later (see, e.g., https://adoptium.net/temurin/releases/).
-
+Most of the above-mentioned projects are configured to use Java 21, which is the latest long-term support (LTS) version of Java at the time of writing.
+These projects require the installation of the Java Development Kit (JDK) 21 or later.
+The installation of the latest JDK is described in the [Installation section](java-project-cli/#111-installation) of [Setting up a Java project using the command line](java-project-cli).
 
 ### 2.2 Bash
 
-[Bash](https://www.gnu.org/software/bash/) is a commonly-used command-line interface for Unix-like operating systems.
-Bash can execute both user-provided commands and so-called shell scripts.
+[Bash](https://www.gnu.org/software/bash/) is a commonly used command-line interface for Unix-based operating systems.
+Bash can both interactively execute commands and run so-called shell scripts.
+MacOS and most Linux distributions come with Bash or a Bash-like shell.
 Windows users can obtain Bash by installing [Git for Windows](https://git-scm.com/download/win).
 
 ### 2.3 IntelliJ IDEA
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is an integrated development environment (IDE) developed by [JetBrains](https://www.jetbrains.com/).
 This IDE supports Java and several other JVM languages and can be extended with plugins to retrieve support for other programming languages.
-IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
+IntelliJ IDEA has [detailed online documentation](https://www.jetbrains.com/help/idea/), and its [community edition](https://www.jetbrains.com/idea/download/) can be downloaded and used for free.
 
 IntelliJ IDEA makes it easy to configure code styles, automatic copyright notices, code inspection profiles, run configurations and more.
-The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](java-project-intellij#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](java-project-intellij).
+The basic IntelliJ IDEA configuration used in the above-mentioned projects is described in the [IntelliJ IDEA section](java-project-intellij/#12-intellij-idea) of [Setting up a Java project using IntelliJ IDEA](java-project-intellij).
+A step-by-step guide for setting up a Java project using IntelliJ IDEA can be found in the [Create a new project section](https://www.jetbrains.com/help/idea/new-project-wizard.html) of IntelliJ IDEA’s [online documentation](https://www.jetbrains.com/help/idea/).
+
 
 ### 2.4 Maven
 
@@ -71,8 +74,9 @@ The basic IntelliJ IDEA configuration used in the above-mentioned projects is de
 The [project object model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html), a file named `pom.xml`, is central to using Maven.
 In this file, the project properties can be set, build plugins can be configured, project dependencies can be defined, etc.
 
-The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](java-project-maven-intellij#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](java-project-maven-intellij).
-A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html#create_new_maven_project) of IntelliJ IDEA's [online documentation](https://www.jetbrains.com/help/idea/discover-intellij-idea.html).
+The basic Maven configuration used in the above-mentioned projects is discussed in the [Maven section](java-project-maven-intellij/#13-maven) of [Setting up a Java project using Maven and IntelliJ IDEA](java-project-maven-intellij).
+A step-by-step guide for setting up a Maven project using IntelliJ IDEA can be found in the [Maven section](https://www.jetbrains.com/help/idea/maven-support.html) of IntelliJ IDEA’s [online documentation](https://www.jetbrains.com/help/idea/).
+Maven does not need to be installed when used with IntelliJ IDEA.
 
 ## License
 
