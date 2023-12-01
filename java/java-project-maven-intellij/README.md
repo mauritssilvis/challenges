@@ -499,13 +499,9 @@ Alternatively, configure both the Java target and Maven compiler plugin versions
 </project>
 ```
 
-#### 2.3.5 Failure executing javac, but could not parse the error / Source release 21 requires target release 21
+#### 2.3.5 Source release 21 requires target release 21
 
-The Maven compiler plugin may encounter either of the following errors while compiling:
-
-```text
-[ERROR] Failure executing javac, but could not parse the error
-```
+The Maven compiler plugin may encounter the following error while compiling:
 
 ```text
 source release 21 requires target release 21
