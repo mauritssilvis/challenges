@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="executable-jar-maven-intellij-1.0-SNAPSHOT.jar" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/target/executable-jar-maven-intellij-1.0-SNAPSHOT.jar" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="executable-jar-maven-intellij [clean...]" run_configuration_type="MavenRunConfiguration" />
+    </method>
+  </configuration>
+</component>
