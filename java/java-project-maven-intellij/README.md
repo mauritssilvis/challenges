@@ -565,12 +565,12 @@ Alternatively, configure the Java target, source and Maven compiler plugin versi
 
 At least one issue may arise with the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
-#### 2.4.1 no main manifest attribute, in basic-1.0-SNAPSHOT.jar
+#### 2.4.1 no main manifest attribute, in java-project-maven-intellij-1.0-SNAPSHOT.jar
 
 When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
-no main manifest attribute, in basic-1.0-SNAPSHOT.jar
+no main manifest attribute, in java-project-maven-intellij-1.0-SNAPSHOT.jar
 ```
 
 To solve this problem, configure the Maven JAR plugin according to the discussion of potential [Maven JAR plugin issues](../executable-jar-maven-intellij/#21-maven-jar-plugin-issues) that is part of [Creating an executable JAR using Maven and IntelliJ IDEA](../executable-jar-maven-intellij).

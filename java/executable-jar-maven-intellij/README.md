@@ -102,12 +102,12 @@ Below, I describe the issues related to the [Maven JAR plugin](#21-maven-jar-plu
 
 Several issues may arise with the [Maven JAR plugin](https://maven.apache.org/plugins/maven-jar-plugin/).
 
-#### 2.1.1 no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
+#### 2.1.1 no main manifest attribute, in executable-jar-maven-intellij-1.0-SNAPSHOT.jar
 
 When trying to execute a JAR, an error similar to the following may occur:
 
 ```text
-no main manifest attribute, in standalone-1.0-SNAPSHOT.jar
+no main manifest attribute, in executable-jar-maven-intellij-1.0-SNAPSHOT.jar
 ```
 
 To solve this problem, use the `build` section of the project object model, `pom.xml`, to configure the Maven JAR plugin.
